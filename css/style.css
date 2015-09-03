@@ -1,0 +1,104 @@
+/*
+ * common
+ */
+
+ul li{
+    list-style:none;
+    display:inline-block;
+}
+#wrapper
+{
+	width:960px;
+	margin:0 auto;
+}
+/*
+ * header
+ */
+#header{
+    border-bottom:1px solid #ccc;
+}
+/*
+ * footer
+ */
+#footer{
+    border-top:1px solid #ccc;
+    margin-top:20px;
+}
+.footer-link
+{
+	text-align:center;
+	margin:5px;
+	padding:5px
+}
+/*
+ * main
+ */
+#content {
+    margin:auto;
+    width:980px;
+}
+
+
+.btn:hover
+{
+	opacity:0.8;
+}
+
+/*
+media 
+*/
+
+/*
+detail page
+*/
+h2>small
+{
+border-bottom:2px solid #000000;
+	
+}
+a : active
+{
+	background-color:gold;!important;
+}
+.icon li
+{margin-right:10px}
+.bg-red
+{
+	background:#bc0404!important;
+}
+.fw-bold
+{
+	font-weight:bold;
+}
+.txt-white
+{
+	color:#ffffff!important;
+}
+.panel
+{
+	border:none!important;
+	box-shadow:none!important;
+}
+.table-ttl
+{
+	background:#ebebeb;
+	font-weight:bold;
+	padding:10px;
+	float:left;
+	width:20%;
+}
+.border
+{
+	border:1px solid #ebebeb;
+	border-collapse:no-collapse;
+}
+.padding-none
+{
+	padding:0!important;
+}
+.table-txt {
+    padding: 10px;
+  
+    width: 80%;
+    float: right;
+}

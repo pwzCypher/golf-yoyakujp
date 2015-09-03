@@ -1,0 +1,122 @@
+
+body
+{
+	background:url(../img/bg.jpg) repeat-x;
+	
+}
+
+/* -------------------------------------------------------------------- 
+/* Margin , Padding
+-------------------------------------------------------------------- */
+
+.mb0 {	margin-bottom: 0px !important;}
+.mb5 {	margin-bottom: 5px !important;}
+.mb10 {	margin-bottom: 10px !important;}
+.mb15 {	margin-bottom: 15px !important;}
+.mb20 {	margin-bottom: 20px !important;}
+.mb25 {	margin-bottom: 25px !important;}
+.mb30 {	margin-bottom: 30px !important;}
+.mb35 {	margin-bottom: 35px !important;}
+.mb40 {	margin-bottom: 40px !important;}
+.mb45 {	margin-bottom: 45px !important;}
+.mb50 {	margin-bottom: 50px !important;}
+.mb55 {	margin-bottom: 55px !important;}
+.mb60 {	margin-bottom: 60px !important;}
+.mb70 {	margin-bottom: 70px !important;}
+.mb80 {	margin-bottom: 80px !important;}
+.mb90 {	margin-bottom: 90px !important;}
+.mb100 {	margin-bottom: 100px !important;}
+
+.ml0 {	margin-left: 0px !important;}
+.ml5 {	margin-left: 5px !important;}
+.ml10 {	margin-left: 10px !important;}
+.ml20 {	margin-left: 20px !important;}
+.ml30 {	margin-left: 30px !important;}
+
+.mr0 {	margin-right: 0px !important;}
+.mr5 {	margin-right: 5px !important;}
+.mr10 {	margin-right: 10px !important;}
+.mr20 {	margin-right: 20px !important;}
+.mr30 {	margin-right: 30px !important;}
+
+.mt0 {	margin-top: 0px !important;}
+.mt5 {	margin-top: 5px !important;}
+.mt10 {	margin-top: 10px !important;}
+.mt20 {	margin-top: 20px !important;}
+.mt30 {	margin-top: 30px !important;}
+.mt25 {	margin-top: 25px !important;}
+.mt60 {	margin-top: 60px !important;}
+.pb0 {	padding-bottom: 0px !important;}
+.pb5 {	padding-bottom: 5px !important;}
+.pb10 {	padding-bottom: 10px !important;}
+.pb20 {	padding-bottom: 20px !important;}
+.pb30 {	padding-bottom: 30px !important;}
+
+.pt0 {	padding-top: 0px !important;}
+.pt5 {	padding-top: 5px !important;}
+.pt10 {	padding-top: 10px !important;}
+.pt20 {	padding-top: 20px !important;}
+.pt30 {	padding-top: 30px !important;}
+
+
+.pl0 {	padding-left: 0px !important;}
+.pr0 {	padding-right: 0px !important;}
+/* -------------------------------------------------------------------- 
+/* Float
+-------------------------------------------------------------------- */
+
+.fll {	float: left !important;}
+.flr {	float: right !important;}
+
+.noFloat { float: none !important;}
+
+/* -------------------------------------------------------------------- 
+/* Clearfix
+-------------------------------------------------------------------- */
+
+.clearfix:after { content: ""; display: block; clear: both; }
+.clearfix { display: inline-block; }
+/*\*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/**/
+
+/* フロート解除 */
+.both { clear: both; }
+
+ .footin {
+	width:950px;
+	margin:0 auto;
+	text-align:left;
+	padding:0 0 20px 0;
+}
+ .footin .linkbox {
+	padding:25px 0 17px 0;
+	text-align:center;
+	font-size:0.9em;
+}
+.footin .linkbox ul li {
+	display:inline;
+	
+	line-height:1.1em;
+	padding:0 6px;
+	border-left:1px solid #000;
+}
+.linkbox ul li:first-child
+{
+border-left:0;	
+	
+}
+ .footin .linkbox ul li a, #Footer .footin .linkbox ul li a:hover {
+	color:#000;
+}
+#footer_wrapper {
+    color: #000;
+    border-top: solid 3px #efefef;
+    margin: 20px 0 0 0;
+}
+.center
+{
+	margin:0 auto;
+	text-align:center;
+}
