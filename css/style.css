@@ -1,165 +1,224 @@
 /*
  * common
  */
+ul li {
+	list-style: none;
+	display: inline-block;
+}
 
-ul li{
-    list-style:none;
-    display:inline-block;
+#wrapper {
+	width: 960px;
+	margin: 0 auto;
 }
-#wrapper
-{
-	width:960px;
-	margin:0 auto;
-}
+
 /*
  * header
  */
-#header{
-    border-bottom:1px solid #ccc;
+#header {
+	border-bottom: 1px solid #ccc;
 }
 /*
  * footer
  */
-#footer{
-    border-top:1px solid #ccc;
-    margin-top:20px;
+#footer {
+	border-top: 1px solid #ccc;
+	margin-top: 20px;
 }
-.footer-link
-{
-	text-align:center;
-	margin:5px;
-	padding:5px
+
+.footer-link {
+	text-align: center;
+	margin: 5px;
+	padding: 5px
 }
 /*
  * main
  */
 #content {
-    margin:auto;
-    width:980px;
+	margin: auto;
+	width: 980px;
 }
 
-
-.btn:hover
-{
-	opacity:0.8;
+.btn:hover {
+	opacity: 0.8;
 }
 
 /*
 media 
 */
+@media screen and (max-width:767px) {
+	
+	/* Force table to not be like tables anymore */
+	#no-more-tables table, 
+	#no-more-tables thead, 
+	#no-more-tables tbody, 
+	#no-more-tables th, 
+	#no-more-tables td, 
+	#no-more-tables tr { 
+		display: block; 
+	}
+ 
+	/* Hide table headers (but not display: none;, for accessibility) 
+	#no-more-tables tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+ */
+	#no-more-tables tr { border: 1px solid #ccc; }
+ 
+	
+ 
+	#no-more-tables th:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+		text-align:left;
+		font-weight: bold;
+	}
+
+.table-head {
+    background: #ebebeb;
+    width: 30%;
+    float: left;
+}
+}
 
 /*
 detail page
 */
-h2>small
-{
-border-bottom:2px solid #000000;
-	
+h2>small {
+	border-bottom: 2px solid #000000;
 }
-a : active
-{
-	background-color:gold;!important;
+
+a : active {
+	background-color: gold;
+	!
+	important;
 }
-.icon li
-{margin-right:10px}
-.bg-red
-{
-	background:#bc0404!important;
+
+.icon li {
+	margin-right: 10px
 }
-.fw-bold
-{
-	font-weight:bold;
+
+.bg-red {
+	background: #bc0404 !important;
 }
-.txt-white
-{
-	color:#ffffff!important;
+
+.fw-bold {
+	font-weight: bold;
 }
-.panel
-{
-	border:none!important;
-	box-shadow:none!important;
+
+.txt-white {
+	color: #ffffff !important;
 }
-.table-ttl
-{
-	background:#ebebeb;
-	font-weight:bold;
-	padding:10px;
-	float:left;
-	width:20%;
+
+.panel {
+	border: none !important;
+	box-shadow: none !important;
 }
-.border
-{
-	border:1px solid #ebebeb;
-	border-collapse:no-collapse;
+
+.table-ttl {
+	background: #ebebeb;
+	font-weight: bold;
+	padding: 10px;
+	float: left;
+	width: 20%;
 }
-.padding-none
-{
-	padding:0!important;
+
+.border {
+	border: 1px solid #ebebeb;
+	border-collapse: no-collapse;
 }
+
+.padding-none {
+	padding: 0 !important;
+}
+
 .table-txt {
-    padding: 10px;
-  
-    width: 80%;
-    float: right;
+	padding: 10px;
+	width: 80%;
+	float: right;
 }
-.btn-weather
-{
-	background:url(img/btn-weather.png)
+
+.btn-weather {
+	background: url(img/btn-weather.png)
 }
-.btn-golfbag
-{
-	background:url(img/btn-golfbag.png)
+
+.btn-golfbag {
+	background: url(img/btn-golfbag.png)
 }
-.btn-hotel
-{
-	background:url(img/btn-hotel.png)
+
+.btn-hotel {
+	background: url(img/btn-hotel.png)
 }
-.btn-car
-{
-	background:url(img/golf-car.png)
+
+.btn-car {
+	background: url(img/golf-car.png)
 }
-.btn-like
-{
-	border-left:1px dotted #ebebeb;
+
+.btn-like {
+	border-left: 1px dotted #ebebeb;
 }
+
 .res_seofooter_top dd {
-    width:80%; 
-    margin: 0;
-    float: right;
+	width: 80%;
+	margin: 0;
+	float: right;
 }
-.res_seofooter_top dt
-{
-	width:20%;
-	float:left;
+
+.res_seofooter_top dt {
+	width: 20%;
+	float: left;
 }
-ul.prefectures li
-{
+
+ul.prefectures li {
 	margin: 0 0 4px -5px;
-    padding: 4px 18px 4px 14px;
-    float: left;
-    font-size: 12px;
-    line-height: 13px;
-    white-space: nowrap;
-    border-left: solid 1px #cccccc;
-    text-align: left;
+	padding: 4px 18px 4px 14px;
+	float: left;
+	font-size: 12px;
+	line-height: 13px;
+	white-space: nowrap;
+	border-left: solid 1px #cccccc;
+	text-align: left;
 }
+
 ul.prefectures {
-    margin-left: -1px;
-    overflow: hidden;
-    clear: both;
+	margin-left: -1px;
+	overflow: hidden;
+	clear: both;
 }
+
 .res_seofooter_top ul {
-    margin-bottom: 0;
-    padding-bottom: 0;
+	margin-bottom: 0;
+	padding-bottom: 0;
 }
+
 ul.prefectures li.first {
-    margin: 0 0 4px -5px;
-    padding: 4px 22px;
-    width: 15%;
-    background: url(../golf_jp/mrk_seofooter_circle.gif) 3px 3px no-repeat;
-    float: left;
-    font-size: 12px;
-    line-height: 13px;
-    font-weight: bold;
-    white-space: nowrap;
+	margin: 0 0 4px -5px;
+	padding: 4px 22px;
+	width: 15%;
+	background: url(../golf_jp/mrk_seofooter_circle.gif) 3px 3px no-repeat;
+	float: left;
+	font-size: 12px;
+	line-height: 13px;
+	font-weight: bold;
+	white-space: nowrap;
+}
+
+.fullborder {
+	border: 1px solid #000000;
+}
+
+.table-head {
+	background: #ebebeb;
+	width: 20%;
+}
+.tabledata
+{
+	
 }
