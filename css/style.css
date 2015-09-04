@@ -102,3 +102,64 @@ a : active
     width: 80%;
     float: right;
 }
+.btn-weather
+{
+	background:url(img/btn-weather.png)
+}
+.btn-golfbag
+{
+	background:url(img/btn-golfbag.png)
+}
+.btn-hotel
+{
+	background:url(img/btn-hotel.png)
+}
+.btn-car
+{
+	background:url(img/golf-car.png)
+}
+.btn-like
+{
+	border-left:1px dotted #ebebeb;
+}
+.res_seofooter_top dd {
+    width:80%; 
+    margin: 0;
+    float: right;
+}
+.res_seofooter_top dt
+{
+	width:20%;
+	float:left;
+}
+ul.prefectures li
+{
+	margin: 0 0 4px -5px;
+    padding: 4px 18px 4px 14px;
+    float: left;
+    font-size: 12px;
+    line-height: 13px;
+    white-space: nowrap;
+    border-left: solid 1px #cccccc;
+    text-align: left;
+}
+ul.prefectures {
+    margin-left: -1px;
+    overflow: hidden;
+    clear: both;
+}
+.res_seofooter_top ul {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+ul.prefectures li.first {
+    margin: 0 0 4px -5px;
+    padding: 4px 22px;
+    width: 15%;
+    background: url(../golf_jp/mrk_seofooter_circle.gif) 3px 3px no-repeat;
+    float: left;
+    font-size: 12px;
+    line-height: 13px;
+    font-weight: bold;
+    white-space: nowrap;
+}
