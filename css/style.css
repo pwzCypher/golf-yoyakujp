@@ -11,6 +11,7 @@ ul li {
 	margin: 0 auto;
 }
 
+
 /*
  * header
  */
@@ -128,8 +129,7 @@ a : active {
 }
 
 .panel {
-	border: none !important;
-	box-shadow: none !important;
+	
 }
 
 .table-ttl {
@@ -231,4 +231,31 @@ ul.prefectures li.first {
 .tabledata
 {
 	
+}
+.rating
+{
+	font-weight: bold;
+    color: #EB4055;
+    font-size: 18px;
+}
+.review li img
+{
+	vertical-align:top;
+}
+.review li
+{
+	margin-right:20px;
+}
+.border-grey
+{
+	border:1px solid #cccccc;
+}
+.bg-grey
+{
+	background:#ebebeb;
+}
+.border-none
+{
+	border:none!important;
+	box-shadow:none!important;
 }
