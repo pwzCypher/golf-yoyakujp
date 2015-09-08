@@ -283,3 +283,19 @@ vertical-align:middle!important;
 {
 	border-bottom:none;
 }
+
+#top-link-block.affix-top {
+    position: absolute; /* allows it to "slide" up into view */
+    bottom: -82px;
+    right: 40px;
+}
+#top-link-block.affix {
+    position: fixed; /* keeps it on the bottom once in view */
+    bottom: 40px;
+    right: 40px;
+}
+.page-top
+{
+	padding-bottom: 40px;
+    margin-right: 40px;
+}
