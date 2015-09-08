@@ -259,3 +259,16 @@ ul.prefectures li.first {
 	border:none!important;
 	box-shadow:none!important;
 }
+.bg-blue
+{
+	background:#f6ffff;
+}
+.btn-toogle
+{
+	background: url(../img/Button Add.png)!important;
+	badkground-size:100%!important;
+}
+.btn-toogle img
+{
+vertical-align:middle!important;	
+}
