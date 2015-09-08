@@ -91,6 +91,9 @@ media
 {
 	display:none;
 }
+.review li {
+    margin-right: 10px!important;
+}
 }
 @media screen and (min-width:768px) {
 	.dis-none-pc
@@ -271,4 +274,12 @@ ul.prefectures li.first {
 .btn-toogle img
 {
 vertical-align:middle!important;	
+}
+.borbot-grey
+{
+	border-bottom:2px solid #ebebeb;
+}
+.borbot-grey:last-child
+{
+	border-bottom:none;
 }
