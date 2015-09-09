@@ -54,7 +54,8 @@ media
 	#no-more-tables tbody, 
 	#no-more-tables th, 
 	#no-more-tables td, 
-	#no-more-tables tr { 
+	#no-more-tables tr
+	.tabledata { 
 		display: block; 
 	}
  
@@ -78,7 +79,7 @@ media
 		width: 45%; 
 		padding-right: 10px; 
 		white-space: nowrap;
-		text-align:left;
+		
 		font-weight: bold;
 	}
 

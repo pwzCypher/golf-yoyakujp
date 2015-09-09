@@ -89,7 +89,7 @@
 	</tr>
 	<tr>
 		<th class="table-head" rowspan="2">開場時間</th>
-		<td class="tabledata" rowspan="2"></td>
+		<td class="tabledata" rowspan="2"> </td>
 		<th class="table-head">予約開始日</th>
 		<td class="tabledata">プレー日の92日前­</td>
 	</tr>
@@ -249,6 +249,12 @@
 		</dl>
 			</div>
 		</div>
+		<span id="top-link-block" class="hidden flr page-top dis-none">
+    <a href="#top" class="well well-sm"
+				onclick="$('html,body').animate({scrollTop:0},'slow');return false;">
+         <i class="glyphicon glyphicon-chevron-up"></i>Back to Top
+    </a>
+</span>
 		<div class="row dis-none-pc">
 		<div class="col-sm-6 ">
 		<button type="button" class="btn btn-success btn-large dis-block center mgb-20">予約カレンダーを見る</button>
@@ -260,6 +266,17 @@
 	</article>
 	<footer></footer>
 
-
+<script>
+		// Only enable if the document has a long scroll bar
+		// Note the window height + offset
+		if (($(window).height() + 100) < $(document).height()) {
+			$('#top-link-block').removeClass('hidden').affix({
+				// how far to scroll down before link "slides" into view
+				offset : {
+					top : 100
+				}
+			});
+		}
+	</script>
 </body>
 </html>
