@@ -55,7 +55,7 @@ media
 	#no-more-tables th, 
 	#no-more-tables td, 
 	#no-more-tables tr
-	.tabledata { 
+{ 
 		display: block; 
 	}
  
@@ -77,7 +77,7 @@ media
 		top: 6px;
 		left: 6px;
 		width: 45%; 
-		padding-right: 10px; 
+		padding-right: 40px; 
 		white-space: nowrap;
 		
 		font-weight: bold;
@@ -85,8 +85,12 @@ media
 
 .table-head {
     background: #ebebeb;
-    width: 30%;
-    float: left;
+    width: 100%!important;
+    	
+}
+.tabledata
+{
+	
 }
 .dis-none
 {
