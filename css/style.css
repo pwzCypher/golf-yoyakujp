@@ -356,3 +356,128 @@ color:#000000;
 {
 	color:#000000;
 }
+.cal_day02 {
+    background: url(../img/bg_fff_e6e_h50.png) repeat-x left top #CCC;
+    background: -webkit-gradient(linear, center top, center bottom, from(#FFF), color-stop(20%, #FFF), to(#CCC)) repeat scroll 0 0 transparent;
+    background: -moz-linear-gradient(center top, #FFF, #CCC) repeat scroll 0 0 transparent;
+    border-right: 1px solid #FFF;
+    border-bottom: 1px solid #FFF;
+    opacity: .50;
+    filter: alpha(opacity=50);
+    -ms-filter: "alpha(opacity=50)";
+    -khtml-opacity: .50;
+    -moz-opacity: .50;
+    
+}
+.cal_sun02 {
+    background: url(../img/bg_fff_ffe_h50.png) repeat-x left top #ffcda0;
+    background: -webkit-gradient(linear, center top, center bottom, from(#FFF), color-stop(20%, #FFF), to(#FFDDDD)) repeat scroll 0 0 transparent;
+    background: -moz-linear-gradient(center top, #FFF, #FFDDDD) repeat scroll 0 0 transparent;
+    border-left: 1px solid #FFDDDD;
+    border-right: 1px solid #FFF;
+    border-bottom: 1px solid #FFF;
+    color: #BB0000;
+    opacity: .50;
+    filter: alpha(opacity=50);
+    -ms-filter: "alpha(opacity=50)";
+    -khtml-opacity: .50;
+    -moz-opacity: .50;
+   
+}
+.cal_sat03 a {
+    color: #0066CC;
+    text-decoration: underline;
+    display: block;
+}
+.cal_day01 {
+    background: url(../img/bg_fff_ccb_h50.png) repeat-x left top #ffcda0;
+    background: -webkit-gradient(linear, center top, center bottom, from(#FFF), color-stop(20%, #FFF), to(#CCBBAA)) repeat scroll 0 0 transparent;
+    background: -moz-linear-gradient(center top, #FFF, #CCBBAA) repeat scroll 0 0 transparent;
+    border-top: 1px solid #CCBBAA;
+    border-right: 1px solid #FFF;
+    border-bottom: 1px solid #CCBBAA;
+}
+cal_sat02 {
+    background: url(../img/bg_fff_e6f_h50.png) repeat-x left top #ffcda0;
+    background: -webkit-gradient(linear, center top, center bottom, from(#FFF), color-stop(20%, #FFF), to(#CCEEFF)) repeat scroll 0 0 transparent;
+    background: -moz-linear-gradient(center top, #FFF, #CCEEFF) repeat scroll 0 0 transparent;
+    border-right: 1px solid #CCEEFF;
+    border-bottom: 1px solid #FFF;
+    color: #0066CC;
+    opacity: .50;
+    filter: alpha(opacity=50);
+    -ms-filter: "alpha(opacity=50)";
+    -khtml-opacity: .50;
+    -moz-opacity: .50;
+    
+}
+.cal_sat01 {
+    background: url(../img/bg_fff_ccb_h50.png) repeat-x left top #ffcda0;
+    background: -webkit-gradient(linear, center top, center bottom, from(#FFF), color-stop(20%, #FFF), to(#CCBBAA)) repeat scroll 0 0 transparent;
+    background: -moz-linear-gradient(center top, #FFF, #CCBBAA) repeat scroll 0 0 transparent;
+    border-top: 1px solid #CCBBAA;
+    border-right: 1px solid #CCBBAA;
+    border-bottom: 1px solid #CCBBAA;
+    color: #0066CC;
+}
+.cal_sun01 {
+    background: url(../img/bg_fff_ccb_h50.png) repeat-x left top #ffcda0;
+    background: -webkit-gradient(linear, center top, center bottom, from(#FFF), color-stop(20%, #FFF), to(#CCBBAA)) repeat scroll 0 0 transparent;
+    background: -moz-linear-gradient(center top, #FFF, #CCBBAA) repeat scroll 0 0 transparent;
+    border-top: 1px solid #CCBBAA;
+    border-left: 1px solid #CCBBAA;
+    border-right: 1px solid #FFF;
+    color: #BB0000;
+    
+}
+.cal_day02 {
+    background: url(../img/bg_fff_e6e_h50.png) repeat-x left top #CCC!important;
+    background: -webkit-gradient(linear, center top, center bottom, from(#FFF), color-stop(20%, #FFF), to(#CCC)) repeat scroll 0 0 transparent!important;
+    background: -moz-linear-gradient(center top, #FFF, #CCC) repeat scroll 0 0 transparent!important;
+    border-right: 1px solid #FFF;
+    border-bottom: 1px solid #FFF;
+    opacity: .50;
+    filter: alpha(opacity=50);
+    -ms-filter: "alpha(opacity=50)";
+    -khtml-opacity: .50;
+    -moz-opacity: .50;
+}
+.cal_day03 {
+    background: url(../img/bg_fff_cdc_h50.png) repeat-x left top #CCC;
+    background: -webkit-gradient(linear, center top, center bottom, from(#FFF), color-stop(20%, #FFF), to(#CCC)) repeat scroll 0 0 transparent;
+    background: -moz-linear-gradient(center top, #FFF, #CCC) repeat scroll 0 0 transparent;
+    border-right: 1px solid #FFF;
+    border-bottom: 1px solid #FFF;
+    text-decoration: underline;
+    
+}
+.cal_hol02 {
+    background: url(../img/bg_fff_cdc_h50.png) repeat-x left top #ffcda0;
+    background: -webkit-gradient(linear, center top, center bottom, from(#FFF), color-stop(20%, #FFF), to(#FFDDDD)) repeat scroll 0 0 transparent;
+    background: -moz-linear-gradient(center top, #FFF, #FFDDDD) repeat scroll 0 0 transparent;
+    border-right: 1px solid #FFF;
+    border-bottom: 1px solid #FFF;
+    color: #BB0000;
+    text-decoration: underline;
+} 
+.cal_sun03 {
+    background: url(../img/bg_fff_ffd_h50.png) repeat-x left top #ffcda0;
+    background: -webkit-gradient(linear, center top, center bottom, from(#FFF), color-stop(20%, #FFF), to(#FFDDDD)) repeat scroll 0 0 transparent;
+    background: -moz-linear-gradient(center top, #FFF, #FFDDDD) repeat scroll 0 0 transparent;
+    border-left: 1px solid #FFDDDD;
+    border-right: 1px solid #FFF;
+    border-bottom: 1px solid #FFF;
+    color: #BB0000;
+    text-decoration: underline;
+    
+}
+.cal_sat03 {
+    background: url(../img/bg_fff_cde_h50.png) repeat-x left top #CCEEFF;
+    background: -webkit-gradient(linear, center top, center bottom, from(#FFF), color-stop(20%, #FFF), to(#CCEEFF)) repeat scroll 0 0 transparent;
+    background: -moz-linear-gradient(center top, #FFF, #CCEEFF) repeat scroll 0 0 transparent;
+    border-right: 1px solid #CCEEFF;
+    border-bottom: 1px solid #FFF;
+    color: #0066CC;
+    text-decoration: underline;
+   
+}
