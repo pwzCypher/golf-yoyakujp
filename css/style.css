@@ -304,3 +304,55 @@ vertical-align:middle!important;
 	padding-bottom: 40px;
     margin-right: 40px;
 }
+.plan_calender {
+   width:100%;
+    border-left: #cfcfcf 1px solid;
+    border-right: 1px solid #cfcfcf;
+}
+.plan_calender td.sat {
+    background: #dbefff;
+    position: relative;
+}
+.plan_calender td.sun {
+    background: #ffdbdb;
+    position: relative;
+}
+.plan_calender tbody td.plan_calender_price {
+    width: 4em;
+    padding: 3px;
+    border-bottom: #cfcfcf 1px solid;
+    white-space: nowrap;
+    text-align: right;
+    color: #e94057;
+    position: relative;
+    font-size: 1.2em;
+}
+.plan_calender tbody td.plan_calender_icon {
+    width: 104px;
+    padding: 3px 1px 3px 3px;
+    white-space: nowrap;
+    border-bottom: #cfcfcf 1px solid;
+    _position: relative;
+}
+.plan_calender tbody .odd td.gray {
+    background: #d8d8ad;
+    _position: relative;
+    border-bottom: #cfcfcf 1px solid;
+}
+.plan_calender tbody td.plan_calender_price span {
+    color: #666;
+    display: block;
+    font-size: .8em;
+}
+.plan_calender tbody td.plan_calender_icon img {
+    float: left;
+    margin-right: 2px;
+}
+.planName a
+{
+color:#000000;
+}
+.prefectures li a
+{
+	color:#000000;
+}

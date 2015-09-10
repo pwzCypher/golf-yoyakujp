@@ -124,8 +124,8 @@ border-left:0;
 }
 .center
 {
-	margin:0 auto;
-	text-align:center;
+	margin:0 auto!important;
+	text-align:center!important;
 }
 a img:hover
 {
