@@ -82,10 +82,10 @@ body
 -------------------------------------------------------------------- */
 
 .clearfix:after { content: ""; display: block; clear: both; }
-.clearfix { display: inline-block; }
+.clearfix {  }
 /*\*/
 * html .clearfix { height: 1%; }
-.clearfix { display: block; }
+.clearfix { }
 /**/
 
 /* フロート解除 */

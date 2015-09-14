@@ -18,6 +18,95 @@ ul li {
 #header {
 	border-bottom: 1px solid #ccc;
 }
+/* ----------------------------------------------------------------------------------------------------
+ *  2.ヘッダー
+ * --------------------------------------------------------------------------------------------------*/
+#header {
+	width: 100%;
+	background: #000;
+}
+
+.site_desc {
+	font-size: 11px !important;
+	padding: 10px 0 0 0;
+}
+
+.text_right {
+	text-align: right;
+}
+
+.headerIn {
+	width: 980px;
+	margin: 0 auto;
+	color: #fff;
+}
+
+.logo {
+	width: 136px;
+	float: left;
+	padding: 20px 0 0px 0;
+}
+
+.headerUtility {
+	float: right;
+	padding: 10px 0 20px 0;
+}
+
+.headerUtility li {
+	float: left;
+	padding: 0 0 0 30px;
+}
+
+.headerUtility a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.gNav {
+	width: 980px;
+	margin: 0 auto;
+	font-size: 14px;
+	font-weight: bold;
+	color: #333333;
+	border-right: 2px solid #000;
+	border-left: 2px solid #000;
+	border-bottom: 2px solid #000;
+}
+
+#nav_place li a {
+	padding: 0 50px;
+}
+
+.gNav li {
+	float: left;
+	padding: 10px 0;
+}
+
+.gNav li a {
+	text-decoration: none;
+	color: #333333;
+	padding: 0 34px;
+	border-right: 1px solid #000;
+}
+
+.gNav li:last-child a {
+	text-decoration: none;
+	color: #333333;
+	padding: 0 34px;
+	border-right: 0;
+}
+
+.gNav li a:hover {
+	
+}
+
+.menu {
+	display: none;
+}
+
+.spmenu {
+	display: none;
+}
 /*
  * footer
  */
@@ -355,4 +444,539 @@ color:#000000;
 .prefectures li a
 {
 	color:#000000;
+}
+#wrapper {
+	width: 100%;
+	overflow: hidden;
+	color: #fff;
+}
+
+img {
+	max-width: 100%;
+}
+
+.spcontact {
+	display: none;
+}
+/* ----------------------------------------------------------------------------------------------------
+ *  2.ヘッダー
+ * --------------------------------------------------------------------------------------------------*/
+#header {
+	width: 100%;
+	background: #000;
+}
+
+.headerIn {
+	width: 980px;
+	margin: 0 auto;
+}
+
+.logo {
+	width: 136px;
+	float: left;
+	padding: 20px 0 0px 0;
+}
+
+.headerUtility {
+	float: right;
+	padding: 10px 0 20px 0;
+}
+
+.headerUtility li {
+	float: left;
+	padding: 0 0 0 30px;
+}
+
+.headerUtility a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.gNav {
+	width: 980px;
+	margin: 0 auto;
+	font-size: 14px;
+	font-weight: bold;
+	color: #333333;
+	border-right: 2px solid #000;
+	border-left: 2px solid #000;
+	border-bottom: 2px solid #000;
+}
+
+#nav_place li a {
+	padding: 0 50px;
+}
+
+.gNav li {
+	float: left;
+	padding: 10px 0;
+}
+
+.gNav li a {
+	text-decoration: none;
+	color: #333333;
+	padding: 0 34px;
+	border-right: 1px solid #000;
+}
+
+.gNav li:last-child a {
+	text-decoration: none;
+	color: #333333;
+	padding: 0 34px;
+	border-right: 0;
+}
+
+.gNav li a:hover {
+	
+}
+
+.menu {
+	display: none;
+}
+
+.spmenu {
+	display: none;
+}
+
+#banner {
+	width: 100%;
+	background: #F2F2F2;
+}
+
+.bannerIn {
+	width: 980px;
+	margin: 0 auto;
+	padding: 10px 0 10px 0;
+}
+
+.mhead {
+	font-size: 24px;
+	font-weight: bold;
+	color: #333333;
+	border-left: 5px solid #FF0000;
+	padding: 9px 0 7px 15px;
+}
+
+.mhead span {
+	font-size: 12px;
+	padding: 0 0 0 20px;
+}
+
+.site_desc {
+	font-size: 11px !important;
+	padding: 10px 0 0 0;
+}
+
+@media only screen and (min-width: 240px) and (max-width: 319px) {
+	#header {
+		width: 100%;
+	}
+	.headerUtility {
+		display: none;
+	}
+	.gNav {
+		display: none;
+	}
+	.headerIn {
+		width: 100%;
+	}
+	.logo {
+		width: 72%;
+		padding: 8px 0 0 0;
+	}
+	.menu {
+		display: block;
+		float: right;
+		width: 12%;
+		position: absolute;
+		right: 3%;
+		top: 2.5%;
+	}
+	.spmenu {
+		display: none;
+		position: absolute;
+		left: 0;
+		width: 100%;
+		z-index: 10000;
+		font-size: 12px;
+		background: #fff;
+		padding-bottom: 10px;
+	}
+	.spmenu li {
+		width: 90%;
+		margin: 0 auto;
+		background: url(../common/img/header/menu_icon.png) no-repeat 4% 61%;
+		padding: 4% 0 3% 4%;
+		border-bottom: 2px solid #ffffff;
+		display: inline-block !important;
+		margin-left: 3%;
+	}
+	.spmenu li　
+a {
+		color: #000;
+	}
+	.spcontact {
+		display: block;
+		width: 100%;
+		position: relative;
+	}
+	.spcontact .ulsec {
+		margin: 0 auto;
+	}
+	.spcontactLeft {
+		float: left;
+		width: 44%;
+	}
+	.spcontactRight {
+		width: 44%;
+		float: right;
+	}
+	#footer {
+		margin: 0;
+	}
+}
+
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+	#header {
+		width: 100%;
+		padding: 0 0 2% 0;
+	}
+	.headerUtility {
+		display: none;
+	}
+	.gNav {
+		display: none;
+	}
+	.headerIn {
+		width: 100%;
+	}
+	.logo {
+		width: 72%;
+		padding: 8px 0 0 0;
+	}
+	.menu {
+		display: block;
+		float: right;
+		width: 13%;
+		position: absolute;
+		right: 4%;
+		top: 4%;
+	}
+	.spmenu {
+		display: none;
+		position: absolute;
+		left: 0;
+		width: 100%;
+		z-index: 10000;
+		background: #fff;
+		font-size: 12px;
+		padding-bottom: 10px;
+	}
+	.spmenu li {
+		width: 90%;
+		margin: 0 auto;
+		background: url(../common/img/header/menu_icon.png) no-repeat right;
+		padding: 4% 0 3% 4%;
+		border-bottom: 1px solid #000;
+		display: inline-block;
+		margin-left: 3%;
+	}
+	.spmenu li　
+a {
+		color: #000000;
+	}
+	.spcontact {
+		display: block;
+		width: 100%;
+		position: relative;
+	}
+	.spcontact .ulsec {
+		
+	}
+	.spcontactLeft {
+		float: left;
+		width: 44%;
+	}
+	.spcontactRight {
+		width: 44%;
+		float: right;
+	}
+}
+
+@media only screen and (min-width: 480px) and (max-width: 640px) {
+	#header {
+		width: 100%;
+		padding: 0 0 1% 0;
+	}
+	.headerUtility {
+		display: none;
+	}
+	.gNav {
+		display: none;
+	}
+	.headerIn {
+		width: 100%;
+	}
+	.logo {
+		width: 50%;
+		padding: 8px 0 0 0;
+	}
+	.menu {
+		display: block;
+		float: right;
+		width: 7%;
+		position: absolute;
+		right: 3%;
+		top: 3%;
+	}
+	.spmenu {
+		display: none;
+		position: absolute;
+		left: 0;
+		width: 100%;
+		z-index: 10000;
+		background: #fff;
+		font-size: 12px;
+		padding-bottom: 10px;
+	}
+	.spmenu li {
+		width: 90%;
+		margin: 0 auto;
+		background: url(../common/img/header/menu_icon.png) no-repeat right;
+		border-bottom: 1px solid #000;
+		padding: 4% 0 3% 4%;
+		display: inline-block !important;
+		margin-left: 3%;
+	}
+	.spmenu li　
+a {
+		color: #000000;
+	}
+	.spcontact {
+		display: block;
+		width: 100%;
+		position: relative;
+	}
+	.spcontact .ulsec {
+		
+	}
+	.spcontactLeft {
+		float: left;
+		width: 44%;
+	}
+	.spcontactRight {
+		width: 44%;
+		float: right;
+	}
+}
+
+@media screen and (max-width:980px) {
+	#headerWrap img {
+		width: 100%;
+	}
+	.site_desc {
+		display: none;
+	}
+	.ulsec {
+		width: 100%;
+	}
+	#header {
+		width: 100%;
+		padding: 0 0 1% 0;
+	}
+	.headerUtility {
+		display: none;
+	}
+	.gNav {
+		display: none;
+	}
+	.headerIn {
+		width: 100%;
+	}
+	.logo {
+		width: 50%;
+		padding: 8px 0 0 0;
+	}
+	.menu {
+		display: block;
+		float: right;
+		width: 7%;
+		position: absolute;
+		right: 3%;
+		top: 3%;
+	}
+	.spmenu {
+		display: none;
+		position: absolute;
+		left: 0;
+		width: 100%;
+		z-index: 10000;
+		background: #fff;
+		font-size: 12px;
+		padding-bottom: 10px;
+	}
+	.spmenu li {
+		width: 95%;
+		margin: 0 auto;
+		background: url(../common/img/header/menu_icon.png) no-repeat right;
+		border-bottom: 1px solid #000;
+		padding: 4% 0 3% 4%;
+		display: inline-block !important;
+		margin-left: 3%;
+	}
+	.spmenu li　
+a {
+		color: #000000;
+	}
+	.spcontact {
+		display: block;
+		width: 100%;
+		position: relative;
+	}
+	.spcontact .ulsec {
+		
+	}
+	.spcontactLeft {
+		float: left;
+		width: 44%;
+	}
+	.spcontactRight {
+		width: 44%;
+		float: right;
+	}
+	.spnav a {
+		width: 16.6%;
+		float: left;
+		border-right: 1px solid #fff;
+		color: #fff;
+		padding: 0px 0;
+	}
+	.spcontact ul li {
+		list-style: none;
+		display: initial;
+	}
+}
+
+@media screen and (max-width:768px) {
+	h1.logo img {
+		
+	}
+	.spcontact ul li {
+		list-style: none;
+		display: initial;
+	}
+	.middle {
+		display: table-cell;
+		vertical-align: middle;
+		height: 60px;
+		text-align: center;
+		width: 100%;
+	}
+	.site_desc {
+		display: none;
+	}
+	.spcontact .ulsec {
+		background-color: #6dcff6;
+	}
+	.spnav a {
+		width: 16.6%;
+		float: left;
+		border-right: 1px solid #fff;
+		color: #fff;
+		padding: 0px 0;
+		/*margin-right: 2%;
+		display: table-cell;
+		font-size: 0.9em;
+		color: #fff;
+		
+		height: 53px;
+		text-align: center;
+		vertical-align: middle;
+		border-right: 2px solid #eee;
+		padding:0 4%; */
+	}
+	.spnav:last-child a {
+		border-right: 0;
+	}
+}
+
+@media only screen and (min-width: 641px) and (max-width: 768px) {
+	.site_desc {
+		disply: none;
+	}
+	#header {
+		width: 100%;
+		padding: 0 0 1% 0;
+	}
+	.headerUtility {
+		display: none;
+	}
+	.gNav {
+		display: none;
+	}
+	.headerIn {
+		width: 100%;
+		margin: 0 auto;
+	}
+	.logo {
+		width: 50%;
+		padding: 8px 0 0 0;
+	}
+	.menu {
+		display: block;
+		float: right;
+		width: 8%;
+		position: absolute;
+		right: 3%;
+		top: 4%
+	}
+	.spmenu {
+		display: none;
+		position: absolute;
+		left: 0;
+		width: 100%;
+		z-index: 10000;
+		background: #fff;
+		font-size: 12px;
+		padding-bottom: 10px;
+	}
+	.spmenu li {
+		width: 90%;
+		margin: 0 auto;
+		background: url(../common/img/header/menu_icon.png) no-repeat right;
+		padding: 4% 0 3% 4%;
+		border-bottom: 1px solid #000;
+		margin-left: 3%;
+	}
+	.spmenu li　
+a {
+		color: #000000;
+	}
+	.spcontact {
+		display: block;
+		width: 100%;
+		position: relative;
+	}
+	.spcontact ul li {
+		list-style: none;
+		display: initial;
+	}
+	.spcontact .ulsec {
+		
+	}
+	.spcontactLeft {
+		float: left;
+		width: 44%;
+	}
+	.spcontactRight {
+		width: 44%;
+		float: right;
+	}
+}
+
+.tothetop {
+	display: none;
+}
+#headerWrap {
+    padding-bottom: 20px;
 }

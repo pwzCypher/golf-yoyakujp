@@ -5,7 +5,7 @@
 	content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0">
 <head>
 
-<title>ゴルフ予約｜ゴルフ予約ＪＰ</title>
+<title>ゴルフ予約ＪＰ</title>
 
 <link rel="stylesheet" href="css/import.css" media="all">
 <!-- <link rel="stylesheet"
@@ -17,7 +17,8 @@
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-
+<script
+	src="js/custom.js"></script>
 
 <!--[if lt IE 9]><script src="js/ie8.js"></script><![endif]-->
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -27,7 +28,80 @@
     <![endif]-->
 </head>
 <body>
-	<header> </header>
+		<div id="headerWrap">
+		<div id="header">
+			<div class="headerIn">
+				<h1 class="text_right site_desc">どこよりも早い空き枠 どこよりも安い空き枠
+					が検索できるサイト</h1>
+			</div>
+			<div class="headerIn clearfix">
+				<h1 class="logo">
+					<img src="common/img/header/logo.png" alt="img">
+				</h1>
+				<div class="headerUtility">
+					<ul class="clearfix">
+						<li>ようこそ○○さん</li>
+						<li>Tポイント:○○pt</li>
+
+					</ul>
+					<ul class="clearfix">
+						<li><a href="#">お知らせ</a></li>
+						<li><a href="#">企業情報</a></li>
+						<li><a href="#">ログアウト</a></li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+		<div class="headerIn clearfix">
+
+			<ul class="gNav clearfix" id="nav_place">
+				<li><a href="#">北海道・東北</a></li>
+				<li><a href="#">関東・甲信越</a></li>
+				<li><a href="#">中部</a></li>
+				<li><a href="#">近畿</a></li>
+				<li><a href="#">中国・四国</a></li>
+				<li><a href="#">九州・沖縄</a></li>
+			</ul>
+			<ul class="gNav clearfix" id="gnav">
+				<li><a href="#">ＴＯＰ</a></li>
+				<li><a href="#">ゴルフ場検索</a></li>
+				<li><a href="#">キャンペーン</a></li>
+				<li><a href="#">初めての方へ</a></li>
+				<li><a href="#">お気に入り</a></li>
+				<li><a href="#">ポイント</a></li>
+				<li><a href="#">ヘルプ</a></li>
+			</ul>
+			<div class="spmenusec">
+				<p class="menu">
+					<img src="common/img/header/menu.png" alt="img">
+				</p>
+
+			</div>
+		</div>
+		<div class="spcontact">
+			<ul class="spmenu">
+				<li><a href="#">ログイン</a></li>
+				<li><a href="#">会員情報</a></li>
+				<li><a href="#">お知らせ</a></li>
+				<li><a href="#">ヘルプ</a></li>
+			</ul>
+			<ul class="ulsec clearfix">
+				<li class="spnav"><a href="#"><img
+						src="common/img/header/sp_nav01.gif" alt=""></a></li>
+				<li class="spnav"><a href="#"><img
+						src="common/img/header/sp_nav02.gif" alt=""></a></li>
+				<li class="spnav"><a href="#"><img
+						src="common/img/header/sp_nav03.gif" alt=""></a></li>
+				<li class="spnav"><a href="#"><img
+						src="common/img/header/sp_nav04.gif" alt=""></a></li>
+				<li class="spnav"><a href="#"><img
+						src="common/img/header/sp_nav05.gif" alt=""></a></li>
+				<li class="spnav"><a href="#"><img
+						src="common/img/header/sp_nav06.gif" alt=""></a></li>
+			</ul>
+		</div>
+	</div>
 	<article>
 		<div class="container">
 
@@ -950,6 +1024,7 @@
 			});
 		}
 	</script>
+	
 
 </body>
 </html>
