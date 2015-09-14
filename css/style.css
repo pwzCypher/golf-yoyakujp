@@ -34,10 +34,6 @@ ul li {
 /*
  * main
  */
-#content {
-	margin: auto;
-	width: 980px;
-}
 
 .btn:hover {
 	opacity: 0.8;
@@ -256,7 +252,7 @@ ul.prefectures li.first {
 }
 .border-grey
 {
-	border:1px solid #cccccc;
+	border:2px solid #cccccc;
 }
 .bg-grey
 {
@@ -480,4 +476,27 @@ cal_sat02 {
     color: #0066CC;
     text-decoration: underline;
    
+}
+.btn-facebook
+
+{
+	background:#3B5998!important;	
+}
+.btn-twitter
+{
+	background:#55ACEE!important;
+}
+.btn-google
+{
+background:#DD4B39!important;	
+}
+.btn-yahoo
+{
+	
+	background:#720E9E!important;
+}
+.btn-social-icon
+{
+	color:#ffffff!important;
+	margin-right:15px;
 }
