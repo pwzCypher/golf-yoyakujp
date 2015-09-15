@@ -11,7 +11,6 @@ ul li {
 	margin: 0 auto;
 }
 
-
 /*
  * header
  */
@@ -123,7 +122,6 @@ ul li {
 /*
  * main
  */
-
 .btn:hover {
 	opacity: 0.8;
 }
@@ -132,18 +130,12 @@ ul li {
 media 
 */
 @media screen and (max-width:767px) {
-	
 	/* Force table to not be like tables anymore */
-	#no-more-tables table, 
-	#no-more-tables thead, 
-	#no-more-tables tbody, 
-	#no-more-tables th, 
-	#no-more-tables td, 
-	#no-more-tables tr
-{ 
-		display: block; 
+	#no-more-tables table, #no-more-tables thead, #no-more-tables tbody,
+		#no-more-tables th, #no-more-tables td, #no-more-tables tr {
+		display: block;
 	}
- 
+
 	/* Hide table headers (but not display: none;, for accessibility) 
 	#no-more-tables tr { 
 		position: absolute;
@@ -151,44 +143,36 @@ media
 		left: -9999px;
 	}
  */
-	#no-more-tables tr { border: 1px solid #ccc; }
- 
-	
- 
-	#no-more-tables th:before { 
+	#no-more-tables tr {
+		border: 1px solid #ccc;
+	}
+	#no-more-tables th:before {
 		/* Now like a table header */
 		position: absolute;
 		/* Top/left values mimic padding */
 		top: 6px;
 		left: 6px;
-		width: 45%; 
-		padding-right: 40px; 
+		width: 45%;
+		padding-right: 40px;
 		white-space: nowrap;
-		
 		font-weight: bold;
 	}
-
-.table-head {
-    background: #ebebeb;
-    width: 100%!important;
-    	
-}
-.tabledata
-{
+	.table-head {
+		background: #ebebeb;
+		width: 100% !important;
+	}
 	
+	.dis-none {
+		display: none;
+	}
+	.review li {
+		margin-right: 10px !important;
+	}
 }
-.dis-none
-{
-	display:none;
-}
-.review li {
-    margin-right: 10px!important;
-}
-}
+
 @media screen and (min-width:768px) {
-	.dis-none-pc
-	{
-	display:none;
+	.dis-none-pc {
+		display: none;
 	}
 }
 
@@ -321,125 +305,134 @@ ul.prefectures li.first {
 	background: #ebebeb;
 	width: 20%;
 }
-.tabledata
-{
+
+.tabledata {
 	
 }
-.rating
-{
+
+.rating {
 	font-weight: bold;
-    color: #EB4055;
-    font-size: 18px;
+	color: #EB4055;
+	font-size: 18px;
 }
-.review li img
-{
-	vertical-align:top;
+
+.review li img {
+	vertical-align: top;
 }
-.review li
-{
-	margin-right:20px;
+
+.review li {
+	margin-right: 20px;
 }
-.border-grey
-{
-	border:2px solid #cccccc;
+
+.border-grey {
+	border: 2px solid #cccccc;
 }
-.bg-grey
-{
-	background:#ebebeb;
+
+.bg-grey {
+	background: #ebebeb;
 }
-.border-none
-{
-	border:none!important;
-	box-shadow:none!important;
+
+.border-none {
+	border: none !important;
+	box-shadow: none !important;
 }
-.bg-blue
-{
-	background:#f6ffff;
+
+.bg-blue {
+	background: #f6ffff;
 }
-.btn-toogle
-{
-	background: url(../img/Button Add.png)!important;
-	badkground-size:100%!important;
+
+.btn-toogle {
+	background: url(../img/Button Add.png) !important;
+	badkground-size: 100% !important;
 }
-.btn-toogle img
-{
-vertical-align:middle!important;	
+
+.btn-toogle img {
+	vertical-align: middle !important;
 }
-.borbot-grey
-{
-	border-bottom:2px solid #ebebeb;
+
+.borbot-grey {
+	border-bottom: 2px solid #ebebeb;
 }
-.borbot-grey:last-child
-{
-	border-bottom:none;
+
+.borbot-grey:last-child {
+	border-bottom: none;
 }
 
 #top-link-block.affix-top {
-    position: absolute; /* allows it to "slide" up into view */
-    bottom: -82px;
-    right: 40px;
+	position: absolute; /* allows it to "slide" up into view */
+	bottom: -82px;
+	right: 40px;
 }
+
 #top-link-block.affix {
-    position: fixed; /* keeps it on the bottom once in view */
-    bottom: 40px;
-    right: 40px;
+	position: fixed; /* keeps it on the bottom once in view */
+	bottom: 40px;
+	right: 40px;
 }
-.page-top
-{
+
+.page-top {
 	padding-bottom: 40px;
-    margin-right: 40px;
+	margin-right: 40px;
 }
+
 .plan_calender {
-   width:100%;
-    border-left: #cfcfcf 1px solid;
-    border-right: 1px solid #cfcfcf;
+	width: 100%;
+	border-left: #cfcfcf 1px solid;
+	border-right: 1px solid #cfcfcf;
 }
+
 .plan_calender td.sat {
-    background: #dbefff;
-    position: relative;
+	background: #dbefff;
+	position: relative;
 }
+
 .plan_calender td.sun {
-    background: #ffdbdb;
-    position: relative;
+	background: #ffdbdb;
+	position: relative;
 }
+
 .plan_calender tbody td.plan_calender_price {
-    width: 4em;
-    padding: 3px;
-    border-bottom: #cfcfcf 1px solid;
-    white-space: nowrap;
-    text-align: right;
-    color: #e94057;
-    position: relative;
-    font-size: 1.2em;
+	width: 4em;
+	padding: 3px;
+	border-bottom: #cfcfcf 1px solid;
+	white-space: nowrap;
+	text-align: right;
+	color: #e94057;
+	position: relative;
+	font-size: 1.2em;
 }
+
 .plan_calender tbody td.plan_calender_icon {
-    width: 104px;
-    padding: 3px 1px 3px 3px;
-    white-space: nowrap;
-    border-bottom: #cfcfcf 1px solid;
-    _position: relative;
+	width: 104px;
+	padding: 3px 1px 3px 3px;
+	white-space: nowrap;
+	border-bottom: #cfcfcf 1px solid;
+	_position: relative;
 }
+
 .plan_calender tbody .odd td.gray {
-    background: #d8d8ad;
-    _position: relative;
-    border-bottom: #cfcfcf 1px solid;
+	background: #d8d8ad;
+	_position: relative;
+	border-bottom: #cfcfcf 1px solid;
 }
+
 .plan_calender tbody td.plan_calender_price span {
-    color: #666;
-    display: block;
-    font-size: .8em;
+	color: #666;
+	display: block;
+	font-size: .8em;
 }
+
 .plan_calender tbody td.plan_calender_icon img {
-    float: left;
-    margin-right: 2px;
+	float: left;
+	margin-right: 2px;
 }
-.planName a
-{
-color:#000000;
+
+.planName a {
+	color: #000000;
 }
-.prefectures li a
-{
-	color:#000000;
+
+.prefectures li a {
+	color: #000000;
 }
 
 #wrapper {
@@ -974,229 +967,266 @@ a {
 .tothetop {
 	display: none;
 }
-#headerWrap {
-    padding-bottom: 20px;
-=======
-.cal_day02 {
-    background: url(../img/bg_fff_e6e_h50.png) repeat-x left top #CCC;
-    background: -webkit-gradient(linear, center top, center bottom, from(#FFF), color-stop(20%, #FFF), to(#CCC)) repeat scroll 0 0 transparent;
-    background: -moz-linear-gradient(center top, #FFF, #CCC) repeat scroll 0 0 transparent;
-    border-right: 1px solid #FFF;
-    border-bottom: 1px solid #FFF;
-    opacity: .50;
-    filter: alpha(opacity=50);
-    -ms-filter: "alpha(opacity=50)";
-    -khtml-opacity: .50;
-    -moz-opacity: .50;
-    
-}
-.cal_sun02 {
-    background: url(../img/bg_fff_ffe_h50.png) repeat-x left top #ffcda0;
-    background: -webkit-gradient(linear, center top, center bottom, from(#FFF), color-stop(20%, #FFF), to(#FFDDDD)) repeat scroll 0 0 transparent;
-    background: -moz-linear-gradient(center top, #FFF, #FFDDDD) repeat scroll 0 0 transparent;
-    border-left: 1px solid #FFDDDD;
-    border-right: 1px solid #FFF;
-    border-bottom: 1px solid #FFF;
-    color: #BB0000;
-    opacity: .50;
-    filter: alpha(opacity=50);
-    -ms-filter: "alpha(opacity=50)";
-    -khtml-opacity: .50;
-    -moz-opacity: .50;
-   
-}
-.cal_sat03 a {
-    color: #0066CC;
-    text-decoration: underline;
-    display: block;
-}
-.cal_day01 {
-    background: url(../img/bg_fff_ccb_h50.png) repeat-x left top #ffcda0;
-    background: -webkit-gradient(linear, center top, center bottom, from(#FFF), color-stop(20%, #FFF), to(#CCBBAA)) repeat scroll 0 0 transparent;
-    background: -moz-linear-gradient(center top, #FFF, #CCBBAA) repeat scroll 0 0 transparent;
-    border-top: 1px solid #CCBBAA;
-    border-right: 1px solid #FFF;
-    border-bottom: 1px solid #CCBBAA;
-}
-cal_sat02 {
-    background: url(../img/bg_fff_e6f_h50.png) repeat-x left top #ffcda0;
-    background: -webkit-gradient(linear, center top, center bottom, from(#FFF), color-stop(20%, #FFF), to(#CCEEFF)) repeat scroll 0 0 transparent;
-    background: -moz-linear-gradient(center top, #FFF, #CCEEFF) repeat scroll 0 0 transparent;
-    border-right: 1px solid #CCEEFF;
-    border-bottom: 1px solid #FFF;
-    color: #0066CC;
-    opacity: .50;
-    filter: alpha(opacity=50);
-    -ms-filter: "alpha(opacity=50)";
-    -khtml-opacity: .50;
-    -moz-opacity: .50;
-    
-}
-.cal_sat01 {
-    background: url(../img/bg_fff_ccb_h50.png) repeat-x left top #ffcda0;
-    background: -webkit-gradient(linear, center top, center bottom, from(#FFF), color-stop(20%, #FFF), to(#CCBBAA)) repeat scroll 0 0 transparent;
-    background: -moz-linear-gradient(center top, #FFF, #CCBBAA) repeat scroll 0 0 transparent;
-    border-top: 1px solid #CCBBAA;
-    border-right: 1px solid #CCBBAA;
-    border-bottom: 1px solid #CCBBAA;
-    color: #0066CC;
-}
-.cal_sun01 {
-    background: url(../img/bg_fff_ccb_h50.png) repeat-x left top #ffcda0;
-    background: -webkit-gradient(linear, center top, center bottom, from(#FFF), color-stop(20%, #FFF), to(#CCBBAA)) repeat scroll 0 0 transparent;
-    background: -moz-linear-gradient(center top, #FFF, #CCBBAA) repeat scroll 0 0 transparent;
-    border-top: 1px solid #CCBBAA;
-    border-left: 1px solid #CCBBAA;
-    border-right: 1px solid #FFF;
-    color: #BB0000;
-    
-}
-.cal_day02 {
-    background: url(../img/bg_fff_e6e_h50.png) repeat-x left top #CCC!important;
-    background: -webkit-gradient(linear, center top, center bottom, from(#FFF), color-stop(20%, #FFF), to(#CCC)) repeat scroll 0 0 transparent!important;
-    background: -moz-linear-gradient(center top, #FFF, #CCC) repeat scroll 0 0 transparent!important;
-    border-right: 1px solid #FFF;
-    border-bottom: 1px solid #FFF;
-    opacity: .50;
-    filter: alpha(opacity=50);
-    -ms-filter: "alpha(opacity=50)";
-    -khtml-opacity: .50;
-    -moz-opacity: .50;
-}
-.cal_day03 {
-    background: url(../img/bg_fff_cdc_h50.png) repeat-x left top #CCC;
-    background: -webkit-gradient(linear, center top, center bottom, from(#FFF), color-stop(20%, #FFF), to(#CCC)) repeat scroll 0 0 transparent;
-    background: -moz-linear-gradient(center top, #FFF, #CCC) repeat scroll 0 0 transparent;
-    border-right: 1px solid #FFF;
-    border-bottom: 1px solid #FFF;
-    text-decoration: underline;
-    
-}
-.cal_hol02 {
-    background: url(../img/bg_fff_cdc_h50.png) repeat-x left top #ffcda0;
-    background: -webkit-gradient(linear, center top, center bottom, from(#FFF), color-stop(20%, #FFF), to(#FFDDDD)) repeat scroll 0 0 transparent;
-    background: -moz-linear-gradient(center top, #FFF, #FFDDDD) repeat scroll 0 0 transparent;
-    border-right: 1px solid #FFF;
-    border-bottom: 1px solid #FFF;
-    color: #BB0000;
-    text-decoration: underline;
-} 
-.cal_sun03 {
-    background: url(../img/bg_fff_ffd_h50.png) repeat-x left top #ffcda0;
-    background: -webkit-gradient(linear, center top, center bottom, from(#FFF), color-stop(20%, #FFF), to(#FFDDDD)) repeat scroll 0 0 transparent;
-    background: -moz-linear-gradient(center top, #FFF, #FFDDDD) repeat scroll 0 0 transparent;
-    border-left: 1px solid #FFDDDD;
-    border-right: 1px solid #FFF;
-    border-bottom: 1px solid #FFF;
-    color: #BB0000;
-    text-decoration: underline;
-    
-}
-.cal_sat03 {
-    background: url(../img/bg_fff_cde_h50.png) repeat-x left top #CCEEFF;
-    background: -webkit-gradient(linear, center top, center bottom, from(#FFF), color-stop(20%, #FFF), to(#CCEEFF)) repeat scroll 0 0 transparent;
-    background: -moz-linear-gradient(center top, #FFF, #CCEEFF) repeat scroll 0 0 transparent;
-    border-right: 1px solid #CCEEFF;
-    border-bottom: 1px solid #FFF;
-    color: #0066CC;
-    text-decoration: underline;
-   
-}
-.btn-facebook
 
-{
-	background:#3B5998!important;	
+#headerWrap {
+	padding-bottom: 20px; ======= . cal_day02 { background :
+	url(../img/bg_fff_e6e_h50.png) repeat-x left top #CCC;
+	background: -webkit-gradient(linear, center top, center bottom, from(#FFF),
+		color-stop(20%, #FFF), to(#CCC)) repeat scroll 0 0 transparent;
+	background: -moz-linear-gradient(center top, #FFF, #CCC) repeat scroll 0
+		0 transparent;
+	border-right: 1px solid #FFF;
+	border-bottom: 1px solid #FFF;
+	opacity: .50;
+	filter: alpha(opacity = 50);
+	-ms-filter: "alpha(opacity=50)";
+	-khtml-opacity: .50;
+	-moz-opacity: .50;
 }
-.btn-twitter
-{
-	background:#55ACEE!important;
+
+.cal_sun02 {
+	background: url(../img/bg_fff_ffe_h50.png) repeat-x left top #ffcda0;
+	background: -webkit-gradient(linear, center top, center bottom, from(#FFF),
+		color-stop(20%, #FFF), to(#FFDDDD)) repeat scroll 0 0 transparent;
+	background: -moz-linear-gradient(center top, #FFF, #FFDDDD) repeat
+		scroll 0 0 transparent;
+	border-left: 1px solid #FFDDDD;
+	border-right: 1px solid #FFF;
+	border-bottom: 1px solid #FFF;
+	color: #BB0000;
+	opacity: .50;
+	filter: alpha(opacity = 50);
+	-ms-filter: "alpha(opacity=50)";
+	-khtml-opacity: .50;
+	-moz-opacity: .50;
 }
-.btn-google
-{
-background:#DD4B39!important;	
+
+.cal_sat03 a {
+	color: #0066CC;
+	text-decoration: underline;
+	display: block;
 }
-.btn-yahoo
-{
-	
-	background:#720E9E!important;
+
+.cal_day01 {
+	background: url(../img/bg_fff_ccb_h50.png) repeat-x left top #ffcda0;
+	background: -webkit-gradient(linear, center top, center bottom, from(#FFF),
+		color-stop(20%, #FFF), to(#CCBBAA)) repeat scroll 0 0 transparent;
+	background: -moz-linear-gradient(center top, #FFF, #CCBBAA) repeat
+		scroll 0 0 transparent;
+	border-top: 1px solid #CCBBAA;
+	border-right: 1px solid #FFF;
+	border-bottom: 1px solid #CCBBAA;
 }
-.btn-social-icon
-{
-	color:#ffffff!important;
-	margin-right:15px;
+
+cal_sat02 {
+	background: url(../img/bg_fff_e6f_h50.png) repeat-x left top #ffcda0;
+	background: -webkit-gradient(linear, center top, center bottom, from(#FFF),
+		color-stop(20%, #FFF), to(#CCEEFF)) repeat scroll 0 0 transparent;
+	background: -moz-linear-gradient(center top, #FFF, #CCEEFF) repeat
+		scroll 0 0 transparent;
+	border-right: 1px solid #CCEEFF;
+	border-bottom: 1px solid #FFF;
+	color: #0066CC;
+	opacity: .50;
+	filter: alpha(opacity = 50);
+	-ms-filter: "alpha(opacity=50)";
+	-khtml-opacity: .50;
+	-moz-opacity: .50;
+}
+
+.cal_sat01 {
+	background: url(../img/bg_fff_ccb_h50.png) repeat-x left top #ffcda0;
+	background: -webkit-gradient(linear, center top, center bottom, from(#FFF),
+		color-stop(20%, #FFF), to(#CCBBAA)) repeat scroll 0 0 transparent;
+	background: -moz-linear-gradient(center top, #FFF, #CCBBAA) repeat
+		scroll 0 0 transparent;
+	border-top: 1px solid #CCBBAA;
+	border-right: 1px solid #CCBBAA;
+	border-bottom: 1px solid #CCBBAA;
+	color: #0066CC;
+}
+
+.cal_sun01 {
+	background: url(../img/bg_fff_ccb_h50.png) repeat-x left top #ffcda0;
+	background: -webkit-gradient(linear, center top, center bottom, from(#FFF),
+		color-stop(20%, #FFF), to(#CCBBAA)) repeat scroll 0 0 transparent;
+	background: -moz-linear-gradient(center top, #FFF, #CCBBAA) repeat
+		scroll 0 0 transparent;
+	border-top: 1px solid #CCBBAA;
+	border-left: 1px solid #CCBBAA;
+	border-right: 1px solid #FFF;
+	color: #BB0000;
+}
+
+.cal_day02 {
+	background: url(../img/bg_fff_e6e_h50.png) repeat-x left top #CCC
+		!important;
+	background: -webkit-gradient(linear, center top, center bottom, from(#FFF),
+		color-stop(20%, #FFF), to(#CCC)) repeat scroll 0 0 transparent
+		!important;
+	background: -moz-linear-gradient(center top, #FFF, #CCC) repeat scroll 0
+		0 transparent !important;
+	border-right: 1px solid #FFF;
+	border-bottom: 1px solid #FFF;
+	opacity: .50;
+	filter: alpha(opacity = 50);
+	-ms-filter: "alpha(opacity=50)";
+	-khtml-opacity: .50;
+	-moz-opacity: .50;
+}
+
+.cal_day03 {
+	background: url(../img/bg_fff_cdc_h50.png) repeat-x left top #CCC;
+	background: -webkit-gradient(linear, center top, center bottom, from(#FFF),
+		color-stop(20%, #FFF), to(#CCC)) repeat scroll 0 0 transparent;
+	background: -moz-linear-gradient(center top, #FFF, #CCC) repeat scroll 0
+		0 transparent;
+	border-right: 1px solid #FFF;
+	border-bottom: 1px solid #FFF;
+	text-decoration: underline;
+}
+
+.cal_hol02 {
+	background: url(../img/bg_fff_cdc_h50.png) repeat-x left top #ffcda0;
+	background: -webkit-gradient(linear, center top, center bottom, from(#FFF),
+		color-stop(20%, #FFF), to(#FFDDDD)) repeat scroll 0 0 transparent;
+	background: -moz-linear-gradient(center top, #FFF, #FFDDDD) repeat
+		scroll 0 0 transparent;
+	border-right: 1px solid #FFF;
+	border-bottom: 1px solid #FFF;
+	color: #BB0000;
+	text-decoration: underline;
+}
+
+.cal_sun03 {
+	background: url(../img/bg_fff_ffd_h50.png) repeat-x left top #ffcda0;
+	background: -webkit-gradient(linear, center top, center bottom, from(#FFF),
+		color-stop(20%, #FFF), to(#FFDDDD)) repeat scroll 0 0 transparent;
+	background: -moz-linear-gradient(center top, #FFF, #FFDDDD) repeat
+		scroll 0 0 transparent;
+	border-left: 1px solid #FFDDDD;
+	border-right: 1px solid #FFF;
+	border-bottom: 1px solid #FFF;
+	color: #BB0000;
+	text-decoration: underline;
+}
+
+.cal_sat03 {
+	background: url(../img/bg_fff_cde_h50.png) repeat-x left top #CCEEFF;
+	background: -webkit-gradient(linear, center top, center bottom, from(#FFF),
+		color-stop(20%, #FFF), to(#CCEEFF)) repeat scroll 0 0 transparent;
+	background: -moz-linear-gradient(center top, #FFF, #CCEEFF) repeat
+		scroll 0 0 transparent;
+	border-right: 1px solid #CCEEFF;
+	border-bottom: 1px solid #FFF;
+	color: #0066CC;
+	text-decoration: underline;
+}
+
+.btn-facebook {
+	background: #3B5998 !important;
+}
+
+.btn-twitter {
+	background: #55ACEE !important;
+}
+
+.btn-google {
+	background: #DD4B39 !important;
+}
+
+.btn-yahoo {
+	background: #720E9E !important;
+}
+
+.btn-social-icon {
+	color: #ffffff !important;
+	margin-right: 15px;
 }
 /***********
 *footer***
 **/
 footer .fstart {
-    padding-left: 10px !important;
-    padding-right: 10px !important;
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
+	padding-left: 10px !important;
+	padding-right: 10px !important;
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
 }
-footer .content {
-    border-width: 0;
-    clear: both;
-    overflow: hidden;
-    padding: 20px 0 !important;
-    position: relative;
-}
-#menu {
-    z-index: 100;
-}
-footer ul.two-columns-list {
-    display: table;
-    -webkit-box-sizing: border-box;
-    width: 100%;
-    vertical-align: middle;
-}
-footer ul.basic-linked-list {
-    margin: 0;
-    padding: 0;
-}
-footer #menu>li:first-child {
-    -webkit-border-top-left-radius: 16px;
-}
-footer #menu>li:nth-child(odd) {
-    border-right: 1px #c2c2c2 solid;
-}
-footer #menu>li {
-    font-size: 24px;
-    border: 0;
-    border-bottom: 1px #c2c2c2 solid;
-    background-color: #f6f6f6;
-    color: #333;
-    -webkit-box-shadow: rgba(0,0,0,0.75) 0 5px 5px;
-}
-footer ul.two-columns-list>li:nth-child(odd) {
-    clear: left;
-    border-right: 1px solid #ccc;
-}
-footer ul.two-columns-list>li {
-    width: 50%;
-    float: left;
-    display: table-cell;
-    margin: 0;
-    -webkit-box-sizing: border-box;
-    vertical-align: middle;
-}
-footer ul.basic-linked-list>li>a {
-    display: table;
-    color: #333;
-    -webkit-tap-highlight-color: rgba(0,0,0,0.25);
-    padding: 0;
-}
-footer #menu>li>a>div {
-    padding-right: 10px !important;
-}
-footer ul.basic-linked-list>li>a>div:first-child {
-    display: table-cell;
-    vertical-align: middle;
-    padding: 20px 42px 20px 10px;
-}
-footer ul.two-columns-list>li>a>div {
-    height: 88px;
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
 
+footer .content {
+	border-width: 0;
+	clear: both;
+	overflow: hidden;
+	padding: 20px 0 !important;
+	position: relative;
+}
+
+#menu {
+	z-index: 100;
+}
+
+footer ul.two-columns-list {
+	display: table;
+	-webkit-box-sizing: border-box;
+	width: 100%;
+	vertical-align: middle;
+}
+
+footer ul.basic-linked-list {
+	margin: 0;
+	padding: 0;
+}
+
+footer #menu>li:first-child {
+	-webkit-border-top-left-radius: 16px;
+}
+
+footer #menu>li:nth-child(odd) {
+	border-right: 1px #c2c2c2 solid;
+}
+
+footer #menu>li {
+	font-size: 24px;
+	border: 0;
+	border-bottom: 1px #c2c2c2 solid;
+	background-color: #f6f6f6;
+	color: #333;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.75) 0 5px 5px;
+}
+
+footer ul.two-columns-list>li:nth-child(odd) {
+	clear: left;
+	border-right: 1px solid #ccc;
+}
+
+footer ul.two-columns-list>li {
+	width: 50%;
+	float: left;
+	display: table-cell;
+	margin: 0;
+	-webkit-box-sizing: border-box;
+	vertical-align: middle;
+}
+
+footer ul.basic-linked-list>li>a {
+	display: table;
+	color: #333;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0.25);
+	padding: 0;
+}
+
+footer #menu>li>a>div {
+	padding-right: 10px !important;
+}
+
+footer ul.basic-linked-list>li>a>div:first-child {
+	display: table-cell;
+	vertical-align: middle;
+	padding: 20px 42px 20px 10px;
+}
+
+footer ul.two-columns-list>li>a>div {
+	height: 88px;
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
 }
