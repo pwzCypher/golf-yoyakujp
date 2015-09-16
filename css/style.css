@@ -882,7 +882,7 @@ a {
 	#headerWrap img {
 		width: 100%;
 	}
-	#breadcumb, .review, .pc {
+	#breadcumb, div.review, .pc {
 		display: none;
 	}
 	.pg_ttl button {
