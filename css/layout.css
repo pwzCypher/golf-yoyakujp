@@ -1,9 +1,4 @@
 
-body
-{
-	background:url(../img/bg.jpg) repeat-x;
-	
-}
 .row
 {
 	margin:0 auto!important;
@@ -153,4 +148,8 @@ a:link
 .pad15
 {
 	padding:15px;
+}
+.fs26
+{
+	font-size:26px!important;
 }

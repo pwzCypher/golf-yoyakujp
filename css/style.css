@@ -1260,16 +1260,25 @@ li>a>div {
 .nav>li>a:active,.nav>li>a:hover,.nav>li>a:focus
 {
 	opacity:0.8;!important;
-	background:#ffffff!important;
+
 }
-.steps>.active>a,.steps>.active>a:hover,.steps>.active>a:focus
-{
-	background:#1AB7EA!important;
-	  -webkit-box-shadow: inset 0 3px 8px rgba(0,0,0,0.125);
+.steps>.active>a, .steps>.active>a:hover, .steps>.active>a:focus {
+    background: #1AB7EA!important;
+    -webkit-box-shadow: inset 0 3px 8px rgba(0,0,0,0.125);
     -moz-box-shadow: inset 0 3px 8px rgba(0,0,0,0.125);
     box-shadow: inset 0 3px 8px rgba(0,0,0,0.125);
+    border-radius: 50px;
 }
 .border-red
 {
 	border:2px solid #bf0000 ;
+}
+.nav>li
+{
+	background:#ebebeb!important;
+	border-radius:50px;
+}
+.steps>li
+{
+	margin-right:20px;
 }
