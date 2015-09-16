@@ -1365,7 +1365,7 @@ td, th {
 html {
 	font-size: 10px;
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-	overflow-x: hidden;
+/* 	overflow-x: hidden; */
 }
 
 body {
@@ -1839,19 +1839,19 @@ pre code {
 
 @media ( min-width :768px) {
 	.container {
-		width: 960px
+		width: 980px;
 	}
 }
 
 @media ( min-width :992px) {
 	.container {
-		width: 960px
+		width: 980px;
 	}
 }
 
 @media ( min-width :1200px) {
 	.container {
-		width: 960px
+		width: 980px;
 	}
 }
 
