@@ -1273,7 +1273,7 @@ li>a>div {
 {
 	border:2px solid #bf0000 ;
 }
-.nav>li
+.steps>li,.step>li:hover,.step>li:focus
 {
 	background:#ebebeb!important;
 	border-radius:50px;
