@@ -1506,3 +1506,85 @@ li>a>div {
 .jssora05rdn {
 	background-position: -310px -40px;
 }
+
+/*******************
+*
+*index tab
+******************/
+
+.search-input
+{
+width:45%;
+}
+.borderbot
+{
+	border-bottom:1px solid #ebebeb;
+}
+.modal-body>.inner
+{
+   
+    margin: 10px auto;
+    padding: 10px;
+    background: #fff;
+    text-align: left;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px #000;
+    -moz-box-shadow: 1px 1px 3px #000;
+}
+.bggray {
+
+    padding: 10px 0 10px 10px;
+    background: #f1f1f1;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.areacheckbox {
+    width: 540px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+.bggray dl {
+    width: 169px;
+    margin-right: 10px;
+    float: left;
+}
+.bggray dl dt {
+    margin-bottom: 5px;
+    padding: 0 5px 5px;
+    font-weight: bold;
+    border-bottom: 2px solid #000;
+}
+.text-gold
+{
+	color:#c7c074!important;
+}
+.matter
+{
+	color:##EB4055;
+}
+.careAboutTitle {
+    
+    padding: 3px 9px;
+    background: #124385!important;
+    overflow: hidden;
+    color:#ffffff
+    }
+.search_panel_main th {
+    padding: 5px 10px;
+    background: #f1f1f1;
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: bold;
+    white-space: nowrap;
+}
+.search_panel_main td {
+    padding: 6px 0 5px 10px;
+    border-top: 1px solid #ccc;
+    vertical-align: middle;
+}
