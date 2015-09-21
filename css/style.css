@@ -1588,3 +1588,31 @@ width:45%;
     border-top: 1px solid #ccc;
     vertical-align: middle;
 }
+li>a>img
+{
+	vertical-align:baseline;
+}
+.golf-drag_plan1 ul li {
+    float: left;
+    margin-bottom: 19px;
+}
+.golfdrag_btn02 {
+    background: orange;
+    display: block;
+    padding: 10px 12px;
+    margin: 6px;
+}
+.golf_drag_inner {
+    background: #eee;
+    padding: 5px 10px;
+    margin: 0px 5px 0px 5px;
+    text-align: center;
+}
+.golf_planttl {
+    display: block;
+    margin: 5px 5px 10px 5px;
+}
+.blue {
+    color: blue;
+    text-decoration: underline;
+}
