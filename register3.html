@@ -17,6 +17,26 @@
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="js/custom.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-2.1.0.min.js"></script>
+<script type="text/javascript" src="//jpostal.googlecode.com/svn/trunk/jquery.jpostal.js"></script>
+<script type="text/javascript">
+$(window).ready( function() {
+        $('#postcode1').jpostal({
+                postcode : [
+                        '#postcode1',
+                        '#postcode2'
+                ],
+                address : {
+                        '#address1'  : '%3',
+                        '#address2'  : '%4',
+                        '#address3'  : '%5'
+                }
+        });
+});
+</script>
+
+
+
 
 <!--[if lt IE 9]><script src="js/ie8.js"></script><![endif]-->
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -214,23 +234,23 @@
 
 								</tr>
 								<tr>
-									<th><span>性別 </span> <span><img
-											src="img/hissu.gif" alt="" /></span></th>
+									<th><span>性別 </span> <span><img src="img/hissu.gif"
+											alt="" /></span></th>
 
-									<td>
-										<label class="radio-inline"><input type="radio" name="optradio">男性</label>
-										<label class="radio-inline"><input type="radio" name="optradio">女性</label>
-									</td>
+									<td><label class="radio-inline"><input
+											type="radio" name="optradio">男性</label> <label
+										class="radio-inline"><input type="radio"
+											name="optradio">女性</label></td>
 
 								</tr>
-								
+
 								<tr>
 									<th><span>生年月日 </span> <span><img
 											src="img/hissu.gif" alt="" /></span></th>
 
 									<td>
-										<label class="radio-inline"><input type="radio" name="optradio">男性</label>
-										<label class="radio-inline"><input type="radio" name="optradio">女性</label>
+										<div id="birthdayPicker"></div>
+
 									</td>
 
 								</tr>
@@ -238,9 +258,66 @@
 							</tbody>
 						</table>
 					</div>
+					<div class="col-sm-12">
+
+						<table class="table table-bordered cleaarfix" id="no-more-tables">
+							<thead>
+								<tr>
+									<td colspan="2">ご住所</td>
+
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th><span>郵便番号 (半角・ハイフンなし) </span> <span><img
+											src="img/hissu.gif" alt="" /></span></th>
+
+									<td><input type="tel"  placeholder = '郵便番号 例:123-4567'  class="tx205 postalcode" name="postalcode" id="postcode1">&nbsp;&nbsp;
+									
+									</td>
+
+								</tr>
+								<tr>
+									<th><span>都道府県 </span> <span><img
+											src="img/hissu.gif" alt="" /></span></th>
+
+									<td><input type="text" class="tx205 form-control" placeholder="ご住所"
+										name="address" id="address"></td>
+
+								</tr>
+								<tr>
+									<th><span>性別 </span> <span><img src="img/hissu.gif"
+											alt="" /></span></th>
+
+									<td><label class="radio-inline"><input
+											type="radio" name="optradio">男性</label> <label
+										class="radio-inline"><input type="radio"
+											name="optradio">女性</label></td>
+
+								</tr>
+
+								<tr>
+									<th><span>生年月日 </span> <span><img
+											src="img/hissu.gif" alt="" /></span></th>
+
+									<td>
+										<div id="birthdayPicker"></div>
+
+									</td>
+
+								</tr>
+
+							</tbody>
+						</table>
+					</div>
+
+
+
+
 				</div>
 			</div>
 		</div>
+
 	</article>
 	<footer>
 		<div class="container">
@@ -374,6 +451,7 @@
 
 		</div>
 	</footer>
+
 	<script>
 		$(document).ready(function() {
 			$('#rootwizard').bootstrapWizard({
