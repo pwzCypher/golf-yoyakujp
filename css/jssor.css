@@ -1,11 +1,3 @@
-/* jssor slider thumbnail navigator skin 07 css */
-/*
-            .jssort07 .p            (normal)
-            .jssort07 .p:hover      (normal mouseover)
-            .jssort07 .pav          (active)
-            .jssort07 .pav:hover    (active mouseover)
-            .jssort07 .pdn          (mousedown)
-            */
 .jssort07 {
 	position: absolute;
 	/* size of thumbnail navigator container */

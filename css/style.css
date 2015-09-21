@@ -845,6 +845,14 @@ a {
 	.visualNav {
 		width: 100%;
 	}
+	.pc
+	{
+	display:none !important ;
+	}
+	.sp
+	{
+	display:block !important ;
+	}
 	#slider1_container {
 		display: none;
 	}
@@ -1018,6 +1026,7 @@ a {
 	.site_desc {
 		disply: none;
 	}
+	
 	#header {
 		width: 100%;
 		padding: 0 0 1% 0;
@@ -1415,7 +1424,14 @@ li>a>div {
 	border: 1px solid #000000;
 	line-height: 3em;
 }
-
+.course_heading
+{
+	background:gray;
+}
+.bg-grey
+{
+	background: #333333 !important;
+}
 .course_yard table td, .course_yard table th {
 	line-height: 3em;
 	border: 1px solid #ccc;
@@ -1490,7 +1506,10 @@ li>a>div {
 .jssora05r {
 	background-position: -70px -40px;
 }
-
+.sp
+	{
+	display:none ;
+	}
 .jssora05l:hover {
 	background-position: -130px -40px;
 }
