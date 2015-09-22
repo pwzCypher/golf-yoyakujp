@@ -232,7 +232,7 @@ media
 		/* Top/left values mimic padding */
 		top: 6px;
 		left: 6px;
-		width: 45%;
+		
 		padding-right: 40px;
 		white-space: nowrap;
 		font-weight: bold;
@@ -1615,4 +1615,16 @@ li>a>img
 .blue {
     color: blue;
     text-decoration: underline;
+}
+ /***************************
+ *
+ *registerpage
+ *************************/
+.btn-size1
+{
+ width:30%;
+}
+.confirm-table th
+{
+	background:#ebebeb!important;
 }

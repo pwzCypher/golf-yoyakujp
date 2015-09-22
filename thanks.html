@@ -14,30 +14,9 @@
 	src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="js/custom.js"></script>
-<script type="text/javascript"
-	src="//code.jquery.com/jquery-2.1.0.min.js"></script>
-<script type="text/javascript"
-	src="//jpostal.googlecode.com/svn/trunk/jquery.jpostal.js"></script>
-<script>
-	$( document ).ready( function()
-	{
-        $('#postcode1').jpostal({
-                postcode : [
-                        '#zipcode'
-                ],
-                address : {
-                        '#prefectures'  : '%3',
-                        '#city'  : '%4',
-                        '#town'  : '%5',
-                        '#number'  : '%6',
-                        '#name'  : '%7'
-                }
-        });
-		
-		
-	});
-	</script>
 
 <!--[if lt IE 9]><script src="js/ie8.js"></script><![endif]-->
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -132,208 +111,35 @@
 								<ul class="nav steps">
 									<li><a href="#">メールアドレス入力</a></li>
 									<li><a href="#">確認メール送信</a></li>
-									<li class="active"><a href="#">会員情報入力</a></li>
+									<li><a href="#">会員情報入力</a></li>
 									<li><a href="#">確認</a></li>
-									<li><a href="#">登録完了</a></li>
+									<li class="active"><a href="#">登録完了</a></li>
 								</ul>
 							</div>
 						</div>
 					</div>
-					<div class="col-sm-12">
-
-						<table class="table table-bordered cleaarfix" id="no-more-tables">
-							<thead>
-								<tr class="center fwbold bg-grey center">
-									<td colspan="2">お客様情報入力</td>
-
-								</tr>
-								<tr>
-									<td colspan="2">ログイン情報</td>
-
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<th>携帯メールアドレース</th>
-									<td><input type="text" class="form-control"
-										placeholder="例:ｃｃｃｃｃ@ccc.jp"></td>
-								</tr>
-								<tr>
-									<th><span>メールアドレスの入力（半角数字 ）</span> <span><img
-											src="img/hissu.gif" alt="" /></span></th>
-
-									<td><label> <input type="checkbox">
-											メールアドレースをログインＩＤにする
-									</label><br>
-										<div class="row">
-											<div class="col-sm-6">
-												<input type="text" class="form-control"
-													placeholder="ｃｃｃｃｃ@ccc.jp">
-											</div>
-											<div class="col-sm-6">
-
-												<span> 半角英数字6文字以上128文字以内<br>
-													すでに利用されているログインIDは利用できません
-
-												</span>
-											</div>
-										</div></td>
-
-								</tr>
-								<tr>
-									<th><span>パスワード（半角数字 ）</span> <span><img
-											src="img/hissu.gif" alt="" /></span></th>
-
-									<td><input type="text" class="form-control" />
-										<p>半角英数字６文字以上20文字以内</p> <input type="text"
-										class="form-control" /></td>
-
-								</tr>
-							</tbody>
-						</table>
+					<div class="panel panel-primary mt30">
+						<div class="panel-heading">
+							<h3 class="panel-title center">予約.jpへの登録の完了</h3>
+						</div>
+						<div class="panel-body center text-danger">
+							ゴルフ予約.jpへの登録が完了しました。<br> お楽しみくださいませ。
+						</div>
+						
 					</div>
-					<div class="col-sm-12">
-
-						<table class="table table-bordered cleaarfix" id="no-more-tables">
-							<thead>
-								<tr>
-									<td colspan="2">お客様情報</td>
-
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<th><span>お名前（全角） </span> <span><img
-											src="img/hissu.gif" alt="" /></span></th>
-
-									<td>
-										<div class="col-sm-4">
-											<input type="text" class="form-control" placeholder="例：渡部" />
-										</div>
-										<div class="col-sm-4">
-											<input type="text" class="form-control" placeholder="例：小三郎
-" />
-										</div>
-										<div class="col-sm-4">英語表記の方は半角英字</div>
-									</td>
-
-								</tr>
-								<tr>
-									<th><span>ふりがな </span> <span><img
-											src="img/hissu.gif" alt="" /></span></th>
-
-									<td>
-										<div class="col-sm-4">
-											<input type="text" class="form-control" placeholder="例：渡部" />
-										</div>
-										<div class="col-sm-4">
-											<input type="text" class="form-control" placeholder="例：小三郎
-" />
-										</div>
-										<div class="col-sm-4">英語表記の方は半角英字</div>
-									</td>
-
-								</tr>
-								<tr>
-									<th><span>性別 </span> <span><img src="img/hissu.gif"
-											alt="" /></span></th>
-
-									<td><label class="radio-inline"><input
-											type="radio" name="optradio">男性</label> <label
-										class="radio-inline"><input type="radio"
-											name="optradio">女性</label></td>
-
-								</tr>
-
-								<tr>
-									<th><span>生年月日 </span> <span><img
-											src="img/hissu.gif" alt="" /></span></th>
-
-									<td></td>
-
-								</tr>
-
-
-							</tbody>
-						</table>
-					</div>
-					<div class="col-sm-12">
-
-						<table class="table table-bordered cleaarfix" id="no-more-tables">
-							<thead>
-								<tr>
-									<td colspan="2">ご住所</td>
-
-								</tr>
-							</thead>
-							<tr>
-								<th><span>郵便番号 (半角・ハイフンなし) </span> <span><img
-										src="img/hissu.gif" alt="" /></span></th>
-								<td><input type="text" class="form-control" value=""
-									id="zipcode" plcaceholder="例：4090000
-								" /></td>
-							</tr>
-							<tr>
-								<th><span>都道府県 </span> <span><img
-										src="img/hissu.gif" alt="" /></span></th>
-								<td><input type="text" class="form-control"
-									id="prefectures" placeholder="都道府県" /></td>
-							</tr>
-							<tr>
-								<th><span>市町村（全角） </span> <span><img
-										src="img/hissu.gif" alt="" /></span></th>
-								<td><input type="text" class="form-control" id="city"
-									placeholder="例：港区
-" /></td>
-							</tr>
-							<tr>
-								<th><span>それ以降の住所 </span> <span><img
-										src="img/hissu.gif" alt="" /></span></th>
-								<td><input type="text" class="form-control"
-									placeholder="例：高輪1-1-" /></td>
-							</tr>
-							<tr>
-								<th><span>建物名・部屋番号 </span></th>
-								<td><input type="text" class="form-control"
-									placeholder="例：予約ビルディング201
-" />
-									<p>ビル名・建物名・部屋番号がある場合は、必ず記入ください。</p></td>
-							</tr>
-							<tr>
-								<th><span>連絡先電話番号<br>(ハイフンなし)
- </span>
-								<span><img
-										src="img/hissu.gif" alt="" /></span></th>
-								<td>
-								<div class="row">
-									<div class="col-sm-6">
-									<input type="text" class="form-control" placeholder="例：0333300540
-									"/>
-									</div>
-									<div class="col-sm-6">
-									（電話番号）
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-sm-6">
-									<input type="text" class="form-control" placeholder="例：0333300540
-									" />
-									</div>
-									<div class="col-sm-6">
-									（携帯電話番号）
-									</div>
-								</div>
-								</td>
-							</tr>
-							<tbody>
-							</tbody>
-						</table>
+					<div class="row mb15">
+						<div class="col-sm-4 col-sm-offset-4">
+						<button class="btn btn-success btn-block">
+						ゴルフ予約.jp ホームへ
+						</button>
+						</div>
 					</div>
 					<div class="row">
-					<div class="col-sm-6 col-sm-offset-4">
-					<button type="button" class="btn btn-lg btn-default btn-size1 mr15">戻る</button>
-					 <button type="button" class="btn btn-lg btn-success btn-size1">次へ</button>
-					</div>
+						<div class="col-sm-4 col-sm-offset-4">
+						<button class="btn btn-danger btn-block">
+						Tカードと連携する
+						</button>
+						</div>
 					</div>
 				</div>
 			</div>
