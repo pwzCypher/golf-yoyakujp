@@ -1641,6 +1641,7 @@ li>a>img
     color: blue;
     text-decoration: underline;
 }
+<<<<<<< HEAD
  /***************************
  *
  *registerpage
@@ -1660,4 +1661,191 @@ li>a>img
 .nopad
 {
 	padding:0!important;
+}
+/*
+-----------------------------------------
+--------------------------------------------
+---------------------------------------------------
+slick js
+*/
+/* Slider */
+.slick-slider
+{
+    position: relative;
+
+    display: block;
+
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;
+
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list
+{
+    position: relative;
+
+    display: block;
+    overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+
+    display: block;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+
+    height: auto;
+
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+
+.slick-prev {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    -webkit-appearance: none;
+    border: 0;
+    outline: 0;
+   top: 45%;
+}
+.slick-next
+{
+	 display: inline-block;
+    position: absolute;
+    right: 0;
+    -webkit-appearance: none;
+    border: 0;
+    outline: 0;
+    top: 45%;
+	
+}
+.golf_plan {
+    margin: 30px 0;
+}
+.golf_plan h3 {
+    text-align: center;
+    font-size: 25px;
+    margin: 10px 0 0 0;
+}
+.golf_plan1, .golf_plan2, .golf_plan3 {
+    display: inline-block;
+    width: 227px;
+    float: left;
+    border-bottom: 1px solid #000;
+    border-left: 1px solid #000;
+    padding: 10px;
+}
+.golf_plan dt {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 10px 0 0 0;
+}
+.golf_plan ul li {
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 15px;
+}
+.golfplan_btn02 {
+    background: orange;
+    display: block;
+    padding: 4px 2px;
+    margin-top: 7px;
+}
+.golfplan_btn01 {
+    background: gray;
+    display: block;
+    padding: 4px;
+    margin-top: 7px;
+
 }

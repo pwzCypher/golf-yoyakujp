@@ -153,3 +153,10 @@ a:link
 {
 	font-size:26px!important;
 }
+aside
+{
+	float: right;
+    width: 190px;
+    margin-right: 0;
+	
+}
