@@ -14,29 +14,31 @@
 	src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-<script
-	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="js/custom.js"></script>
-<script type="text/javascript" src="//code.jquery.com/jquery-2.1.0.min.js"></script>
-<script type="text/javascript" src="//jpostal.googlecode.com/svn/trunk/jquery.jpostal.js"></script>
-<script type="text/javascript">
-$(window).ready( function() {
+
+<script type="text/javascript"
+	src="//code.jquery.com/jquery-2.1.0.min.js"></script>
+<script type="text/javascript"
+	src="//jpostal.googlecode.com/svn/trunk/jquery.jpostal.js"></script>
+<script>
+	$( document ).ready( function()
+	{
         $('#postcode1').jpostal({
                 postcode : [
-                        '#postcode1',
-                        '#postcode2'
+                        '#zipcode'
                 ],
                 address : {
-                        '#address1'  : '%3',
-                        '#address2'  : '%4',
-                        '#address3'  : '%5'
+                        '#prefectures'  : '%3',
+                        '#city'  : '%4',
+                        '#town'  : '%5',
+                        '#number'  : '%6',
+                        '#name'  : '%7'
                 }
         });
-});
-</script>
-
-
-
+		
+		
+	});
+	</script>
 
 <!--[if lt IE 9]><script src="js/ie8.js"></script><![endif]-->
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -129,11 +131,11 @@ $(window).ready( function() {
 						<div class="navbar-inner">
 							<div class="container">
 								<ul class="nav steps">
-									<li><a href="#">メールアドレス入力</a></li>
-									<li><a href="#">確認メール送信</a></li>
-									<li class="active"><a href="#">会員情報入力</a></li>
-									<li><a href="#">確認</a></li>
-									<li><a href="#">登録完了</a></li>
+									<li>メールアドレス入力</li>
+									<li>確認メール送信</li>
+									<li class="active">会員情報入力</li>
+									<li>確認</li>
+									<li>登録完了</li>
 								</ul>
 							</div>
 						</div>
@@ -237,6 +239,7 @@ $(window).ready( function() {
 									<th><span>性別 </span> <span><img src="img/hissu.gif"
 											alt="" /></span></th>
 
+
 									<td><label class="radio-inline"><input
 											type="radio" name="optradio">男性</label> <label
 										class="radio-inline"><input type="radio"
@@ -258,6 +261,7 @@ $(window).ready( function() {
 							</tbody>
 						</table>
 					</div>
+					
 					<div class="col-sm-12">
 
 						<table class="table table-bordered cleaarfix" id="no-more-tables">
@@ -267,52 +271,80 @@ $(window).ready( function() {
 
 								</tr>
 							</thead>
+							<tr>
+								<th><span>郵便番号 (半角・ハイフンなし) </span> <span><img
+										src="img/hissu.gif" alt="" /></span></th>
+								<td><input type="text" class="form-control" value=""
+									id="zipcode" placeholder="例：4090000
+								" /></td>
+							</tr>
+							<tr>
+								<th><span>都道府県 </span> <span><img
+										src="img/hissu.gif" alt="" /></span></th>
+								<td><input type="text" class="form-control"
+									id="prefectures" placeholder="都道府県" /></td>
+							</tr>
+							<tr>
+								<th><span>市町村（全角） </span> <span><img
+										src="img/hissu.gif" alt="" /></span></th>
+								<td><input type="text" class="form-control" id="city"
+									placeholder="例：港区
+" /></td>
+							</tr>
+							<tr>
+								<th><span>それ以降の住所 </span> <span><img
+										src="img/hissu.gif" alt="" /></span></th>
+								<td><input type="text" class="form-control"
+									placeholder="例：高輪1-1-" /></td>
+							</tr>
+							<tr>
+								<th><span>建物名・部屋番号 </span></th>
+								<td><input type="text" class="form-control"
+									placeholder="例：予約ビルディング201
+" />
+									<p>ビル名・建物名・部屋番号がある場合は、必ず記入ください。</p></td>
+							</tr>
+							<tr>
+								<th><span>連絡先電話番号<br>(ハイフンなし)
+ </span>
+								<span><img
+										src="img/hissu.gif" alt="" /></span></th>
+								<td>
+								<div class="row">
+									<div class="col-sm-6">
+									<input type="text" class="form-control" placeholder="例：0333300540
+									"/>
+									</div>
+									<div class="col-sm-6">
+									（電話番号）
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-6">
+									<input type="text" class="form-control" placeholder="例：0333300540
+									" />
+									</div>
+									<div class="col-sm-6">
+									（携帯電話番号）
+									</div>
+								</div>
+								</td>
+							</tr>
 							<tbody>
-								<tr>
-									<th><span>郵便番号 (半角・ハイフンなし) </span> <span><img
-											src="img/hissu.gif" alt="" /></span></th>
-
-									<td><input type="tel"  placeholder = '郵便番号 例:123-4567'  class="tx205 postalcode" name="postalcode" id="postcode1">&nbsp;&nbsp;
-									
-									</td>
-
-								</tr>
-								<tr>
-									<th><span>都道府県 </span> <span><img
-											src="img/hissu.gif" alt="" /></span></th>
-
-									<td><input type="text" class="tx205 form-control" placeholder="ご住所"
-										name="address" id="address"></td>
-
-								</tr>
-								<tr>
-									<th><span>性別 </span> <span><img src="img/hissu.gif"
-											alt="" /></span></th>
-
-									<td><label class="radio-inline"><input
-											type="radio" name="optradio">男性</label> <label
-										class="radio-inline"><input type="radio"
-											name="optradio">女性</label></td>
-
-								</tr>
-
-								<tr>
-									<th><span>生年月日 </span> <span><img
-											src="img/hissu.gif" alt="" /></span></th>
-
-									<td>
-										<div id="birthdayPicker"></div>
-
-									</td>
-
-								</tr>
-
 							</tbody>
 						</table>
 					</div>
 
 
 
+
+
+					<div class="row">
+					<div class="col-sm-6 col-sm-offset-4">
+					<button type="button" class="btn btn-lg btn-default btn-size1 mr15">戻る</button>
+					 <button type="button" class="btn btn-lg btn-success btn-size1">次へ</button>
+					</div>
+					</div>
 
 				</div>
 			</div>
