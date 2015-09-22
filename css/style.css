@@ -399,10 +399,11 @@ ul.prefectures li.first {
 	font-size: 18px;
 }
 
+/*
 .review li img {
 	vertical-align: top;
 }
-
+*/
 .review li {
 	margin-right: 20px;
 }
@@ -1635,5 +1636,9 @@ li>a>img
 }
 #no-more-tables th
 {
-	width:40%;
+	width:27%;
+}
+.nopad
+{
+	padding:0!important;
 }
