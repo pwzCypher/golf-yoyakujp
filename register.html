@@ -128,23 +128,25 @@
 								<div class="col-sm-12">
 
 									<div class="row mb20">
-										<div class="form-group ">
+										<div class="form-group">
 											<div class="col-sm-5 pt10">
-												<span class="fwbold fs16 ">メールアドレスの入力（半角数字 ）</span> <span
-													class="flr"><img src="img/hissu.gif" alt="" /></span>
+												<span class="fwbold fs16 ">メールアドレスの入力（半角数字 ）</span> <span><img
+													src="img/hissu.gif" alt="" /></span>
 											</div>
 
 											<div class="col-sm-7">
-												<input type="text" class="form-control input-lg flr">
+												<input type="text" class="form-control">
+												<p class="mt10">入力内容をご確認ください。</p>
 
 											</div>
 
 										</div>
+										
+										
+									
+										
 									</div>
-									<div class="col-sm-6 flr">
-										<p>入力内容をご確認ください。</p>
-									</div>
-
+									
 								</div>
 
 							</form>
@@ -173,46 +175,48 @@
 							</div>
 
 						</div>
-						
+
 					</div>
 					<div class="row">
-				<div class="col-sm-12 bg-grey pt10">
-					<h3>他のアカウントでログイン/新登録</h3>
-					<ul>
-						<li><a class="btn btn-social-icon btn-facebook"> <i
-								class="fa fa-facebook"></i>Facebookで登録
-						</a></li>
+						<div class="col-sm-12 bg-grey pt10">
+							<h3>他のアカウントでログイン/新登録</h3>
+							<ul>
+								<li><a class="btn btn-social-icon btn-facebook"> <i
+										class="fa fa-facebook"></i>Facebookで登録
+								</a></li>
 
-						<li><a class="btn btn-social-icon btn-twitter"> <i
-								class="fa fa-twitter"></i>twitterで登録
-						</a></li>
+								<li><a class="btn btn-social-icon btn-twitter"> <i
+										class="fa fa-twitter"></i>twitterで登録
+								</a></li>
 
-						<li><a class="btn btn-social-icon btn-google"> <i
-								class="fa fa-google"></i>googleで登録
-						</a></li>
-						<li><a class="btn btn-social-icon btn-yahoo"> <i
-								class="fa fa-yahoo"></i>yahooで登録
-						</a></li>
-					</ul>
-					<span><a href="">設定方法</a></span>
-					<span><a href="">利用方法</a></span>
+								<li><a class="btn btn-social-icon btn-google"> <i
+										class="fa fa-google"></i>googleで登録
+								</a></li>
+								<li><a class="btn btn-social-icon btn-yahoo"> <i
+										class="fa fa-yahoo"></i>yahooで登録
+								</a></li>
+							</ul>
+							<span><a href="">設定方法</a></span> <span><a href="">利用方法</a></span>
+						</div>
+					</div>
 				</div>
 			</div>
-				</div>
-			</div>
+		</div>
 	</article>
 	<footer>
 		<div class="container">
 			<div class="row dis-none-pc">
+			<div class="col-sm-8 ">
+			
 				<div class="col-sm-6 ">
 					<button type="button"
-						class="btn btn-success btn-large dis-block center mgb-20">>予約カレンダーを見る</button>
+						class="btn btn-success btn-block center">>予約カレンダーを見る</button>
 				</div>
 				<div class="col-sm-6">
 					<button type="button"
-						class="btn btn-danger btn-large dis-block center">>
+						class="btn btn-danger btn-block center">>
 						お気に入りに保存</button>
-
+</div>
 				</div>
 			</div>
 			<div class="col-sm-12 dis-none-pc">
@@ -334,9 +338,12 @@
 		</div>
 	</footer>
 	<script>
-	$(document).ready(function() {
-	  	$('#rootwizard').bootstrapWizard({'nextSelector': '.button-next', 'previousSelector': '.button-previous'});
-	});
+		$(document).ready(function() {
+			$('#rootwizard').bootstrapWizard({
+				'nextSelector' : '.button-next',
+				'previousSelector' : '.button-previous'
+			});
+		});
 	</script>
 </body>
 

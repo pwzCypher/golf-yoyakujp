@@ -21,24 +21,20 @@
 <script type="text/javascript"
 	src="//jpostal.googlecode.com/svn/trunk/jquery.jpostal.js"></script>
 <script>
-	$( document ).ready( function()
-	{
-        $('#postcode1').jpostal({
-                postcode : [
-                        '#zipcode'
-                ],
-                address : {
-                        '#prefectures'  : '%3',
-                        '#city'  : '%4',
-                        '#town'  : '%5',
-                        '#number'  : '%6',
-                        '#name'  : '%7'
-                }
-        });
-		
-		
+	$(document).ready(function() {
+		$('#postcode1').jpostal({
+			postcode : [ '#zipcode' ],
+			address : {
+				'#prefectures' : '%3',
+				'#city' : '%4',
+				'#town' : '%5',
+				'#number' : '%6',
+				'#name' : '%7'
+			}
+		});
+
 	});
-	</script>
+</script>
 
 <!--[if lt IE 9]><script src="js/ie8.js"></script><![endif]-->
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -261,7 +257,7 @@
 							</tbody>
 						</table>
 					</div>
-					
+
 					<div class="col-sm-12">
 
 						<table class="table table-bordered cleaarfix" id="no-more-tables">
@@ -306,28 +302,24 @@
 							</tr>
 							<tr>
 								<th><span>連絡先電話番号<br>(ハイフンなし)
- </span>
-								<span><img
-										src="img/hissu.gif" alt="" /></span></th>
+								</span> <span><img src="img/hissu.gif" alt="" /></span></th>
 								<td>
-								<div class="row">
-									<div class="col-sm-6">
-									<input type="text" class="form-control" placeholder="例：0333300540
-									"/>
-									</div>
-									<div class="col-sm-6">
-									（電話番号）
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-sm-6">
-									<input type="text" class="form-control" placeholder="例：0333300540
+									<div class="row">
+										<div class="col-sm-6">
+											<input type="text" class="form-control"
+												placeholder="例：0333300540
 									" />
+										</div>
+										<div class="col-sm-6">（電話番号）</div>
 									</div>
-									<div class="col-sm-6">
-									（携帯電話番号）
+									<div class="row">
+										<div class="col-sm-6">
+											<input type="text" class="form-control"
+												placeholder="例：0333300540
+									" />
+										</div>
+										<div class="col-sm-6">（携帯電話番号）</div>
 									</div>
-								</div>
 								</td>
 							</tr>
 							<tbody>
@@ -340,10 +332,15 @@
 
 
 					<div class="row">
-					<div class="col-sm-6 col-sm-offset-4">
-					<button type="button" class="btn btn-lg btn-default btn-size1 mr15">戻る</button>
-					 <button type="button" class="btn btn-lg btn-success btn-size1">次へ</button>
-					</div>
+						<div class="col-sm-6 col-sm-offset-4">
+							<div class="col-sm-6">
+								<button type="button"
+									class="btn  btn-default btn-block">戻る</button>
+							</div>
+							<div class="col-sm-6">
+								<button type="button" class="btn btn-success btn-block">次へ</button>
+							</div>
+						</div>
 					</div>
 
 				</div>
@@ -353,18 +350,6 @@
 	</article>
 	<footer>
 		<div class="container">
-			<div class="row dis-none-pc">
-				<div class="col-sm-6 ">
-					<button type="button"
-						class="btn btn-success btn-large dis-block center mgb-20">>予約カレンダーを見る</button>
-				</div>
-				<div class="col-sm-6">
-					<button type="button"
-						class="btn btn-danger btn-large dis-block center">>
-						お気に入りに保存</button>
-
-				</div>
-			</div>
 			<div class="col-sm-12 dis-none-pc">
 
 				<div class="content fstart">
