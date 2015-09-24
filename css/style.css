@@ -1993,5 +1993,30 @@ ul#res_seofooter_recommend li a {
 {
 	vertical-align:top !important;
 }
+.border-blue
+{
+	border-right:1px solid blue !important;
+	border-left:1px solid blue !important;
+	border-top:1px solid blue !important;
+	border-bottom:1px solid blue !important;
+	
+}
 
+table.playtable tbody tr td:first-child {
+    width:50%;
+    border-top:0;
+}
+table.playtable tbody tr:last-child td {
+    width:50%;
+     border-top:0;
+}
+table.playtable tbody tr:first-child td {
+  border-top:0;  
+  width:50%;
+}
+table.playtable > tbody > tr > td {
+    text-align: left;
+    padding: 15px;
+    border: 2px solid #2087C7;
+}
 
