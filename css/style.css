@@ -1366,7 +1366,6 @@ li>a>div {
 	height: 88px;
 	padding-top: 0 !important;
 	padding-bottom: 0 !important;
-	font-size:17px;
 }
 
 /*******
@@ -1625,7 +1624,7 @@ li>a>img
 .golfdrag_btn02 {
     background: orange;
     display: block;
-    padding: 10px 12px;
+   padding: 3px;
     margin: 6px;
 }
 .golf_drag_inner {
@@ -1642,7 +1641,7 @@ li>a>img
     color: blue;
     text-decoration: underline;
 }
-<<<<<<< HEAD
+
  /***************************
  *
  *registerpage
@@ -1816,15 +1815,14 @@ slick js
 .golf_plan h3 {
     text-align: center;
     font-size: 25px;
-    margin: 10px 0 0 0;
+    margin: 30px 0 30px 0;
 }
 .golf_plan1, .golf_plan2, .golf_plan3 {
     display: inline-block;
-    width: 227px;
     float: left;
     border-bottom: 1px solid #000;
     border-left: 1px solid #000;
-    padding: 10px;
+    padding: 10px 11.6px;
 }
 .golf_plan dt {
     text-align: center;
@@ -1834,14 +1832,27 @@ slick js
 }
 .golf_plan ul li {
     display: inline-block;
-    vertical-align: top;
-    margin-bottom: 15px;
+       margin-bottom: 15px;
+    font-size: 11px;
+}
+dd.golf_row1,dd.golf_row2,dd.golf_row3
+{
+	
+	
 }
 .golfplan_btn02 {
     background: orange;
     display: block;
     padding: 4px 2px;
     margin-top: 7px;
+}
+.red {
+    color: #ff0000;
+    font-size: 18px;
+}
+.blue {
+    color: blue;
+    text-decoration: underline;
 }
 .golfplan_btn01 {
     background: gray;
@@ -1850,3 +1861,174 @@ slick js
     margin-top: 7px;
 
 }
+.golf_plan3 {
+    border-right: 1px solid #000;
+}
+.golf_plan h4 {
+    background: #000;
+    height: 54px;
+    margin: 0;
+}
+.reco_ttl ul li {
+    display: inline-block;
+    background: blue;
+    text-align: center;
+    width:318px;
+    padding: 10px 0;
+    border-radius: 10px;
+   
+}
+#recomme-container-hot .recomme-box02 {
+    margin: 0 0 10px 0;
+}
+
+#recomme-container-hot .crs-box .photo {
+    float: left;
+    width: 85px;
+    display: inline;
+    margin-bottom: 10px;
+}
+#recomme-container-hot .crs-box .txt {
+    float: right;
+    width: 210px;
+    display: inline;
+    margin: 0 7px;
+    font-size: 12px;
+    line-height: 1.2;
+}
+#recomme-container-hot h3 {
+    margin: 0 0 5px 0;
+    padding: 0 0 0 13px;
+    background: url(http://image.gora.golf.rakuten.co.jp/img/top/icon_arrow_disc.gif) 0 4px no-repeat;
+    font-size: 12px;
+    line-height: 1.2;
+}
+#recomme-container-hot .crs-box .txt p {
+    margin: 0;
+}
+#recomme-container-hot .crs-box {
+    float: left;
+    width: 318px;
+    overflow: hidden;
+   }
+#recomme-container-hot .crs-box .photo {
+    float: left;
+    width: 85px;
+    display: inline;
+    margin-bottom: 10px;
+}
+.footer_nav {
+    border-top: 1px solid #e5e5e5;
+    padding: 13px 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+.footer_nav >div {
+    margin: 0 auto;
+}
+ 
+ ul.blockList li {
+    margin: 4px 0 4px -9px;
+    padding: 4px 18px 4px 7px;
+    float: left;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+ ul#res_seofooter_lists li a {
+    padding: 4px 0 2px 24px;
+    white-space: nowrap;
+}
+ ul.blockList {
+    margin: 0 -1px 0 0;
+    padding: 0;
+    overflow: hidden;
+}
+  ul#res_seofooter_recommend li#recommend01 {
+    width: 9em !important;
+    _width: 10.5em !important;
+}
+ ul#res_seofooter_recommend li#recommend02 {
+    width: 9em !important;
+}
+
+ ul#res_seofooter_lists li a {
+    padding: 4px 0 2px 24px;
+    white-space: nowrap;
+}
+ul#res_seofooter_recommend li a {
+    padding: 4px 0 4px 22px;
+    white-space: nowrap;
+}
+#res_seofooter_recommend a {
+    text-decoration: underline;
+}
+.inner_visual ul li {
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    display: inline-block;
+    padding: 10px 35px;
+    font-size: 18px;
+    margin: 20px 0px;
+    float: left;
+}
+.visual_num {
+    background: #000;
+    border-radius: 15px;
+    padding: 5px 10px;
+    color: #fff;
+    font-size: 12px;
+    float: left;
+    margin: 10px 10px 0 0;
+}
+.visual_txt {
+    float: right;
+    text-align: center;
+}
+.inner_visual ul li:last-child {
+    border-right: 1px solid #ccc;
+}
+.big-checkbox {width: 35px; height: 30px;}
+.align-top
+{
+	vertical-align:top !important;
+}
+.border-blue
+{
+	border-right:1px solid blue !important;
+	border-left:1px solid blue !important;
+	border-top:1px solid blue !important;
+	border-bottom:1px solid blue !important;
+	
+}
+
+table.playtable tbody tr td:first-child {
+    width:50%;
+    border-top:0;
+}
+table.playtable tbody tr:last-child td {
+    width:50%;
+     border-top:0;
+}
+table.playtable tbody tr:first-child td {
+  border-top:0;  
+  width:50%;
+}
+table.playtable > tbody > tr > td {
+    text-align: left;
+    padding: 15px;
+    border: 2px solid #2087C7;
+}
+
+
+
+/*----
+ * for sp index
+ 
+ * --------------------
+ * -------------------*/
+.sp .visual_txt {
+    float: left;
+    text-align: center;
+}
+ 
