@@ -289,9 +289,12 @@ a : active {
 }
 
 .panel {
-	
+	margin-bottom:30px!important;
 }
-
+.table
+{
+margin-bottom:30px!important;	
+}
 .table-ttl {
 	background: #ebebeb;
 	font-weight: bold;
