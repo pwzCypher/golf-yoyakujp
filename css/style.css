@@ -258,7 +258,11 @@ media
 		display: none;
 	}
 }
-
+@media screen and (min-width:979px) {
+	.pc-padding {
+		padding-top: 10%;
+	}
+}
 /*
 detail page
 */
@@ -2034,5 +2038,46 @@ table.playtable > tbody > tr > td {
     float: left;
     text-align: center;
 }
- 
+/*---------
+upload button
+*---------------*
+*/ 
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
 
+/*---------------------------
+*
+*/
+.border-right
+{
+	border-right:2px solid #cccccc;
+}
+.course-table tr th:first-child,.course-table tr td:first-child
+{
+width:5%;
+}
+
+/*---------------------------
+*admin----------------------
+*/
+.admin li 
+{
+	padding-right:46px;
+}
