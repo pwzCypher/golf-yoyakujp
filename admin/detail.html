@@ -5,7 +5,7 @@
 	content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0">
 <head>
 
-<title>コース場情報設定｜ゴルフ予約ＪＰ</title>
+<title>ゴルフ場情報設定｜ゴルフ予約ＪＰ</title>
 
 <link rel="stylesheet" href="../css/import.css" media="all">
 <!-- <link rel="stylesheet"
@@ -17,8 +17,6 @@
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="../js/custom.js"></script>
-<script type="text/javascript" src="js/bootstrap-filestyle.min.js"> </script>
-
 
 
 <!--[if lt IE 9]><script src="js/ie8.js"></script><![endif]-->
@@ -97,115 +95,238 @@
 	</header>
 	<article>
 		<div class="container">
-			<h2>コース案内情報情報入力</h2>
+			<h2>ゴルフ場詳細情報情報入力</h2>
 			<div class="navbar">
 				<div class="navbar-inner">
 					<div class="container">
 						<ul class="nav steps">
 							<li class="active">基本情報入力</li>
-							<li>コースレイアウト情報入力</li>
-							<li>ホール攻略情報入力</li>
+							<li>施設情報入力</li>
+							<li>ゴルフ場からのお願い入力</li>
 							<li>確認</li>
 							<li>完了</li>
 						</ul>
 					</div>
 				</div>
 			</div>
-			<form class="form-horizontal" role="form">
-				<table class="table table-bordered" id="no-more-tables">
-					<tbody>
-						<tr>
-							<th>コースの特徴</th>
-							<td><input type="text" name="course-attract"
-								class="form-control" /></td>
-						</tr>
+			<table class="table table-bordered" id="no-more-tables">
+				<tbody>
+					<tr>
+						<th>お知らせ</th>
+						<td><textarea rows="5" cols="50" name="notice"></textarea></td>
+					</tr>
 
-						<tr>
-							<th>設計者</th>
-							<td><input type="text" name="setter" class="form-control"
-								placeholder="例：ゴルフJP
-						" /></td>
-						</tr>
-						<tr>
-							<th>総ヤード数</th>
-							<td><div class="col-sm-6">
-									<input type="text" class="form-control" id="inputKey"
-										placeholder="">
-								</div> <label for="inputKey" class="col-sm-1 control-label">yard</label>
-							</td>
-						</tr>
-						<tr>
-							<th>コースタイプ</th>
-							<td><textarea rows="5" cols="50"
-									placeholder="例：丘陵3243Y(西 )3442Y(東 )3236Y(中 )西 9H P36
-東 9H P36
-中 9H P36
-コースレート：70.7（西・中・ベント） 
-71.8（東・西・ベント） 71.5（中・東・ベント）
-"></textarea>
-							</td>
-						</tr>
-						<tr>
-							<th>フェアウェイ広さ</th>
-							<td><input type="text" name="width" class="form-control"
-								placeholder="例：51～70ヤード" /></td>
-						</tr>
-						<tr>
-							<th>ホール</th>
-							<td><input type="text" name="hole" class="form-control"
-								placeholder="例：18ホール　パー72" /></td>
-						</tr>
-						<tr>
-							<th>グリーン</th>
-							<td><textarea rows="5" cols="50"
-									placeholder="例：ベント9.5フィート以上800平方メートル以上程良いアンジュレーション"></textarea>
-							</td>
-						</tr>
-					</tbody>
-				</table>
-			</form>
-			<div class="row">
-				<div class="col-sm-4 pt15 pb15 center">
-					<img src="../img/sample-img1.jpg" alt="" class="img-responsive center" />
-				</div>
-				<div class="col-sm-8 pc-padding">
-					<input type="file" class="filestyle">
-				</div>
-				</div>
-			<div class="row">
-				<div class="col-sm-4 pt15 pb15 center">
-					<img src="../img/sample-img1.jpg" alt="" class="img-responsive center" />
-				</div>
-				<div class="col-sm-8 pc-padding">
-					<input type="file" class="filestyle">
-				</div>
+					<tr>
+						<th>所在地</th>
+						<td>
+							<div class="row">
+								<div class="col-sm-2">郵便番号</div>
+
+
+								<div class="col-sm-2">
+									<input type="text" class="form-control" id="inputKey">
+								</div>
+								<div class="col-sm-1">-</div>
+								<div class="col-sm-2">
+									<input type="text" class="form-control" id="inputKey2">
+								</div>
+
+							</div>
+							<div class="mt10">
+								<div class="col-sm-2">住所</div>
+								<div class="col-sm-10">
+									<input type="text" id="address-input" class="form-control" />
+									<input type="text" id="address-input2"
+										class="form-control mt10" />
+								</div>
+
+
+
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th>連絡先</th>
+						<td><div class="row">
+								<div class="col-sm-2">TEL</div>
+								<div class="col-sm-10">
+									<input type="text" name="tel" class="form-control" />
+
+								</div>
+
+
+
+							</div>
+							<div class="row mt10">
+								<div class="col-sm-2">FAX</div>
+								<div class="col-sm-10">
+									<input type="text" name="fax" class="form-control" />
+
+								</div>
+
+
+
+							</div></td>
+					</tr>
+					<tr>
+						<th>休日</th>
+						<td><input type="text" class="form-control" name="holiday" />
+						</td>
+					</tr>
+					<tr>
+						<th>開場日</th>
+						<td><input type="text" class="form-control" name="open-date" />
+						</td>
+					</tr>
+					<tr>
+						<th>予約開始日</th>
+						<td><input type="text" class="form-control"
+							name="reserve-time" /></td>
+					</tr>
+					<tr>
+						<th>冬季クローズ</th>
+						<td><input type="text" class="form-control" name="winter" />
+						</td>
+					</tr>
+					<tr>
+						<th>カード</th>
+						<td><div class="col-sm-6">
+								<div class="checkbox">
+									<label><input type="checkbox" value="visa">VISA</label>
+								</div>
+								<div class="checkbox">
+									<label><input type="checkbox" value="jcb">JCB</label>
+								</div>
+								<div class="checkbox">
+									<label><input type="checkbox" value="dinersclub">Diners
+										club</label>
+								</div>
+								<div class="checkbox">
+									<label><input type="checkbox" value="mufg">MUFG</label>
+								</div>
+								<div class="checkbox">
+									<label><input type="checkbox" value="三井住友">三井住友</label>
+								</div>
+								<div class="checkbox">
+									<label><input type="checkbox" value="りそな">りそな</label>
+								</div>
+								<div class="checkbox">
+									<label><input type="checkbox" value="セディナ">セディナ</label>
+								</div>
+								<div class="checkbox">
+									<label><input type="checkbox" value="オリコ">オリコ</label>
+								</div>
+								<div class="checkbox">
+									<label><input type="checkbox" value="ファミマT">ファミマT</label>
+								</div>
+								<div class="checkbox">
+									<label><input type="checkbox" value="ファミマT">ファミマT</label>
+								</div>
+								<div class="checkbox">
+									<label><input type="checkbox" value="楽天">楽天</label>
+								</div>
+								<div class="checkbox">
+									<label><input type="checkbox" value="VIEW">VIEW</label>
+								</div>
+								<div class="checkbox">
+									<label><input type="checkbox" value="NTTグループ">NTTグループ</label>
+								</div>
+								<div class="checkbox">
+									<label><input type="checkbox" value="TCCUBIC">TC
+										CUBIC</label>
+								</div>
+								<div class="checkbox">
+									<label><input type="checkbox" value="JTB">JTB</label>
+								</div>
+								<div class="checkbox">
+									<label><input type="checkbox" value="ENEOS">ENEOS
+									</label>
+								</div>
+							</div>
+
+							<div class="col-sm-6">
+								<div class="checkbox">
+									<label><input type="checkbox" value="MasterCard">MasterCard
+									</label>
+								</div>
+								<div class="checkbox">
+									<label><input type="checkbox" value="AmericanExpress">AmericanExpress
+									</label>
+								</div>
+								<div class="checkbox">
+									<label><input type="checkbox" value="NICOS">NICOS
+									</label>
+								</div>
+								<div class="checkbox">
+									<label><input type="checkbox" value="シティ">シティ </label>
+								</div>
+								<div class="checkbox">
+									<label><input type="checkbox" value="UC">UC </label>
+								</div>
+								<div class="checkbox">
+									<label><input type="checkbox" value="住信">住信 </label>
+								</div>
+								<div class="checkbox">
+									<label><input type="checkbox" value="アプラス">アプラス
+									</label>
+								</div>
+								<div class="checkbox">
+									<label><input type="checkbox" value="ジャックス">ジャックス
+									</label>
+								</div>
+								<div class="checkbox">
+									<label><input type="checkbox" value="セゾン">セゾン </label>
+								</div>
+								<div class="checkbox">
+									<label><input type="checkbox" value="イオン">イオン </label>
+								</div>
+								<div class="checkbox">
+									<label><input type="checkbox" value="タカシマヤ">タカシマヤ
+
+									</label>
+								</div>
+								<div class="checkbox">
+									<label><input type="checkbox" value="SBI">SBI </label>
+								</div>
+								<div class="checkbox">
+									<label><input type="checkbox" value="東急">東急 </label>
+								</div>
+								<div class="checkbox">
+									<label><input type="checkbox" value="ソニー">ソニー </label>
+								</div>
+								<div class="checkbox">
+									<label><input type="checkbox" value="JAL">JAL </label>
+								</div>
+								<div class="checkbox">
+									<label><input type="checkbox" value="出光">出光 </label>
+								</div>
+							</div>
+					</tr>
+					<tr>
+						<th>宅急便</th>
+						<td><input type="text" name="express" class="form-control" /></td>
+					</tr>
+					<tr>
+						<th>服装規定</th>
+						<td><input type="text" name="uniform" class="form-control" /></td>
+					</tr>
+					<tr>
+						<th>キャンセル規定</th>
+						<td><input type="text" name="cancel" class="form-control" /></td>
+					</tr>
+
+				</tbody>
+			</table>
+			<div class="col-sm-4 col-sm-offset-4 mt30">
+
+				<button type="button" class="btn btn-lg btn-default btn-block">次へ</button>
+
 			</div>
-			<div class="row">
-				<div class="col-sm-4 pt15 pb15 center">
-					<img src="../img/sample-img1.jpg" alt="" class="img-responsive center" />
-				</div>
-				<div class="col-sm-8 pc-padding">
-					
-<input type="file" class="filestyle">
-					</div>
-				</div>
-			</div>
-	
+		</div>
 	</article>
 	<footer>
 		<div class="container">
-			<div class="row dis-none-pc">
-				<div class="col-sm-6 ">
-					<button type="button"
-						class="btn btn-success btn-large dis-block center mgb-20">>予約カレンダーを見る</button>
-				</div>
-				<div class="col-sm-6">
-					<button type="button"
-						class="btn btn-danger btn-large dis-block center">>
-						お気に入りに保存</button>
 
-				</div>
-			</div>
 			<div class="col-sm-12 dis-none-pc">
 
 				<div class="content fstart">
@@ -329,9 +450,11 @@
 
 
 	</footer>
-	<script>
-$(":file").filestyle({buttonText: "参照"});
-</script>
+	<script type="text/javascript">
+		$('input[id=lefile]').change(function() {
+			$('#photoCover').val($(this).val());
+		});
+	</script>
 </body>
 
 </html>

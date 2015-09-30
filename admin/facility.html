@@ -1,0 +1,803 @@
+<!doctype html>
+<html lang="jp">
+<meta charset="UTF-8">
+<meta name="viewport"
+	content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0">
+<head>
+
+<title>ゴルフ場情報設定｜ゴルフ予約ＪＰ</title>
+
+<link rel="stylesheet" href="../css/import.css" media="all">
+<!-- <link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> -->
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="../js/custom.js"></script>
+
+
+<!--[if lt IE 9]><script src="js/ie8.js"></script><![endif]-->
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+	<header>
+		<div id="headerWrap">
+			<div id="header">
+				<div class="headerIn">
+					<h1 class="text_right site_desc">どこよりも早い空き枠 どこよりも安い空き枠
+						が検索できるサイト</h1>
+				</div>
+				<div class="headerIn clearfix">
+					<h1 class="logo">
+						<img src="../common/img/header/logo.png" alt="img">
+					</h1>
+					<div class="headerUtility">
+						<ul class="clearfix">
+							<li>ようこそ○○さん</li>
+							<li>Tポイント:○○pt</li>
+
+						</ul>
+						<ul class="clearfix">
+							<li><a href="#">お知らせ</a></li>
+							<li><a href="#">企業情報</a></li>
+							<li><a href="#">ログアウト</a></li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+			<div class="headerIn clearfix">
+
+				<ul class="gNav admin clearfix" id="gnav">
+					<li><a href="#">ＴＯＰ</a></li>
+					<li><a href="#">コース案内</a></li>
+					<li><a href="#">ゴルフ場詳細設定</a></li>
+					<li><a href="#">アクセス情報</a></li>
+					<li><a href="#">担当者情報</a></li>
+				</ul>
+				<div class="spmenusec">
+					<p class="menu">
+						<img src="../common/img/header/menu.png" alt="img">
+					</p>
+
+				</div>
+			</div>
+			<div class="spcontact">
+				<ul class="spmenu">
+					<li><a href="#">ログイン</a></li>
+					<li><a href="#">会員情報</a></li>
+					<li><a href="#">お知らせ</a></li>
+					<li><a href="#">ヘルプ</a></li>
+				</ul>
+				<ul class="ulsec clearfix">
+					<li class="spnav"><a href="#"><img
+							src="../common/img/header/sp_nav01.gif" alt=""></a></li>
+					<li class="spnav"><a href="#"><img
+							src="../common/img/header/sp_nav02.gif" alt=""></a></li>
+					<li class="spnav"><a href="#"><img
+							src="../common/img/header/sp_nav03.gif" alt=""></a></li>
+					<li class="spnav"><a href="#"><img
+							src="../common/img/header/sp_nav04.gif" alt=""></a></li>
+					<li class="spnav"><a href="#"><img
+							src="../common/img/header/sp_nav05.gif" alt=""></a></li>
+					<li class="spnav"><a href="#"><img
+							src="../common/img/header/sp_nav06.gif" alt=""></a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<article>
+		<div class="container">
+			<h2>ゴルフ場詳細情報情報入力</h2>
+			<div class="navbar">
+				<div class="navbar-inner">
+					<div class="container">
+						<ul class="nav steps">
+							<li>基本情報入力</li>
+							<li class="active">施設情報入力</li>
+							<li>ゴルフ場からのお願い入力</li>
+							<li>確認</li>
+							<li>完了</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<table class="table table-bordered" id="no-more-tables">
+				<tbody>
+					<tr>
+						<th class="fw-bold center fs-16">練習場</th>
+						<td>
+							<div class="row">
+								<div class="col-sm-12">
+									<div class="radio">
+										<label><input type="radio" name="train-field">なし</label>
+									</div>
+									<div class="radio">
+										<label><input type="radio" name="train-field">あり</label>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-2">打席数</div>
+								<div class="col-sm-10">
+									<input type="text" name="bat" class="form-control" />
+
+								</div>
+
+
+
+							</div>
+							<div class="row mt10">
+								<div class="col-sm-2">ヤード数</div>
+								<div class="col-sm-10">
+									<input type="text" name="yards" class="form-control" />
+
+								</div>
+							</div>
+							<div class="row mt10">
+								<div class="col-sm-2 pt10">グリーン</div>
+								<div class="col-sm-10">
+									<div class="radio">
+										<label><input type="radio" name="green">なし</label>
+									</div>
+									<div class="radio">
+										<label><input type="radio" name="green">あり</label>
+									</div>
+								</div>
+							</div>
+							<div class="row mt10">
+								<div class="col-sm-2">グリーン数</div>
+								<div class="col-sm-10">
+									<input type="text" name="green-no" class="form-control" />
+
+								</div>
+							</div>
+							<div class="row mt10">
+								<div class="col-sm-2 pt10">パター</div>
+								<div class="col-sm-10">
+									<div class="radio">
+										<label><input type="radio" name="putter">なし</label>
+									</div>
+									<div class="radio">
+										<label><input type="radio" name="putter">あり</label>
+									</div>
+								</div>
+							</div>
+							<div class="row mt10">
+								<div class="col-sm-2">パター数</div>
+								<div class="col-sm-10">
+									<input type="text" name="putter-no" class="form-control" />
+
+								</div>
+							</div>
+							<div class="row mt10">
+								<div class="col-sm-2">価格</div>
+								<div class="col-sm-10">
+									<input type="text" name="price" class="form-control" />
+
+								</div>
+							</div>
+							<div class="row mt10">
+								<div class="col-sm-2">ドライバー利用</div>
+								<div class="col-sm-10">
+
+									<label class="radio-inline"><input type="radio"
+										name="putter">可</label> <label class="radio-inline"><input
+										type="radio" name="putter">不可</label>
+
+								</div>
+							</div>
+							<div class="row mt10">
+								<div class="col-sm-2">アプローチ練習場</div>
+								<div class="col-sm-10">
+
+									<label class="radio-inline"><input type="radio"
+										name="approch">あり</label> <label class="radio-inline"><input
+										type="radio" name="approch">なし</label>
+
+								</div>
+							</div>
+							<div class="row mt10">
+								<div class="col-sm-2">コースボール</div>
+								<div class="col-sm-10">
+									<input type="text" name="course" class="form-control" />
+
+								</div>
+							</div>
+							<div class="row mt10">
+								<div class="col-sm-2">その他</div>
+								<div class="col-sm-10">
+									<input type="text" name="others-faci" class="form-control" />
+
+								</div>
+							</div>
+						</td>
+
+					</tr>
+					<tr>
+						<th class="fw-bold center fs-16">レストラン</th>
+						<td>
+							<div class="row">
+								<div class="col-sm-12">
+									<div class="radio">
+										<label><input type="radio" name="resturant">なし</label>
+									</div>
+									<div class="radio">
+										<label><input type="radio" name="resturant">あり</label>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-2">価格帯</div>
+								<div class="col-sm-10">
+									<input type="text" name="price-range" class="form-control" />
+
+								</div>
+
+
+
+							</div>
+							<div class="row">
+								<div class="col-sm-2">営業時間</div>
+								<div class="col-sm-10">
+									<input type="text" name="opening-hour" class="form-control" />
+
+								</div>
+
+
+
+							</div>
+
+							<div class="row mt10">
+								<div class="col-sm-2 pt10">朝食</div>
+								<div class="col-sm-10">
+									<div class="radio">
+										<label><input type="radio" name="breakfast">なし</label>
+									</div>
+									<div class="radio">
+										<label><input type="radio" name="breakfast">あり</label>
+									</div>
+								</div>
+							</div>
+							<div class="row mt10">
+								<div class="col-sm-2">朝食価格帯</div>
+								<div class="col-sm-10">
+									<input type="text" name="breakfast-price" class="form-control" />
+
+								</div>
+							</div>
+
+
+							<div class="row mt10">
+								<div class="col-sm-2">バイキング</div>
+								<div class="col-sm-10">
+
+									<label class="radio-inline"><input type="radio"
+										name="viking">あり</label> <label class="radio-inline"><input
+										type="radio" name="viking">なし</label>
+
+								</div>
+							</div>
+							<div class="row mt10">
+								<div class="col-sm-2">全席禁煙</div>
+								<div class="col-sm-10">
+
+									<label class="radio-inline"><input type="radio"
+										name="no-smoke">あり</label> <label class="radio-inline"><input
+										type="radio" name="no-smoke">なし</label>
+
+								</div>
+							</div>
+							<div class="row mt10">
+								<div class="col-sm-2 pt10">名物料理</div>
+								<div class="col-sm-10">
+									<div class="radio">
+										<label><input type="radio" name="raw-food">なし</label>
+									</div>
+									<div class="radio">
+										<label><input type="radio" name="raw-food">あり</label>
+									</div>
+								</div>
+							</div>
+							<div class="row mt10">
+								<div class="col-sm-2">コースボール</div>
+								<div class="col-sm-10">
+									<input type="text" name="course" class="form-control" />
+
+								</div>
+							</div>
+							<div class="row mt10">
+								<div class="col-sm-2">料理名</div>
+								<div class="col-sm-10">
+									<input type="text" name="dish-name" class="form-control" />
+
+								</div>
+							</div>
+						</td>
+
+					</tr>
+					<!-- hotel -->
+					<tr>
+						<th class="fw-bold center fs-16">宿泊施設</th>
+						<td>
+							<div class="row">
+								<div class="col-sm-12">
+									<div class="radio">
+										<label><input type="radio" name="resturant">なし</label>
+									</div>
+									<div class="radio">
+										<label><input type="radio" name="resturant">あり</label>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-2">施設種類</div>
+								<div class="col-sm-10">
+									<input type="text" name="faci-type" class="form-control"
+										placeholder="例：ホテル・コテージ" />
+
+								</div>
+
+
+
+							</div>
+							<div class="row">
+								<div class="col-sm-2">喫煙部屋数</div>
+								<div class="col-sm-10">
+									<input type="text" name="smoke-area" class="form-control" />
+
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-2">禁煙部屋数</div>
+								<div class="col-sm-10">
+									<input type="text" name="unsmoke-area" class="form-control" />
+
+								</div>
+							</div>
+							<div class="row mt10">
+								<div class="col-sm-2 pt10">朝食</div>
+								<div class="col-sm-10">
+
+									<label class="radio-inline"><input type="radio"
+										name="hotel-breakfast">あり</label> <label class="radio-inline"><input
+										type="radio" name="hotel-breakfast">なし</label>
+								</div>
+							</div>
+							<div class="row mt10">
+								<div class="col-sm-2 pt10">昼食</div>
+								<div class="col-sm-10">
+
+									<label class="radio-inline"><input type="radio"
+										name="hotel-lunch">あり</label> <label class="radio-inline"><input
+										type="radio" name="hotel-lunch">なし</label>
+								</div>
+							</div>
+							<div class="row mt10">
+								<div class="col-sm-2 pt10">夕食</div>
+								<div class="col-sm-10">
+
+									<label class="radio-inline"><input type="radio"
+										name="hotel-dinner">あり</label> <label class="radio-inline"><input
+										type="radio" name="hotel-dinner">なし</label>
+								</div>
+							</div>
+							<div class="row mt10">
+								<div class="col-sm-2">チェックイン</div>
+								<div class="col-sm-10">
+									<input type="text" name="check-in" class="form-control" />
+
+								</div>
+							</div>
+							<div class="row mt10">
+								<div class="col-sm-2">チェックアウト</div>
+								<div class="col-sm-10">
+									<input type="text" name="check-out" class="form-control" />
+
+								</div>
+							</div>
+
+
+							<div class="row mt10">
+								<div class="col-sm-3">お風呂</div>
+								<div class="col-sm-9">
+
+									<label class="radio-inline"><input type="radio"
+										name="ofuro">あり</label> <label class="radio-inline"><input
+										type="radio" name="ofuro">なし</label>
+
+								</div>
+							</div>
+							<div class="row mt10">
+								<div class="col-sm-2">キャンセル料</div>
+								<div class="col-sm-10">
+									<input type="text" name="cancel-fee" class="form-control" />
+
+								</div>
+							</div>
+
+							<div class="row mt10">
+								<div class="col-sm-3">周辺施設紹介</div>
+								<div class="col-sm-9">
+
+									<label class="radio-inline"><input type="radio"
+										name="no-smoke">可</label> <label class="radio-inline"><input
+										type="radio" name="no-smoke">不可</label>
+
+								</div>
+							</div>
+
+						</td>
+
+					</tr>
+					<!-- hotelend -->
+					<!-- ofuro -->
+					<tr>
+						<th class="fw-bold center fs-16">お風呂</th>
+						<td>
+							<div class="row">
+								<div class="col-sm-12">
+									<div class="radio">
+										<label><input type="radio" name="ofuro">なし</label>
+									</div>
+									<div class="radio">
+										<label><input type="radio" name="ofuro">あり</label>
+									</div>
+								</div>
+							</div>
+
+
+							<div class="row mt10">
+								<div class="col-sm-2 pt10">温泉</div>
+								<div class="col-sm-10">
+
+									<label class="radio-inline"><input type="radio"
+										name="onsen">あり</label> <label class="radio-inline"><input
+										type="radio" name="onsen">なし</label>
+								</div>
+							</div>
+							<div class="row mt10">
+								<div class="col-sm-2 pt10">露天</div>
+								<div class="col-sm-10">
+
+									<label class="radio-inline"><input type="radio"
+										name="roten">あり</label> <label class="radio-inline"><input
+										type="radio" name="roten">なし</label>
+								</div>
+							</div>
+							<div class="row mt10">
+								<div class="col-sm-2 pt10">サウナ</div>
+								<div class="col-sm-10">
+
+									<label class="radio-inline"><input type="radio"
+										name="sauna">あり</label> <label class="radio-inline"><input
+										type="radio" name="sauna">なし</label>
+								</div>
+							</div>
+							<div class="row mt10">
+								<div class="col-sm-2 pt10">パウダールーム</div>
+								<div class="col-sm-10">
+
+									<label class="radio-inline"><input type="radio"
+										name="powder-room">あり</label> <label class="radio-inline"><input
+										type="radio" name="powder-room">なし</label>
+								</div>
+							</div>
+						</td>
+					</tr>
+					<!-- ofuro end -->
+					<!-- course lesson -->
+					<tr>
+						<th class="fw-bold center fs-16">コースレッスン</th>
+						<td>
+							<div class="row">
+								<div class="col-sm-12">
+									<div class="radio">
+										<label><input type="radio" name="course-lesson">なし</label>
+									</div>
+									<div class="radio">
+										<label><input type="radio" name="course-lesson">あり</label>
+									</div>
+								</div>
+							</div>
+							<div class="row mt10">
+								<div class="col-sm-2">価格</div>
+								<div class="col-sm-10">
+									<input type="text" name="cource-fee" class="form-control" />
+
+								</div>
+							</div>
+						</td>
+					</tr>
+					<!-- courseend -->
+					<!-- shop -->
+					<tr>
+						<th class="fw-bold center fs-16">ショップ</th>
+						<td>
+							<div class="row">
+								<div class="col-sm-12">
+									<div class="radio">
+										<label><input type="radio" name="shop">なし</label>
+									</div>
+									<div class="radio">
+										<label><input type="radio" name="shop">あり</label>
+									</div>
+								</div>
+							</div>
+							<div class="row mt10">
+								<div class="col-sm-2 pt10">クラブ工房</div>
+								<div class="col-sm-10">
+
+									<label class="radio-inline"><input type="radio"
+										name="club">あり</label> <label class="radio-inline"><input
+										type="radio" name="club">なし</label>
+								</div>
+							</div>
+
+						</td>
+					</tr>
+					<!-- shopend -->
+					<!-- shoten -->
+					<tr>
+						<th class="fw-bold center fs-16">ショップ</th>
+						<td>
+							<div class="row">
+								<div class="col-sm-12">
+									<div class="radio">
+										<label><input type="radio" name="shoten">なし</label>
+									</div>
+									<div class="radio">
+										<label><input type="radio" name="shoten">あり</label>
+									</div>
+								</div>
+							</div>
+							<div class="row mt10">
+								<div class="col-sm-2 pt10">コース売店</div>
+								<div class="col-sm-10">
+
+									<label class="radio-inline"><input type="radio"
+										name="course-shop">あり</label> <label class="radio-inline"><input
+										type="radio" name="course-shop">なし</label>
+								</div>
+							</div>
+							<div class="row mt10">
+								<div class="col-sm-2">清算方法</div>
+								<div class="col-sm-10">
+									<input type="text" name="seisen" class="form-control" />
+
+								</div>
+							</div>
+
+						</td>
+					</tr>
+					<!-- shotenend -->
+					<tr>
+						<th class="fw-bold center fs-16">コンペルーム</th>
+						<td>
+							<div class="row">
+								<div class="col-sm-12">
+									<div class="radio">
+										<label><input type="radio" name="compete-room">なし</label>
+									</div>
+									<div class="radio">
+										<label><input type="radio" name="compete-room">あり</label>
+									</div>
+								</div>
+							</div>
+
+							<div class="row mt10">
+								<div class="col-sm-2">部屋数</div>
+								<div class="col-sm-10">
+									<input type="text" name="room-no" class="form-control" />
+
+								</div>
+							</div>
+							<div class="row mt10">
+								<div class="col-sm-2">利用人数</div>
+								<div class="col-sm-10">
+									<input type="text" name="user-no" class="form-control" />
+
+								</div>
+							</div>
+							<div class="row mt10">
+								<div class="col-sm-2">価格</div>
+								<div class="col-sm-10">
+									<input type="text" name="user-no" class="form-control"
+										placeholder="例：50名1室, 30名1室
+									" />
+
+								</div>
+							</div>
+
+						</td>
+					</tr>
+					<!-- compete roomend -->
+					<!-- rental -->
+					<tr>
+						<th class="fw-bold center fs-16">レンタル</th>
+						<td>
+							<div class="row">
+								<div class="col-sm-12">
+									<div class="radio">
+										<label><input type="radio" name="compete-room">なし</label>
+									</div>
+									<div class="radio">
+										<label><input type="radio" name="compete-room">あり</label>
+									</div>
+								</div>
+							</div>
+
+							<div class="row mt10">
+								<div class="col-sm-2">シューズレンタル価格数</div>
+								<div class="col-sm-10">
+									<input type="text" name="juice-rental" class="form-control" />
+
+								</div>
+							</div>
+							<div class="row mt10">
+								<div class="col-sm-2">シューズレンタル価格</div>
+								<div class="col-sm-10">
+									<input type="text" name="club-rental" class="form-control" />
+
+								</div>
+							</div>
+						</td>
+					</tr>
+					<!-- rentalend -->
+					<!-- others -->
+					<tr>
+						<th class="fw-bold center fs-16">その他</th>
+						<td><input type="text" name="juice-rental"
+							class="form-control" /></td>
+					</tr>
+					<!-- othersend -->
+				</tbody>
+			</table>
+			<div class="col-sm-4 col-sm-offset-4 mt30">
+
+				<button type="button" class="btn btn-lg btn-default btn-block">次へ</button>
+
+			</div>
+		</div>
+	</article>
+	<footer>
+		<div class="container">
+
+			<div class="col-sm-12 dis-none-pc">
+
+				<div class="content fstart">
+					<ul class="basic-linked-list two-columns-list" id="menu">
+						<li><a href="#"><div>ショップ</div></a></li>
+						<li><a href="#"><div>ゴルフ場予約</div></a></li>
+						<li><a href="#"><div>ニュース</div></a></li>
+						<li><a href="#"><div>ギア情報</div></a></li>
+						<li><a href="#"><div>レッスン・練習</div></a></li>
+						<li><a href="#"><div>スコア</div></a></li>
+						<li><a href="#"><div>競技・イベント</div></a></li>
+						<li><a href="#"><div>メディアパック</div></a></li>
+						<li><a href="#"><div>ゴルフスタイル</div></a></li>
+						<li><a href="#"><div>MY GDO</div></a></li>
+						<li><a href="#"><div>
+									コミュニティ<span class="x-small">(PC)</span>
+								</div></a></li>
+						<li><a href="#" target="_blank"><div>ゴルフテック</div></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+
+
+
+			<div class="row mt30 dis-none">
+				<div class="col-sm-12">
+					<dl class="res_seofooter_top">
+						<dt>ゴルフ場一覧</dt>
+						<dd>
+							<ul class="prefectures">
+								<li class="first"><a href="#">北海道・東北</a></li>
+								<li class="prefecturestop"><a href="#">北海道</a></li>
+								<li><a href="#">青森</a></li>
+								<li><a href="#">岩手</a></li>
+								<li><a href="#">宮城</a></li>
+								<li><a href="#">秋田</a></li>
+								<li><a href="#">山形</a></li>
+								<li><a href="#">福島</a></li>
+							</ul>
+							<ul class="prefectures">
+								<li class="first"><a href="#">関東・甲信越</a></li>
+								<li class="prefecturestop"><a href="#">茨城</a></li>
+								<li><a href="#">栃木</a></li>
+								<li><a href="#">群馬</a></li>
+								<li><a href="#">埼玉</a></li>
+								<li><a href="#">千葉</a></li>
+								<li><a href="#">東京</a></li>
+								<li><a href="#">神奈川</a></li>
+								<li><a href="#">山梨</a></li>
+								<li><a href="#">長野</a></li>
+								<li><a href="#">静岡</a></li>
+								<li><a href="#">新潟</a></li>
+							</ul>
+
+							<ul class="prefectures">
+								<li class="first"><a href="#">中部</a></li>
+								<li class="prefecturestop"><a href="#">愛知</a></li>
+								<li><a href="#">岐阜</a></li>
+								<li><a href="#">三重</a></li>
+								<li><a href="#">富山</a></li>
+								<li><a href="#">石川</a></li>
+								<li><a href="#">福井</a></li>
+							</ul>
+
+							<ul class="prefectures">
+								<li class="first"><a href="#">近畿</a></li>
+								<li class="prefecturestop"><a href="#">滋賀</a></li>
+								<li><a href="#">京都</a></li>
+								<li><a href="#">大阪</a></li>
+								<li><a href="#">兵庫</a></li>
+								<li><a href="#">奈良</a></li>
+								<li><a href="#">和歌山</a></li>
+							</ul>
+
+							<ul class="prefectures">
+								<li class="first"><a href="#">中国・四国</a></li>
+								<li class="prefecturestop"><a href="#">鳥取</a></li>
+								<li><a href="#">島根</a></li>
+								<li><a href="#">岡山</a></li>
+								<li><a href="#">広島</a></li>
+								<li><a href="#">山口</a></li>
+								<li><a href="#">徳島</a></li>
+								<li><a href="#">香川</a></li>
+								<li><a href="#">愛媛</a></li>
+								<li><a href="#">高知</a></li>
+							</ul>
+
+							<ul class="prefectures">
+								<li class="first"><a href="#">九州・沖縄</a></li>
+								<li class="prefecturestop"><a href="#">福岡</a></li>
+								<li><a href="#">佐賀</a></li>
+								<li><a href="#">長崎</a></li>
+								<li><a href="#">熊本</a></li>
+								<li><a href="#">大分</a></li>
+								<li><a href="#">宮崎</a></li>
+								<li><a href="#">鹿児島</a></li>
+								<li><a href="#">沖縄</a></li>
+							</ul>
+
+							<ul class="prefectures">
+								<li class="first"><a href="#">海外</a></li>
+								<li class="prefecturestop"><a href="#">ハワイ</a></li>
+								<li><a href="#">グアム</a></li>
+								<li><a href="#">サイパン・ロタ</a></li>
+								<li><a href="#">アジア</a></li>
+							</ul>
+						</dd>
+					</dl>
+				</div>
+			</div>
+			<span id="top-link-block" class="hidden flr page-top dis-none">
+				<a href="#top" class="well well-sm"
+				onclick="$('html,body').animate({scrollTop:0},'slow');return false;">
+					<i class="glyphicon glyphicon-chevron-up"></i>Back to Top
+			</a>
+			</span>
+
+		</div>
+
+
+	</footer>
+	<script type="text/javascript">
+		$('input[id=lefile]').change(function() {
+			$('#photoCover').val($(this).val());
+		});
+	</script>
+</body>
+
+</html>
