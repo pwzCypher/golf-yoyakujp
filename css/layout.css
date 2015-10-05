@@ -62,6 +62,7 @@
 .pl0 {	padding-left: 0px !important;}
 .pr0 {	padding-right: 0px !important;}
 .pl30{ padding-left:30px !important;}
+.noPad {	padding: 0!important;}
 /* -------------------------------------------------------------------- 
 /* Float
 -------------------------------------------------------------------- */
