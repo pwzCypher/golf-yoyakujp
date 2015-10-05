@@ -4,3 +4,37 @@
 	border:1px solid #cccccc;
 	
 }
+/*-----------
+----------------*/
+a.icon_link
+{
+	
+	color:blue;
+}
+
+.course_bg
+{
+background:#e9f8ff;
+}
+.icon dl
+{
+	margin:10px;
+}
+.courseConfirm td, .courseConfirm th {
+    border: 1px solid #000000;
+   line-height:3em;
+   vertical-align:middle;
+}
+.courseConfirm p
+{
+	 line-height:1.6em;
+	 margin:10px;
+}
+.bg-yellow
+{
+	background-color:yellow;
+}
+.bg-green
+{
+	background-color:green;
+}
