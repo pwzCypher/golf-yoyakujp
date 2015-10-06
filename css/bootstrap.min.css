@@ -7630,3 +7630,11 @@ button.close {
 		display: none !important
 	}
 }
+.bartitle_m {
+    font-size: 16px;
+    font-weight: bold;
+    border-left: 6px solid #446B92;
+    padding: 6px 10px;
+    width: 420px;
+    line-height: 1.1;
+}
