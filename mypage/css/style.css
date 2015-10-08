@@ -52,3 +52,34 @@ background:#e9f8ff;
 {
 	display:block;
 }
+.confrimtbl td,.confrimtbl th
+{
+	padding:0 1%;
+}
+.confrimtbl
+{
+	width:80%;
+	margin:0 auto;
+}
+.bg_pink
+{
+	background-color:rgb(255,0,102) !important;
+}
+.reservelist li
+{
+	display:block;
+}
+.pgNav li
+{
+	padding:0% 4%;
+	
+	text-decoration:underline;
+}
+.pgNav li a
+{
+	color:blue;
+}
+.pgNav li:first-child
+{
+	padding-left:0;
+}
