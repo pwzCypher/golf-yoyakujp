@@ -1,0 +1,53 @@
+#area_nav ul {
+	list-style: outside none none;
+}
+
+#search_main {
+	background-color: #2c2662;
+}
+
+@media ( min-width : 768px) {
+	.nav-tabs.nav-justified>li>a {
+		border-bottom: none !important;
+		border-radius: 4px 4px 0 0;
+	}
+}
+
+.calendar th {
+	background-color: #33b9ec;
+	color: #ffffff;
+	font-size: 112%;
+	
+}
+
+.calendar td {
+	background-color: #3f67bf;
+	color: #ffffff;
+	cursor: pointer;
+	font-weight: bold;
+	padding-bottom: 7px;
+	padding-top: 7px;
+	text-align: center;
+}
+.calendar td a{
+	
+	color:#ffffff;
+}
+.nav-calendar{
+	background-color: #3f67bf;
+	color:#ffffff;
+	
+}
+.nav-calendar li a
+{
+	color:#ffffff;
+	
+}
+.calendar td a.selected {
+    background-color: #f9474a;
+    color: #ffffff;
+}
+.nav>li>a:hover
+{
+	
+}
