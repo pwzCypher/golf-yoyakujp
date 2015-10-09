@@ -18,7 +18,7 @@
 .icon_link
 {
 	
-	color:blue;
+	color:blue !important;
 }
 
 .course_bg
@@ -82,4 +82,15 @@ background:#e9f8ff;
 .pgNav li:first-child
 {
 	padding-left:0;
+}
+.required {
+    color: #fff;
+    background: #c21010;
+    padding: 3px 5px;
+    line-height: 1;
+    margin-right: 3px;
+}
+.bartitle_m
+{
+	width:100% !important;
 }
