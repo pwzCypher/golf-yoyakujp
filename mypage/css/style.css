@@ -94,3 +94,11 @@ background:#e9f8ff;
 {
 	width:100% !important;
 }
+.bg-green
+{
+	background:#99ff99;
+}
+.borbot-white
+{
+    border-bottom: 2px solid #ffffff;
+}
