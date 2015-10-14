@@ -258,7 +258,7 @@ media
 		display: none;
 	}
 }
-@media screen and (min-width:979px) {
+@media screen and (min-width:768px) {
 	.pc-padding {
 		padding-top: 10%;
 	}
@@ -853,6 +853,7 @@ a {
 	}
 }
 
+
 @media screen and (max-width:980px) {
 	.visualNav {
 		width: 100%;
@@ -989,6 +990,15 @@ a {
 		list-style: none;
 		display: initial;
 	}
+	
+}
+@media screen and (min-width:981px)
+{
+.container{
+	width:980px;
+	
+	}
+	
 }
 
 @media screen and (max-width:768px) {
