@@ -4,14 +4,6 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
-html {
-	font-family: sans-serif;
-	font-family: "ＭＳ Ｐゴシック", Verdana, "ヒラギノ角ゴ Pro W3",
-		"Hiragino Kaku Gothic Pro", Osaka, "MS PGothic", "メイリオ", "Meiryo",
-		Sans-Serif;
-	-webkit-text-size-adjust: 100%;
-	-ms-text-size-adjust: 100%
-}
 
 body {
 	margin: 0
@@ -1372,9 +1364,9 @@ body {
 	font-family: "Meiryo", "ＭＳ Ｐゴシック", Verdana, "ヒラギノ角ゴ Pro W3",
 		"Hiragino Kaku Gothic Pro", Osaka, "MS PGothic", "メイリオ", "Meiryo",
 		Sans-Serif;
-	font-size: 14px;
+	font-size: 17px;
 	line-height: 1.42857143;
-	color: #333;
+	color: #000;
 	background-color: #fff;
 }
 
@@ -1385,7 +1377,7 @@ button, input, select, textarea {
 }
 
 a {
-	color: #333;
+	color: #000;
 	text-decoration: none
 }
 
@@ -4550,7 +4542,7 @@ border-bottom-right-radius
 .nav>li>a {
 	position: relative;
 	display: block;
-	padding: 10px 15px
+	
 }
 
 .nav>li>a:focus, .nav>li>a:hover {
