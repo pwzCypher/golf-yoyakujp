@@ -139,29 +139,27 @@
 
 	</div>
 	<article>
-	<div class="bodyIn pc">
-		<div class="container pc">
-
+	<div class="bodyIn home pc">
+		<div class="container pc pt20">
+         <div class="main_content">
 			<div class="col-sm-9">
 				<ul class="nav nav-tabs top-pill">
-					<li><a data-toggle="pill" href="#tab1">エリア。高速道路から絵検索</a></li>
+					<li class="active"><a data-toggle="pill" href="#tab1">エリア・高速道路から<span class="text-flowerpink">最安値</span>検索</a></li>
 					<li><a data-toggle="pill" href="#tab2">MYゴルフ場から検索</a></li>
 
 				</ul>
 
 				<div class="tab-content">
 					<div id="tab1" class="tab-pane fade in active">
-						<h3 class="center pt15">
-							<strong>複数のゴルフ場</strong>から案件を指定して<strong>最案値</strong>
-						</h3>
-
+						
+                     <div class="mr20 ml20">
 						<div class="row borderbot pb15 mb15">
-							<p>プレー日</p>
-							<div class="col-sm-5">
+							<p class="barTitle_black">プレー日</p>
+							<div class="col-sm-6 pl0 pr0">
 
 								<div class="search-box-date ">
 									<input type="text" class="monthpicker daypicker search-input"
-										name="month" id="month" /> から <select name="widthday"
+										name="month" id="month"  value="日付選択"/> から <select name="widthday"
 										class="widthday">
 										<option value="1" selected="selected">1</option>
 										<option value="2">2</option>
@@ -176,27 +174,33 @@
 										<option value="15">15</option>
 										<option value="20">20</option>
 										<option value="31">31</option>
-									</select> 日間
+									</select> 日分
 
 								</div>
 
 							</div>
-							<div class="col-sm-7">
-								<label class="radio-inline radio-date"><input
-									type="radio" name="optradio">全ての曜日</label> <label
-									class="radio-inline radio-date"><input type="radio"
-									name="optradio">土日税のみ</label> <label
-									class="radio-inline radio-date"><input type="radio"
-									name="optradio">平日のみ</label>
+							<div class="col-sm-6 date pl0 pr0">
+							<div class="day">
+							<input	type="radio" name="optradio" id="allday" />
+								<label class="radio-inline radio-date" for="allday"><span>全ての曜日</span></label> 
+								</div>
+								<div class="day">
+							<input	type="radio" name="optradio" id="sunday" />
+								<label class="radio-inline radio-date" for="sunday"><span>土日税のみ</span></label> 
+								</div>
+								<div class="day">
+							<input	type="radio" name="optradio" id="weekday" />
+								<label class="radio-inline radio-date" for="weekday"><span>平日のみ</span></label> 
+								</div>
 							</div>
 						</div>
 						<div class="row pb10 borderbot">
 
-							<div class="col-sm-6">
-								<p>エリアから</p>
-								<button type="button" class="btn btn-default "
+							<div class="col-sm-6 pr0 pl0">
+								<p class="barTitle_black">エリアから</p>
+								<button type="button" class="btn btn-default bg_gradient "
 									data-toggle="modal" data-target=".mymodal">
-									追加。変更<i class="glyphicon glyphicon-chevron-right"></i>
+									追加。変更<i class="glyphicon glyphicon-play"></i>
 								</button>
 								<span>地域や都道府県を選択できます</span>
 								<!-- Modal -->
@@ -518,11 +522,11 @@
 								</div>
 
 							</div>
-							<div class="col-sm-6">
-								<p>高速道路</p>
-								<button type="button" class="btn btn-default fll mr10"
+							<div class="col-sm-6 pr0 pl0">
+								<p class="barTitle_black">高速道路</p>
+								<button type="button" class="btn btn-default fll mr10 bg_gradient"
 									data-toggle="modal" data-target=".mymodal2">
-									追加。変更<i class="glyphicon glyphicon-chevron-right"></i>
+									追加。変更<i class="glyphicon glyphicon-play"></i>
 								</button>
 								<p class="fll">
 									高速道路:<span class="text-gold">未設定</span><br> IC:<span
@@ -625,7 +629,7 @@
 													</div>
 													<!-- .bggray -->
 													<p class="fall_under center">
-														該当コース <span class="rating">1,600</span><span
+														該当コース <span class="ratingprice text-red">1500</span><span
 															class="matter">件</span>
 													</p>
 
@@ -644,33 +648,116 @@
 							</div>
 
 						</div>
-						<div class="row pb10 pt10 mb30 borderbot">
-							<div class="col-sm-6">
-								<span class="fwbold">連続枠を指定：</span> <select name="consecutive"
-									style="">
-									<option></option>
-									<option value="2">2組以上</option>
-									<option value="3">3組以上</option>
-									<option value="4">4組以上</option>
-									<option value="5">5組以上</option>
-									<option value="6">6組以上</option>
-									<option value="7">7組以上</option>
-									<option value="8">8組以上</option>
-									<option value="9">9組以上</option>
-									<option value="10">10組以上</option>
-								</select>
+						<div class="row pb10 pt10 borderbot">
+							<div class="col-sm-6 pr0 pl0">
+							<p class="barTitle_black">料金・条件</p>
+							
+							
+							<div class="price_col">
+								 <select name="price" class="price">
+										<option value="1" selected="selected">指定なし</option>
+										<option value="2">指定なし</option>
+										
+									</select>円～
+
+								</div>
+							
+							<div  class="price_col" >
+								 <select name="price" class="price">
+										<option value="1" selected="selected">指定なし</option>
+										<option value="2">指定なし</option>
+										
+									</select>円
+
+								</div>
+							
 
 							</div>
-							<div class="col-sm-6">
-								<label class="checkbox-inline"><input type="checkbox" />昼食付</label>
-								<label class="checkbox-inline"><input type="checkbox" />キャディ付</label>
-								<label class="checkbox-inline"><input type="checkbox" />2サム保証</label>
+							<div class="row">
+							<p class="barTitle_black">プレースタイル</p>
+								<div class="col-sm-6 date pl0 pr0">
+							<div class="checkboxbg">
+							<input type="checkbox"  id="lunch">
+								<label  for="lunch"><span>昼食付き</span></label> 
+								</div>
+								<div class="checkboxbg">
+							<input type="checkbox"  id="wranty">
+								<label for="wranty"><span>2サム保証</span></label> 
+								</div>
+								<div class="checkboxbg">
+							<input type="checkbox"  id="caddy">
+								<label  for="caddy"><span>キャディ付き</span></label> 
+								</div>
+							</div>
 							</div>
 						</div>
-						<div class="row pb10 pt10 mb30 borderbot">
-							<div class="col-sm-6">
+						<div class="row pb10 pt10 borderbot">
+							<div class="col-sm-6 pr0 pl0">
+							<p class="barTitle_black">スタート時間</p>
+							<div class="col-sm-12 date pl0 pr0">
+							<div class="checkboxbg">
+							<input type="checkbox" id="sixTime">
+								<label for="sixTime"><span>6時台</span></label> 
+								</div>
+								<div class="checkboxbg">
+							<input type="checkbox" id="sevenTime">
+								<label for="sevenTime"><span>7時台</span></label> 
+								</div>
+								<div class="checkboxbg">
+							<input type="checkbox" id="eightTime">
+								<label for="eightTime"><span>8時台</span></label> 
+								</div>
+								</div>
+								<div class="col-sm-12 date pl0 pr0">
+								<div class="checkboxbg">
+							<input type="checkbox" id="nineTime">
+								<label for="nineTime"><span>9時台</span></label> 
+								</div>
+									
+								<div class="checkboxbg">
+							<input type="checkbox" id="tenTime">
+								<label for="tenTime"><span>10時台</span></label> 
+								</div>
+									<div class="checkboxbg">
+							<input type="checkbox" id="elevenTime">
+								<label for="elevenTime"><span>11時台～</span></label> 
+								</div>
+								</div>
+							</div>
+							
+							<div class="col-sm-6 pr0 pl0">
+							<p class="barTitle_black">連続枠を指定</p>
+							
+							
+							<div class="price_col">
+								 <select name="price" class="price">
+									<option selected> 指定なし</option>
+										<option value="2">2組以上</option>
+										<option value="3">3組以上</option>
+										<option value="4">4組以上</option>
+										<option value="5">5組以上</option>
+										<option value="6">6組以上</option>
+										<option value="7">7組以上</option>
+										<option value="8">8組以上</option>
+										<option value="9">9組以上</option>
+										<option value="10">10組以上</option>
+									
+									</select>
+
+								</div>
+						
+							
+
+							</div>
+						
+						</div>
+						</div>
+						
+						<div class="row">
+							<div class="col-sm-6 pr0 pl0">
+							<div class="search_wrapBtn">
 								<a href="" data-toggle="modal" data-target=".mymodal3"> <img
-									src="img/Button Add.png" alt="" class="img-responsive fll"
+									src="img/home/add_btn.png" alt="" class="img-responsive fll"
 									width="20"> こだわり条件を追加する
 								</a>
 								<div class="modal fade mymodal3" tabindex="-1" role="dialog"
@@ -885,11 +972,12 @@
 									</div>
 								</div>
 								<p class="fall_under">
-									該当コース <span class="rating">1,600</span><span class="matter">件</span>
+									該当コース <span class="ratingprice text-red">1500</span><span class="matter">件</span>
 								</p>
+								</div>
 							</div>
 							<div class="col-sm-6">
-								<button class="btn btn-danger btn-block center">空き枠検索</button>
+							<a href="#"><img src="img/home/search_btn.png" alt=""/></a>
 							</div>
 
 						</div>
@@ -1238,6 +1326,8 @@
 					</div>
 				</div>
 			</div>
+			</div>
+			<!-- main content -->
 
 			<aside>
 				<div class="pc">
@@ -2011,7 +2101,7 @@
 					</div>
 					<div class="col-xs-6">
 						<p class="btn btn-block center fw-bold center bg-grey">
-							該当コース <span class="rating">1,600</span><span class="matter">件</span>
+							該当コース <span class="ratingprice text-red">1500</span><span class="matter">件</span>
 						</p>
 					</div>
 				</div>

@@ -236,6 +236,27 @@ home page
 	
 	background:url(../img/home/bg.jpg)no-repeat top center;
 }
+.tab-content
+{
+	
+	background:url(../img/home/bg_tab.jpg)no-repeat top center;
+}
+.barTitle_black{
+    font-size: 18px;
+    font-weight: bold;
+    border-left: 5px solid #000;
+    margin: 15px 0px 8px 0;
+    padding-left:15px;
+    line-height: 1.1;
+}
+.bg_gradient
+{
+background:url(../img/home/gradient_bg.png) !important;
+}
+.price_col
+{
+	display:inline-block;
+}
 /*
 media 
 */
@@ -1567,14 +1588,129 @@ li>a>div {
 *
 *index tab
 ******************/
-
-.search-input
-{
-width:45%;
+.home .search-input {
+    display: inline-block;
+    margin-bottom: 0;
+    width: 130px;
+    padding-left: 10px;
+    height: 40px;
+    text-align: left;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border-radius: 4px;
+    border: 1px solid #a0a0a0;
+    background: url(../img/home/gold_down_arrow.png) no-repeat;
+    background-position: 105px;
 }
+.home .price {
+       margin-bottom: 0;
+    width: 100px;
+    padding-left: 10px;
+    height: 40px;
+    text-align: left;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border-radius: 4px;
+    border: 1px solid #a0a0a0;
+    background: url(../img/home/gold_down_arrow.png) no-repeat;
+    background-position: 83px;
+    -webkit-appearance: none;
+    background-color: #fff;
+    margin-right: 7px;
+}
+.home .widthday 
+{
+	margin-bottom: 0;
+    width:45px;
+    padding-left:8px;
+	height:40px;
+	text-align: left;
+	white-space: nowrap;
+	vertical-align: middle;
+	-ms-touch-action: manipulation;
+	touch-action: manipulation;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	border-radius: 4px;
+	border: 1px solid #a0a0a0;
+background:url(../img/home/gold_down_arrow.png) no-repeat;
+background-position: 29px;
+    -webkit-appearance: none;
+}
+.day input
+{
+display: none;
+}
+.day
+{
+	display:inline;
+	
+}
+
+.day span {
+   background:url(../img/home/radio_btn.png) no-repeat;
+    margin-bottom: 10px;
+  padding-left: 27px;
+    background-position-y: 1px;
+  
+}
+
+.day input:checked + label span {
+     background:url(../img/home/radio_check.png) no-repeat;
+}
+
+.search_wrapBtn
+{
+	width:236px;
+	margin-left:94px;
+}
+
+.checkboxbg input
+{
+display: none;
+}
+.checkboxbg
+{
+	display:inline;
+	width:136px;
+	float: left;
+	
+}
+
+.checkboxbg span {
+   background:url(../img/home/check_box.png) no-repeat;
+    margin-bottom: 10px;
+  padding-left: 27px;
+  font-weight:normal;
+    background-position-y: 1px;
+  
+}
+
+.checkboxbg input:checked + label span {
+     background:url(../img/home/check_box_on.png) no-repeat;
+}
+
+
 .borderbot
 {
-	border-bottom:1px solid #ebebeb;
+	border-bottom:1px dotted #000000;
 }
 .modal-body>.inner
 {
@@ -2184,4 +2320,10 @@ width:5%;
 .bg-black
 {
 	background:#000000;
+}
+.ratingprice
+{
+	font-family:"Time News Roman";
+	font-weight:bold;
+	font-size:38px;
 }
