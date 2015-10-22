@@ -1384,7 +1384,7 @@ a {
 }
 
 a:focus, a:hover {
-	color: #23527c;
+
 	
 }
 
@@ -3306,7 +3306,7 @@ select[multiple].input-lg, textarea.input-lg {
 
 .btn {
 	display: inline-block;
-	padding: 6px 12px;
+	padding: 8px 23px;
 	margin-bottom: 0;
 	font-size: 14px;
 	font-weight: 400;
@@ -3324,6 +3324,25 @@ select[multiple].input-lg, textarea.input-lg {
 	background-image: none;
 	border: 1px solid transparent;
 	border-radius: 4px
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 .btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus,
@@ -4583,7 +4602,7 @@ border-bottom-right-radius
     margin-bottom: -1px;
     font-size: 20px;
     background: #000;
-    width: 430px;
+    width: 443px;
     text-align: center;
     
 }
