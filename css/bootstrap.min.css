@@ -4589,7 +4589,7 @@ border-bottom-right-radius
 }
 
 .nav-tabs>li>a {
-	margin-right: 2px;
+	
 	line-height: 1.42857143;
 	padding: 10px 0;
 	color:#fff;
@@ -4604,7 +4604,7 @@ opacity: 1;
 	color: #000;
 	cursor: default;
 	background-color: #fff;
-	opacity: 1;
+	opacity: 1 !important;
 }
 
 .nav-tabs.nav-justified {

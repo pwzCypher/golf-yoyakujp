@@ -277,6 +277,19 @@ input#search_c_name_submit2 {
     border: 0;
     text-indent: 9999px;
 }
+.br_dotted
+{
+	border-left: 1px dotted #000;
+	padding-left: 20px !important;
+}
+.reco_ttl ul {
+    margin-bottom: 8px;
+}
+
+div#reco {
+    width: 265px;
+    float: left;
+}
 /*
 media 
 */
@@ -1709,7 +1722,7 @@ display: none;
 .checkboxbg
 {
 	display:inline;
-	width:136px;
+	width:130px;
 	float: left;
 	
 }
@@ -2070,44 +2083,55 @@ dd.golf_row1,dd.golf_row2,dd.golf_row3
     font-size: 15px;
     color: #fff;
 }
-#recomme-container-hot .recomme-box02 {
-    margin: 0 0 10px 0;
-}
-
-#recomme-container-hot .crs-box .photo {
-    float: left;
-    width: 85px;
-    display: inline;
-    margin-bottom: 10px;
-}
-#recomme-container-hot .crs-box .txt {
-    float: right;
-    width: 175px;
-    display: inline;
-    /* margin: 0 7px; */
-    font-size: 12px;
-    line-height: 1.2;
-}
-#recomme-container-hot h3 {
-    margin: 0 0 5px 0;
-    padding: 0 0 0 13px;
-    background: url(http://image.gora.golf.rakuten.co.jp/img/top/icon_arrow_disc.gif) 0 4px no-repeat;
-    font-size: 12px;
-    line-height: 1.2;
-}
-#recomme-container-hot .crs-box .txt p {
-    margin: 0;
-}
-#recomme-container-hot .crs-box {
-    float: left;
+#reco .reco_box {
+   
     width: 265px;
     overflow: hidden;
-   }
-#recomme-container-hot .crs-box .photo {
+}
+
+#reco .crs-box .photo {
     float: left;
     width: 85px;
     display: inline;
     margin-bottom: 10px;
+}
+#reco .crs-box .txt {
+      float: left;
+      width: 125px;
+      font-size: 13px;
+      margin-top: 4px;
+      margin-left: 6px;
+}
+#reco h3 {
+     font-size: 15px;
+     letter-spacing: 1px;
+}
+#reco .crs-box .txt dt
+{
+	font-weight:normal;
+}
+#reco .crs-box .txt .text-flowerpink
+{
+	font-size:15px;
+	line-height: 1em;
+}
+#reco .crs-box .txt dd  img
+{
+	    vertical-align: top;
+	    margin-left: 5px;
+}
+#reco .crs-box .txt p {
+    margin: 0;
+}
+#reco .crs-box {
+   margin:0 10px;
+   }
+#reco .crs-box .photo {
+    float: left;
+    width: 85px;
+    display: inline;
+    margin-bottom: 10px;
+    margin-top: 8px;
 }
 .footer_nav {
     border-top: 1px solid #e5e5e5;
