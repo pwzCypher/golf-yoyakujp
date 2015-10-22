@@ -423,14 +423,14 @@ ul.prefectures li {
     font-size: 15px;
     line-height: 13px;
     white-space: nowrap;
-    border-left: solid 1px #cccccc;
+    border-right:solid 1px #000000;
     text-align: center;
     min-width: 80px;
 }
 ul.prefectures li:first-child
 {
 	text-align:left;
-	border-none
+	border:none;
 }
 
 ul.prefectures {
@@ -440,8 +440,12 @@ ul.prefectures {
 }
 
 .res_seofooter_top ul {
-	margin-bottom: 0;
-	padding-bottom: 0;
+    margin-bottom: 20px;
+    padding-bottom: 0;
+}
+.res_seofooter_top ul:last-child {
+    margin-bottom:0;
+    padding-bottom: 0;
 }
 
 ul.prefectures li.first {
