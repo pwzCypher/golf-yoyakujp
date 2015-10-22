@@ -406,25 +406,31 @@ a : active {
 }
 
 .res_seofooter_top dd {
-	width: 80%;
+	width: 86%;
 	margin: 0;
 	float: right;
 }
 
 .res_seofooter_top dt {
-	width: 20%;
+
 	float: left;
 }
 
 ul.prefectures li {
-	margin: 0 0 4px -5px;
-	padding: 4px 18px 4px 14px;
-	float: left;
-	font-size: 12px;
-	line-height: 13px;
-	white-space: nowrap;
-	border-left: solid 1px #cccccc;
-	text-align: left;
+       margin: 0 0 4px -5px;
+    padding: 8px 20px 5px;
+    float: left;
+    font-size: 15px;
+    line-height: 13px;
+    white-space: nowrap;
+    border-left: solid 1px #cccccc;
+    text-align: center;
+    min-width: 80px;
+}
+ul.prefectures li:first-child
+{
+	text-align:left;
+	border-none
 }
 
 ul.prefectures {
@@ -442,12 +448,21 @@ ul.prefectures li.first {
 	margin: 0 0 4px -5px;
 	padding: 4px 22px;
 	width: 15%;
-	background: url(../golf_jp/mrk_seofooter_circle.gif) 3px 3px no-repeat;
 	float: left;
-	font-size: 12px;
+	font-size: 15px;
 	line-height: 13px;
 	font-weight: bold;
 	white-space: nowrap;
+	margin-right:10px;
+	
+}
+ul.prefectures li.first a
+{
+	color:#4f0228 !important;
+	background: url(../common/img/header/right-arrow.png) no-repeat center
+ left;
+
+    padding:0 20px;
 }
 
 .fullborder {
@@ -2114,11 +2129,6 @@ dd.golf_row1, dd.golf_row2, dd.golf_row3 {
 	margin-bottom: 10px;
 }
 
-.footer_nav {
-	border-top: 1px solid #e5e5e5;
-	padding: 13px 0;
-	border-bottom: 1px solid #e5e5e5;
-}
 
 .footer_nav>div {
 	margin: 0 auto;
@@ -2430,3 +2440,25 @@ upload button
 	font-size:38px;
 }
 
+.footer-list li
+{
+	margin-top:20px;
+	font-size:15px;
+	padding-left:5px;
+	padding-right:10px;
+	border-right:solid 1px #fff;
+	text-align:center;
+}
+.footer-list li:last-child
+{
+ border:none;
+}
+.footer-list li a 
+{
+	color:#fff;
+	
+}
+.bg-purple
+{
+back-ground:#4f0228;
+}
