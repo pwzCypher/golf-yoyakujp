@@ -137,1107 +137,1376 @@
 			</ul>
 		</div>
 
+
 	</div>
 	<article>
-		<div class="bodyIn pc">
-			<div class="container pc">
+		<div class="bodyIn home pc">
+			<div class="container pc pt20">
+				<div class="main_content">
+					<div class="col-sm-9">
+						<ul class="nav nav-tabs top-pill">
+							<li class="active"><a data-toggle="pill" href="#tab1">エリア・高速道路から<span
+									class="text-flowerpink">最安値</span>検索
+							</a></li>
+							<li class="tab_sp">&nbsp;</li>
+							<li><a data-toggle="pill" href="#tab2">MYゴルフ場から検索</a></li>
 
-				<div class="col-sm-9">
-					<ul class="nav nav-tabs top-pill">
-						<li><a data-toggle="pill" href="#tab1">エリア。高速道路から絵検索</a></li>
-						<li><a data-toggle="pill" href="#tab2">MYゴルフ場から検索</a></li>
+						</ul>
 
-					</ul>
+						<div class="tab-content">
+							<div id="tab1" class="tab-pane fade in active">
 
-					<div class="tab-content">
-						<div id="tab1" class="tab-pane fade in active">
-							<h3 class="center pt15">
-								<strong>複数のゴルフ場</strong>から案件を指定して<strong>最案値</strong>
-							</h3>
+								<div class="mr20 ml20">
+									<div class="row borderbot pb15 mb15">
+										<p class="barTitle_black">プレー日</p>
+										<div class="col-sm-6 pl0 pr0">
 
-							<div class="row borderbot pb15 mb15">
-								<p>プレー日</p>
-								<div class="col-sm-5">
+											<div class="search-box-date ">
+												<input type="text"
+													class="monthpicker daypicker search-input" name="month"
+													id="month" value="日付選択" /> から <select name="widthday"
+													class="widthday">
+													<option value="1" selected="selected">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+													<option value="6">6</option>
+													<option value="7">7</option>
+													<option value="8">8</option>
+													<option value="9">9</option>
+													<option value="10">10</option>
+													<option value="15">15</option>
+													<option value="20">20</option>
+													<option value="31">31</option>
+												</select> 日分
 
-									<div class="search-box-date ">
-										<input type="text" class="monthpicker daypicker search-input"
-											name="month" id="month" /> から <select name="widthday"
-											class="widthday">
-											<option value="1" selected="selected">1</option>
-											<option value="2">2</option>
-											<option value="3">3</option>
-											<option value="4">4</option>
-											<option value="5">5</option>
-											<option value="6">6</option>
-											<option value="7">7</option>
-											<option value="8">8</option>
-											<option value="9">9</option>
-											<option value="10">10</option>
-											<option value="15">15</option>
-											<option value="20">20</option>
-											<option value="31">31</option>
-										</select> 日間
+											</div>
 
+										</div>
+										<div class="col-sm-6 date pl0 pr0">
+											<div class="day">
+												<input type="radio" name="optradio" id="allday" /> <label
+													class="radio-inline radio-date" for="allday"><span>全ての曜日</span></label>
+											</div>
+											<div class="day">
+												<input type="radio" name="optradio" id="sunday" /> <label
+													class="radio-inline radio-date" for="sunday"><span>土日税のみ</span></label>
+											</div>
+											<div class="day">
+												<input type="radio" name="optradio" id="weekday" /> <label
+													class="radio-inline radio-date" for="weekday"><span>平日のみ</span></label>
+											</div>
+										</div>
 									</div>
+									<div class="row pb10 borderbot">
 
-								</div>
-								<div class="col-sm-7">
-									<label class="radio-inline radio-date"><input
-										type="radio" name="optradio">全ての曜日</label> <label
-										class="radio-inline radio-date"><input type="radio"
-										name="optradio">土日税のみ</label> <label
-										class="radio-inline radio-date"><input type="radio"
-										name="optradio">平日のみ</label>
-								</div>
-							</div>
-							<div class="row pb10 borderbot">
+										<div class="col-sm-6 pr0 pl0">
+											<p class="barTitle_black">エリアから</p>
+											<button type="button" class="btn btn-default bg_gradient "
+												data-toggle="modal" data-target=".mymodal">
+												追加。変更<i class="glyphicon glyphicon-play"></i>
+											</button>
+											<span>地域や都道府県を選択できます</span>
+											<!-- Modal -->
+											<div class="modal fade mymodal" tabindex="-1" role="dialog"
+												aria-labelledby="myModalLabel">
+												<div class="modal-dialog" role="document">
+													<div class="modal-content">
 
-								<div class="col-sm-6">
-									<p>エリアから</p>
-									<button type="button" class="btn btn-default "
-										data-toggle="modal" data-target=".mymodal">
-										追加。変更<i class="glyphicon glyphicon-chevron-right"></i>
-									</button>
-									<span>地域や都道府県を選択できます</span>
-									<!-- Modal -->
-									<div class="modal fade mymodal" tabindex="-1" role="dialog"
-										aria-labelledby="myModalLabel">
-										<div class="modal-dialog" role="document">
-											<div class="modal-content">
+														<div class="modal-body">
+															<div class="inner">
+																<div class="bggray">
+																	<div class="areacheckbox">
+																		<dl>
+																			<dt>
+																				<label for="id_region_0"><input
+																					type="checkbox" id="id_region_0" value="北海道・東北"
+																					name="region"> 北海道・東北</label>
+																			</dt>
+																			<dd>
+																				<label for="id_region_1"><input
+																					type="checkbox" id="id_region_1" value="北海道"
+																					name="region"> 北海道</label>
+																			</dd>
+																			<dd>
+																				<label for="id_region_2"><input
+																					type="checkbox" id="id_region_2" value="青森県"
+																					name="region"> 青森県</label>
+																			</dd>
+																			<dd>
+																				<label for="id_region_3"><input
+																					type="checkbox" id="id_region_3" value="岩手県"
+																					name="region"> 岩手県</label>
+																			</dd>
+																			<dd>
+																				<label for="id_region_4"><input
+																					type="checkbox" id="id_region_4" value="宮城県"
+																					name="region"> 宮城県</label>
+																			</dd>
+																			<dd>
+																				<label for="id_region_5"><input
+																					type="checkbox" id="id_region_5" value="秋田県"
+																					name="region"> 秋田県</label>
+																			</dd>
+																			<dd>
+																				<label for="id_region_6"><input
+																					type="checkbox" id="id_region_6" value="山形県"
+																					name="region"> 山形県</label>
+																			</dd>
+																			<dd>
+																				<label for="id_region_7"><input
+																					type="checkbox" id="id_region_7" value="福島県"
+																					name="region"> 福島県</label>
+																			</dd>
+																		</dl>
+																		<dl>
+																			<dt>
+																				<label for="id_region_8"><input
+																					type="checkbox" id="id_region_8" value="関東・甲信越"
+																					name="region"> 関東・甲信越</label>
+																			</dt>
+																			<dd>
+																				<label for="id_region_9"><input
+																					type="checkbox" id="id_region_9" value="茨城県"
+																					name="region"> 茨城県</label>
+																			</dd>
+																			<dd>
+																				<label for="id_region_10"><input
+																					type="checkbox" id="id_region_10" value="栃木県"
+																					name="region"> 栃木県</label>
+																			</dd>
+																			<dd>
+																				<label for="id_region_11"><input
+																					type="checkbox" id="id_region_11" value="群馬県"
+																					name="region"> 群馬県</label>
+																			</dd>
+																			<dd>
+																				<label for="id_region_12"><input
+																					type="checkbox" id="id_region_12" value="埼玉県"
+																					name="region"> 埼玉県</label>
+																			</dd>
+																			<dd>
+																				<label for="id_region_13"><input
+																					type="checkbox" id="id_region_13" value="千葉県"
+																					name="region"> 千葉県</label>
+																			</dd>
+																			<dd>
+																				<label for="id_region_14"><input
+																					type="checkbox" id="id_region_14" value="東京都"
+																					name="region"> 東京都</label>
+																			</dd>
+																			<dd>
+																				<label for="id_region_15"><input
+																					type="checkbox" id="id_region_15" value="神奈川県"
+																					name="region"> 神奈川県</label>
+																			</dd>
+																			<dd>
+																				<label for="id_region_16"><input
+																					type="checkbox" id="id_region_16" value="山梨県"
+																					name="region"> 山梨県</label>
+																			</dd>
+																			<dd>
+																				<label for="id_region_17"><input
+																					type="checkbox" id="id_region_17" value="静岡県"
+																					name="region"> 静岡県</label>
+																			</dd>
+																			<dd>
+																				<label for="id_region_18"><input
+																					type="checkbox" id="id_region_18" value="新潟県"
+																					name="region"> 新潟県</label>
+																			</dd>
+																			<dd>
+																				<label for="id_region_19"><input
+																					type="checkbox" id="id_region_19" value="長野県"
+																					name="region"> 長野県</label>
+																			</dd>
+																		</dl>
+																		<dl>
+																			<dt>
+																				<label for="id_region_20"><input
+																					type="checkbox" id="id_region_20" value="中部"
+																					name="region"> 中部</label>
+																			</dt>
+																			<dd>
+																				<label for="id_region_21"><input
+																					type="checkbox" id="id_region_21" value="愛知県"
+																					name="region"> 愛知県</label>
+																			</dd>
+																			<dd>
+																				<label for="id_region_22"><input
+																					type="checkbox" id="id_region_22" value="岐阜県"
+																					name="region"> 岐阜県</label>
+																			</dd>
+																			<dd>
+																				<label for="id_region_23"><input
+																					type="checkbox" id="id_region_23" value="富山県"
+																					name="region"> 富山県</label>
+																			</dd>
+																			<dd>
+																				<label for="id_region_24"><input
+																					type="checkbox" id="id_region_24" value="石川県"
+																					name="region"> 石川県</label>
+																			</dd>
+																			<dd>
+																				<label for="id_region_25"><input
+																					type="checkbox" id="id_region_25" value="福井県"
+																					name="region"> 福井県</label>
+																			</dd>
+																			<dd>
+																				<label for="id_region_26"><input
+																					type="checkbox" id="id_region_26" value="三重県"
+																					name="region"> 三重県</label>
+																			</dd>
+																		</dl>
+																	</div>
+																	<div class="areacheckbox">
+																		<dl>
+																			<dt>
+																				<label for="id_region_27"><input
+																					type="checkbox" id="id_region_27" value="近畿"
+																					name="region"> 近畿</label>
+																			</dt>
+																			<dd>
+																				<label for="id_region_28"><input
+																					type="checkbox" id="id_region_28" value="滋賀県"
+																					name="region"> 滋賀県</label>
+																			</dd>
+																			<dd>
+																				<label for="id_region_29"><input
+																					type="checkbox" id="id_region_29" value="京都府"
+																					name="region"> 京都府</label>
+																			</dd>
+																			<dd>
+																				<label for="id_region_30"><input
+																					type="checkbox" id="id_region_30" value="大阪府"
+																					name="region"> 大阪府</label>
+																			</dd>
+																			<dd>
+																				<label for="id_region_31"><input
+																					type="checkbox" id="id_region_31" value="兵庫県"
+																					name="region"> 兵庫県</label>
+																			</dd>
+																			<dd>
+																				<label for="id_region_32"><input
+																					type="checkbox" id="id_region_32" value="奈良県"
+																					name="region"> 奈良県</label>
+																			</dd>
+																			<dd>
+																				<label for="id_region_33"><input
+																					type="checkbox" id="id_region_33" value="和歌山県"
+																					name="region"> 和歌山県</label>
+																			</dd>
+																		</dl>
+																		<dl>
+																			<dt>
+																				<label for="id_region_34"><input
+																					type="checkbox" id="id_region_34" value="中国・四国"
+																					name="region"> 中国・四国</label>
+																			</dt>
+																			<dd>
+																				<label for="id_region_35"><input
+																					type="checkbox" id="id_region_35" value="鳥取県"
+																					name="region"> 鳥取県</label>
+																			</dd>
+																			<dd>
+																				<label for="id_region_36"><input
+																					type="checkbox" id="id_region_36" value="島根県"
+																					name="region"> 島根県</label>
+																			</dd>
+																			<dd>
+																				<label for="id_region_37"><input
+																					type="checkbox" id="id_region_37" value="岡山県"
+																					name="region"> 岡山県</label>
+																			</dd>
+																			<dd>
+																				<label for="id_region_38"><input
+																					type="checkbox" id="id_region_38" value="広島県"
+																					name="region"> 広島県</label>
+																			</dd>
+																			<dd>
+																				<label for="id_region_39"><input
+																					type="checkbox" id="id_region_39" value="山口県"
+																					name="region"> 山口県</label>
+																			</dd>
+																			<dd>
+																				<label for="id_region_40"><input
+																					type="checkbox" id="id_region_40" value="徳島県"
+																					name="region"> 徳島県</label>
+																			</dd>
+																			<dd>
+																				<label for="id_region_41"><input
+																					type="checkbox" id="id_region_41" value="香川県"
+																					name="region"> 香川県</label>
+																			</dd>
+																			<dd>
+																				<label for="id_region_42"><input
+																					type="checkbox" id="id_region_42" value="愛媛県"
+																					name="region"> 愛媛県</label>
+																			</dd>
+																			<dd>
+																				<label for="id_region_43"><input
+																					type="checkbox" id="id_region_43" value="高知県"
+																					name="region"> 高知県</label>
+																			</dd>
+																		</dl>
+																		<dl>
+																			<dt>
+																				<label for="id_region_44"><input
+																					type="checkbox" id="id_region_44" value="九州・沖縄"
+																					name="region"> 九州・沖縄</label>
+																			</dt>
+																			<dd>
+																				<label for="id_region_45"><input
+																					type="checkbox" id="id_region_45" value="福岡県"
+																					name="region"> 福岡県</label>
+																			</dd>
+																			<dd>
+																				<label for="id_region_46"><input
+																					type="checkbox" id="id_region_46" value="佐賀県"
+																					name="region"> 佐賀県</label>
+																			</dd>
+																			<dd>
+																				<label for="id_region_47"><input
+																					type="checkbox" id="id_region_47" value="長崎県"
+																					name="region"> 長崎県</label>
+																			</dd>
+																			<dd>
+																				<label for="id_region_48"><input
+																					type="checkbox" id="id_region_48" value="熊本県"
+																					name="region"> 熊本県</label>
+																			</dd>
+																			<dd>
+																				<label for="id_region_49"><input
+																					type="checkbox" id="id_region_49" value="大分県"
+																					name="region"> 大分県</label>
+																			</dd>
+																			<dd>
+																				<label for="id_region_50"><input
+																					type="checkbox" id="id_region_50" value="宮崎県"
+																					name="region"> 宮崎県</label>
+																			</dd>
+																			<dd>
+																				<label for="id_region_51"><input
+																					type="checkbox" id="id_region_51" value="鹿児島県"
+																					name="region"> 鹿児島県</label>
+																			</dd>
+																			<dd>
+																				<label for="id_region_52"><input
+																					type="checkbox" id="id_region_52" value="沖縄県"
+																					name="region"> 沖縄県</label>
+																			</dd>
+																		</dl>
+																	</div>
+																	<div class="areacheckbox">
+																		<dl>
+																			<dt>
+																				<label for="id_region_53"><input
+																					type="checkbox" id="id_region_53" value="海外"
+																					name="region"> 海外</label>
+																			</dt>
+																		</dl>
+																	</div>
+																</div>
+																<!-- .bggray -->
+																<p class="fall_under center">
+																	該当コース <span class="rating">1,599</span><span
+																		class="matter">件</span>
+																</p>
 
-												<div class="modal-body">
-													<div class="inner">
-														<div class="bggray">
-															<div class="areacheckbox">
-																<dl>
-																	<dt>
-																		<label for="id_region_0"><input
-																			type="checkbox" id="id_region_0" value="北海道・東北"
-																			name="region"> 北海道・東北</label>
-																	</dt>
-																	<dd>
-																		<label for="id_region_1"><input
-																			type="checkbox" id="id_region_1" value="北海道"
-																			name="region"> 北海道</label>
-																	</dd>
-																	<dd>
-																		<label for="id_region_2"><input
-																			type="checkbox" id="id_region_2" value="青森県"
-																			name="region"> 青森県</label>
-																	</dd>
-																	<dd>
-																		<label for="id_region_3"><input
-																			type="checkbox" id="id_region_3" value="岩手県"
-																			name="region"> 岩手県</label>
-																	</dd>
-																	<dd>
-																		<label for="id_region_4"><input
-																			type="checkbox" id="id_region_4" value="宮城県"
-																			name="region"> 宮城県</label>
-																	</dd>
-																	<dd>
-																		<label for="id_region_5"><input
-																			type="checkbox" id="id_region_5" value="秋田県"
-																			name="region"> 秋田県</label>
-																	</dd>
-																	<dd>
-																		<label for="id_region_6"><input
-																			type="checkbox" id="id_region_6" value="山形県"
-																			name="region"> 山形県</label>
-																	</dd>
-																	<dd>
-																		<label for="id_region_7"><input
-																			type="checkbox" id="id_region_7" value="福島県"
-																			name="region"> 福島県</label>
-																	</dd>
-																</dl>
-																<dl>
-																	<dt>
-																		<label for="id_region_8"><input
-																			type="checkbox" id="id_region_8" value="関東・甲信越"
-																			name="region"> 関東・甲信越</label>
-																	</dt>
-																	<dd>
-																		<label for="id_region_9"><input
-																			type="checkbox" id="id_region_9" value="茨城県"
-																			name="region"> 茨城県</label>
-																	</dd>
-																	<dd>
-																		<label for="id_region_10"><input
-																			type="checkbox" id="id_region_10" value="栃木県"
-																			name="region"> 栃木県</label>
-																	</dd>
-																	<dd>
-																		<label for="id_region_11"><input
-																			type="checkbox" id="id_region_11" value="群馬県"
-																			name="region"> 群馬県</label>
-																	</dd>
-																	<dd>
-																		<label for="id_region_12"><input
-																			type="checkbox" id="id_region_12" value="埼玉県"
-																			name="region"> 埼玉県</label>
-																	</dd>
-																	<dd>
-																		<label for="id_region_13"><input
-																			type="checkbox" id="id_region_13" value="千葉県"
-																			name="region"> 千葉県</label>
-																	</dd>
-																	<dd>
-																		<label for="id_region_14"><input
-																			type="checkbox" id="id_region_14" value="東京都"
-																			name="region"> 東京都</label>
-																	</dd>
-																	<dd>
-																		<label for="id_region_15"><input
-																			type="checkbox" id="id_region_15" value="神奈川県"
-																			name="region"> 神奈川県</label>
-																	</dd>
-																	<dd>
-																		<label for="id_region_16"><input
-																			type="checkbox" id="id_region_16" value="山梨県"
-																			name="region"> 山梨県</label>
-																	</dd>
-																	<dd>
-																		<label for="id_region_17"><input
-																			type="checkbox" id="id_region_17" value="静岡県"
-																			name="region"> 静岡県</label>
-																	</dd>
-																	<dd>
-																		<label for="id_region_18"><input
-																			type="checkbox" id="id_region_18" value="新潟県"
-																			name="region"> 新潟県</label>
-																	</dd>
-																	<dd>
-																		<label for="id_region_19"><input
-																			type="checkbox" id="id_region_19" value="長野県"
-																			name="region"> 長野県</label>
-																	</dd>
-																</dl>
-																<dl>
-																	<dt>
-																		<label for="id_region_20"><input
-																			type="checkbox" id="id_region_20" value="中部"
-																			name="region"> 中部</label>
-																	</dt>
-																	<dd>
-																		<label for="id_region_21"><input
-																			type="checkbox" id="id_region_21" value="愛知県"
-																			name="region"> 愛知県</label>
-																	</dd>
-																	<dd>
-																		<label for="id_region_22"><input
-																			type="checkbox" id="id_region_22" value="岐阜県"
-																			name="region"> 岐阜県</label>
-																	</dd>
-																	<dd>
-																		<label for="id_region_23"><input
-																			type="checkbox" id="id_region_23" value="富山県"
-																			name="region"> 富山県</label>
-																	</dd>
-																	<dd>
-																		<label for="id_region_24"><input
-																			type="checkbox" id="id_region_24" value="石川県"
-																			name="region"> 石川県</label>
-																	</dd>
-																	<dd>
-																		<label for="id_region_25"><input
-																			type="checkbox" id="id_region_25" value="福井県"
-																			name="region"> 福井県</label>
-																	</dd>
-																	<dd>
-																		<label for="id_region_26"><input
-																			type="checkbox" id="id_region_26" value="三重県"
-																			name="region"> 三重県</label>
-																	</dd>
-																</dl>
-															</div>
-															<div class="areacheckbox">
-																<dl>
-																	<dt>
-																		<label for="id_region_27"><input
-																			type="checkbox" id="id_region_27" value="近畿"
-																			name="region"> 近畿</label>
-																	</dt>
-																	<dd>
-																		<label for="id_region_28"><input
-																			type="checkbox" id="id_region_28" value="滋賀県"
-																			name="region"> 滋賀県</label>
-																	</dd>
-																	<dd>
-																		<label for="id_region_29"><input
-																			type="checkbox" id="id_region_29" value="京都府"
-																			name="region"> 京都府</label>
-																	</dd>
-																	<dd>
-																		<label for="id_region_30"><input
-																			type="checkbox" id="id_region_30" value="大阪府"
-																			name="region"> 大阪府</label>
-																	</dd>
-																	<dd>
-																		<label for="id_region_31"><input
-																			type="checkbox" id="id_region_31" value="兵庫県"
-																			name="region"> 兵庫県</label>
-																	</dd>
-																	<dd>
-																		<label for="id_region_32"><input
-																			type="checkbox" id="id_region_32" value="奈良県"
-																			name="region"> 奈良県</label>
-																	</dd>
-																	<dd>
-																		<label for="id_region_33"><input
-																			type="checkbox" id="id_region_33" value="和歌山県"
-																			name="region"> 和歌山県</label>
-																	</dd>
-																</dl>
-																<dl>
-																	<dt>
-																		<label for="id_region_34"><input
-																			type="checkbox" id="id_region_34" value="中国・四国"
-																			name="region"> 中国・四国</label>
-																	</dt>
-																	<dd>
-																		<label for="id_region_35"><input
-																			type="checkbox" id="id_region_35" value="鳥取県"
-																			name="region"> 鳥取県</label>
-																	</dd>
-																	<dd>
-																		<label for="id_region_36"><input
-																			type="checkbox" id="id_region_36" value="島根県"
-																			name="region"> 島根県</label>
-																	</dd>
-																	<dd>
-																		<label for="id_region_37"><input
-																			type="checkbox" id="id_region_37" value="岡山県"
-																			name="region"> 岡山県</label>
-																	</dd>
-																	<dd>
-																		<label for="id_region_38"><input
-																			type="checkbox" id="id_region_38" value="広島県"
-																			name="region"> 広島県</label>
-																	</dd>
-																	<dd>
-																		<label for="id_region_39"><input
-																			type="checkbox" id="id_region_39" value="山口県"
-																			name="region"> 山口県</label>
-																	</dd>
-																	<dd>
-																		<label for="id_region_40"><input
-																			type="checkbox" id="id_region_40" value="徳島県"
-																			name="region"> 徳島県</label>
-																	</dd>
-																	<dd>
-																		<label for="id_region_41"><input
-																			type="checkbox" id="id_region_41" value="香川県"
-																			name="region"> 香川県</label>
-																	</dd>
-																	<dd>
-																		<label for="id_region_42"><input
-																			type="checkbox" id="id_region_42" value="愛媛県"
-																			name="region"> 愛媛県</label>
-																	</dd>
-																	<dd>
-																		<label for="id_region_43"><input
-																			type="checkbox" id="id_region_43" value="高知県"
-																			name="region"> 高知県</label>
-																	</dd>
-																</dl>
-																<dl>
-																	<dt>
-																		<label for="id_region_44"><input
-																			type="checkbox" id="id_region_44" value="九州・沖縄"
-																			name="region"> 九州・沖縄</label>
-																	</dt>
-																	<dd>
-																		<label for="id_region_45"><input
-																			type="checkbox" id="id_region_45" value="福岡県"
-																			name="region"> 福岡県</label>
-																	</dd>
-																	<dd>
-																		<label for="id_region_46"><input
-																			type="checkbox" id="id_region_46" value="佐賀県"
-																			name="region"> 佐賀県</label>
-																	</dd>
-																	<dd>
-																		<label for="id_region_47"><input
-																			type="checkbox" id="id_region_47" value="長崎県"
-																			name="region"> 長崎県</label>
-																	</dd>
-																	<dd>
-																		<label for="id_region_48"><input
-																			type="checkbox" id="id_region_48" value="熊本県"
-																			name="region"> 熊本県</label>
-																	</dd>
-																	<dd>
-																		<label for="id_region_49"><input
-																			type="checkbox" id="id_region_49" value="大分県"
-																			name="region"> 大分県</label>
-																	</dd>
-																	<dd>
-																		<label for="id_region_50"><input
-																			type="checkbox" id="id_region_50" value="宮崎県"
-																			name="region"> 宮崎県</label>
-																	</dd>
-																	<dd>
-																		<label for="id_region_51"><input
-																			type="checkbox" id="id_region_51" value="鹿児島県"
-																			name="region"> 鹿児島県</label>
-																	</dd>
-																	<dd>
-																		<label for="id_region_52"><input
-																			type="checkbox" id="id_region_52" value="沖縄県"
-																			name="region"> 沖縄県</label>
-																	</dd>
-																</dl>
-															</div>
-															<div class="areacheckbox">
-																<dl>
-																	<dt>
-																		<label for="id_region_53"><input
-																			type="checkbox" id="id_region_53" value="海外"
-																			name="region"> 海外</label>
-																	</dt>
-																</dl>
 															</div>
 														</div>
-														<!-- .bggray -->
-														<p class="fall_under center">
-															該当コース <span class="rating">1,599</span><span
-																class="matter">件</span>
-														</p>
-
-													</div>
-												</div>
-												<div class="modal-footer">
-													<button type="button" class="btn btn-default"
-														data-dismiss="modal">Close</button>
-													<button type="button" class="btn btn-primary">Save
-														changes</button>
-												</div>
-											</div>
-										</div>
-									</div>
-
-								</div>
-								<div class="col-sm-6">
-									<p>高速道路</p>
-									<button type="button" class="btn btn-default fll mr10"
-										data-toggle="modal" data-target=".mymodal2">
-										追加。変更<i class="glyphicon glyphicon-chevron-right"></i>
-									</button>
-									<p class="fll">
-										高速道路:<span class="text-gold">未設定</span><br> IC:<span
-											class="text-gold">未設定</span><br>
-									</p>
-									<div class="modal fade mymodal2" tabindex="-1" role="dialog"
-										aria-labelledby="myModalLabel">
-										<div class="modal-dialog" role="document">
-											<div class="modal-content">
-												<div class="modal-body">
-													<div class="inner">
-														<div class="bggray">
-															<dl>
-																<dt>エリアの選択</dt>
-																<dd>
-																	<label><input type="radio" name="region_state"
-																		value="北海道・東北"> 北海道・東北</label>
-																</dd>
-																<dd>
-																	<label><input type="radio" name="region_state"
-																		value="関東・甲信越"> 関東・甲信越</label>
-																</dd>
-																<dd>
-																	<label><input type="radio" name="region_state"
-																		value="中部"> 中部</label>
-																</dd>
-																<dd>
-																	<label><input type="radio" name="region_state"
-																		value="近畿"> 近畿</label>
-																</dd>
-																<dd>
-																	<label><input type="radio" name="region_state"
-																		value="中国・四国"> 中国・四国</label>
-																</dd>
-																<dd>
-																	<label><input type="radio" name="region_state"
-																		value="九州・沖縄"> 九州・沖縄</label>
-																</dd>
-															</dl>
-															<dl>
-																<dt>高速道路の選択</dt>
-																<dd>
-																	<select id="id_heightway_items" size="10"
-																		name="course_highway" style="">
-																		<option value="伊勢自動車道">伊勢自動車道</option>
-																		<option value="海南湯浅御坊自動車道">海南湯浅御坊自動車道</option>
-																		<option value="関越自動車道">関越自動車道</option>
-																		<option value="館山自動車道">館山自動車道</option>
-																		<option value="京都縦貫自動車道">京都縦貫自動車道</option>
-																		<option value="京奈和自動車道">京奈和自動車道</option>
-																		<option value="京葉道路">京葉道路</option>
-																		<option value="阪和自動車道">阪和自動車道</option>
-																		<option value="山陽自動車道">山陽自動車道</option>
-																		<option value="上信越自動車道">上信越自動車道</option>
-																		<option value="常磐自動車道">常磐自動車道</option>
-																		<option value="新名神高速道路">新名神高速道路</option>
-																		<option value="神戸淡路鳴門自動車道">神戸淡路鳴門自動車道</option>
-																		<option value="西名阪自動車道">西名阪自動車道</option>
-																		<option value="中央自動車道">中央自動車道</option>
-																		<option value="中国自動車道">中国自動車道</option>
-																		<option value="長野自動車道">長野自動車道</option>
-																		<option value="東海北陸自動車道">東海北陸自動車道</option>
-																		<option value="東関東自動車道">東関東自動車道</option>
-																		<option value="東北自動車道">東北自動車道</option>
-																		<option value="東名高速道路">東名高速道路</option>
-																		<option value="東名阪自動車道">東名阪自動車道</option>
-																		<option value="磐越自動車道">磐越自動車道</option>
-																		<option value="舞鶴若狭自動車道">舞鶴若狭自動車道</option>
-																		<option value="北関東自動車道">北関東自動車道</option>
-																		<option value="北陸自動車道">北陸自動車道</option>
-																		<option value="名阪国道">名阪国道</option>
-																		<option value="名神高速道路">名神高速道路</option>
-																		<option value="圏央自動車道">圏央自動車道</option>
-																		<option value="新東名高速道路">新東名高速道路</option>
-																		<option value="九州自動車道">九州自動車道</option>
-																		<option value="宮崎自動車道">宮崎自動車道</option>
-																		<option value="長崎自動車道">長崎自動車道</option>
-																		<option value="大分自動車道">大分自動車道</option>
-																		<option value="東九州自動車道">東九州自動車道</option>
-																		<option value="阪神高速道路">阪神高速道路</option>
-																	</select>
-																</dd>
-															</dl>
-															<dl class="ic_select">
-																<dt>ICの選択</dt>
-																<dd class="from_ic">
-																	<select size="1" name="course_ic_nearby_from" style="">
-
-																		<option value="">指定なし（IC区間）</option>
-																	</select>
-																</dd>
-																から
-																<dd class="to_ic">
-																	<select size="1" name="course_ic_nearby_to" style="">
-
-																		<option value="">指定なし（IC区間）</option>
-																	</select>
-																</dd>
-															</dl>
+														<div class="modal-footer">
+															<button type="button" class="btn btn-default"
+																data-dismiss="modal">Close</button>
+															<button type="button" class="btn btn-primary">Save
+																changes</button>
 														</div>
-														<!-- .bggray -->
-														<p class="fall_under center">
-															該当コース <span class="rating">1,600</span><span
-																class="matter">件</span>
-														</p>
-
 													</div>
 												</div>
-												<div class="modal-footer">
-													<button type="button" class="btn btn-default"
-														data-dismiss="modal">Close</button>
-													<button type="button" class="btn btn-primary">Save
-														changes</button>
+											</div>
+
+										</div>
+										<div class="col-sm-6 pr0 pl0">
+											<p class="barTitle_black">高速道路</p>
+											<button type="button"
+												class="btn btn-default fll mr10 bg_gradient"
+												data-toggle="modal" data-target=".mymodal2">
+												追加。変更<i class="glyphicon glyphicon-play"></i>
+											</button>
+											<p class="fll">
+												高速道路:<span class="text-gold">未設定</span><br> IC:<span
+													class="text-gold">未設定</span><br>
+											</p>
+											<div class="modal fade mymodal2" tabindex="-1" role="dialog"
+												aria-labelledby="myModalLabel">
+												<div class="modal-dialog" role="document">
+													<div class="modal-content">
+														<div class="modal-body">
+															<div class="inner">
+																<div class="bggray">
+																	<dl>
+																		<dt>エリアの選択</dt>
+																		<dd>
+																			<label><input type="radio"
+																				name="region_state" value="北海道・東北"> 北海道・東北</label>
+																		</dd>
+																		<dd>
+																			<label><input type="radio"
+																				name="region_state" value="関東・甲信越"> 関東・甲信越</label>
+																		</dd>
+																		<dd>
+																			<label><input type="radio"
+																				name="region_state" value="中部"> 中部</label>
+																		</dd>
+																		<dd>
+																			<label><input type="radio"
+																				name="region_state" value="近畿"> 近畿</label>
+																		</dd>
+																		<dd>
+																			<label><input type="radio"
+																				name="region_state" value="中国・四国"> 中国・四国</label>
+																		</dd>
+																		<dd>
+																			<label><input type="radio"
+																				name="region_state" value="九州・沖縄"> 九州・沖縄</label>
+																		</dd>
+																	</dl>
+																	<dl>
+																		<dt>高速道路の選択</dt>
+																		<dd>
+																			<select id="id_heightway_items" size="10"
+																				name="course_highway" style="">
+																				<option value="伊勢自動車道">伊勢自動車道</option>
+																				<option value="海南湯浅御坊自動車道">海南湯浅御坊自動車道</option>
+																				<option value="関越自動車道">関越自動車道</option>
+																				<option value="館山自動車道">館山自動車道</option>
+																				<option value="京都縦貫自動車道">京都縦貫自動車道</option>
+																				<option value="京奈和自動車道">京奈和自動車道</option>
+																				<option value="京葉道路">京葉道路</option>
+																				<option value="阪和自動車道">阪和自動車道</option>
+																				<option value="山陽自動車道">山陽自動車道</option>
+																				<option value="上信越自動車道">上信越自動車道</option>
+																				<option value="常磐自動車道">常磐自動車道</option>
+																				<option value="新名神高速道路">新名神高速道路</option>
+																				<option value="神戸淡路鳴門自動車道">神戸淡路鳴門自動車道</option>
+																				<option value="西名阪自動車道">西名阪自動車道</option>
+																				<option value="中央自動車道">中央自動車道</option>
+																				<option value="中国自動車道">中国自動車道</option>
+																				<option value="長野自動車道">長野自動車道</option>
+																				<option value="東海北陸自動車道">東海北陸自動車道</option>
+																				<option value="東関東自動車道">東関東自動車道</option>
+																				<option value="東北自動車道">東北自動車道</option>
+																				<option value="東名高速道路">東名高速道路</option>
+																				<option value="東名阪自動車道">東名阪自動車道</option>
+																				<option value="磐越自動車道">磐越自動車道</option>
+																				<option value="舞鶴若狭自動車道">舞鶴若狭自動車道</option>
+																				<option value="北関東自動車道">北関東自動車道</option>
+																				<option value="北陸自動車道">北陸自動車道</option>
+																				<option value="名阪国道">名阪国道</option>
+																				<option value="名神高速道路">名神高速道路</option>
+																				<option value="圏央自動車道">圏央自動車道</option>
+																				<option value="新東名高速道路">新東名高速道路</option>
+																				<option value="九州自動車道">九州自動車道</option>
+																				<option value="宮崎自動車道">宮崎自動車道</option>
+																				<option value="長崎自動車道">長崎自動車道</option>
+																				<option value="大分自動車道">大分自動車道</option>
+																				<option value="東九州自動車道">東九州自動車道</option>
+																				<option value="阪神高速道路">阪神高速道路</option>
+																			</select>
+																		</dd>
+																	</dl>
+																	<dl class="ic_select">
+																		<dt>ICの選択</dt>
+																		<dd class="from_ic">
+																			<select size="1" name="course_ic_nearby_from"
+																				style="">
+
+																				<option value="">指定なし（IC区間）</option>
+																			</select>
+																		</dd>
+																		から
+																		<dd class="to_ic">
+																			<select size="1" name="course_ic_nearby_to" style="">
+
+																				<option value="">指定なし（IC区間）</option>
+																			</select>
+																		</dd>
+																	</dl>
+																</div>
+																<!-- .bggray -->
+																<p class="fall_under center">
+																	該当コース <span class="ratingprice text-red">1500</span><span
+																		class="matter">件</span>
+																</p>
+
+															</div>
+														</div>
+														<div class="modal-footer">
+															<button type="button" class="btn btn-default"
+																data-dismiss="modal">Close</button>
+															<button type="button" class="btn btn-primary">Save
+																changes</button>
+														</div>
+													</div>
+												</div>
+											</div>
+
+										</div>
+
+									</div>
+									<div class="row pb10 pt10 borderbot">
+										<div class="col-sm-6 pr0 pl0">
+											<p class="barTitle_black">料金・条件</p>
+
+
+											<div class="price_col">
+												<select name="price" class="price">
+													<option value="1" selected="selected">指定なし</option>
+													<option value="2">指定なし</option>
+
+												</select>円～
+
+											</div>
+
+											<div class="price_col">
+												<select name="price" class="price">
+													<option value="1" selected="selected">指定なし</option>
+													<option value="2">指定なし</option>
+
+												</select>円
+
+											</div>
+
+
+										</div>
+										<div class="row">
+											<p class="barTitle_black">プレースタイル</p>
+											<div class="col-sm-6 date pl0 pr0">
+												<div class="checkboxbg">
+													<input type="checkbox" id="lunch"> <label
+														for="lunch"><span>昼食付き</span></label>
+												</div>
+												<div class="checkboxbg">
+													<input type="checkbox" id="wranty"> <label
+														for="wranty"><span>2サム保証</span></label>
+												</div>
+												<div class="checkboxbg">
+													<input type="checkbox" id="caddy"> <label
+														for="caddy"><span>キャディ付き</span></label>
 												</div>
 											</div>
 										</div>
 									</div>
-
-								</div>
-
-							</div>
-							<div class="row pb10 pt10 mb30 borderbot">
-								<div class="col-sm-6">
-									<span class="fwbold">連続枠を指定：</span> <select name="consecutive"
-										style="">
-										<option></option>
-										<option value="2">2組以上</option>
-										<option value="3">3組以上</option>
-										<option value="4">4組以上</option>
-										<option value="5">5組以上</option>
-										<option value="6">6組以上</option>
-										<option value="7">7組以上</option>
-										<option value="8">8組以上</option>
-										<option value="9">9組以上</option>
-										<option value="10">10組以上</option>
-									</select>
-
-								</div>
-								<div class="col-sm-6">
-									<label class="checkbox-inline"><input type="checkbox" />昼食付</label>
-									<label class="checkbox-inline"><input type="checkbox" />キャディ付</label>
-									<label class="checkbox-inline"><input type="checkbox" />2サム保証</label>
-								</div>
-							</div>
-							<div class="row pb10 pt10 mb30 borderbot">
-								<div class="col-sm-6">
-									<a href="" data-toggle="modal" data-target=".mymodal3"> <img
-										src="img/Button Add.png" alt="" class="img-responsive fll"
-										width="20"> こだわり条件を追加する
-									</a>
-									<div class="modal fade mymodal3" tabindex="-1" role="dialog"
-										aria-labelledby="myModalLabel">
-										<div class="modal-dialog" role="document">
-											<div class="modal-content">
-												<div class="modal-body">
-													<div class="careAboutTitle">
-														<h2>こだわり条件</h2>
-													</div>
-													<table class="search_panel_main table table-bordered"
-														summary="ゴルフ場検索パネル">
-														<tbody>
-															<tr>
-																<th>ICからの距離</th>
-																<td><select name="course_ic_nearby_distance"
-																	style="">
-																		<option value="" selected="selected">指定なし</option>
-																		<option value="5km以内">5km以内</option>
-																		<option value="10km以内">10km以内</option>
-																		<option value="15km以内">15km以内</option>
-																		<option value="20km以内">20km以内</option>
-																		<option value="25km以内">25km以内</option>
-																		<option value="30km以内">30km以内</option>
-																</select></td>
-															</tr>
-															<tr>
-																<th>スタート時間</th>
-																<td>
-																	<ul>
-																		<li><label><input type="checkbox"
-																				value="～5時台" name="start_time">～5時台</label></li>
-																		<li><label><input type="checkbox"
-																				value="6時台" name="start_time">6時台</label></li>
-																		<li><label><input name="start_time"
-																				value="7時台" type="checkbox"> 7時台</label></li>
-																		<li><label><input name="start_time"
-																				value="8時台" type="checkbox"> 8時台</label></li>
-																		<li><label><input name="start_time"
-																				value="9時台" type="checkbox"> 9時台</label></li>
-																		<li><label><input name="start_time"
-																				value="10時台" type="checkbox"> 10時台</label></li>
-																		<li><label><input name="start_time"
-																				value="11時台" type="checkbox"> 11時台</label></li>
-																		<li><label><input name="start_time"
-																				value="12時台～" type="checkbox"> 12時台～</label></li>
-																		<li><label><input name="start_time"
-																				value="" type="checkbox"> 時間指定なし</label></li>
-																	</ul>
-																</td>
-															</tr>
-
-
-															<tr class="other_search_menu">
-																<th>プレースタイル</th>
-																<td>
-																	<ul>
-																		<li><label><input name="playstyle"
-																				value="セルフ" type="checkbox"> セルフ</label></li>
-																		<li><label><input name="playstyle"
-																				value="乗用カート" type="checkbox"> 乗用カート</label></li>
-																		<li><label><input name="playstyle"
-																				value="歩き" type="checkbox"> 歩き</label></li>
-																		<li><label><input name="playstyle"
-																				value="宿泊付" type="checkbox"> 宿泊付</label></li>
-																		<li><label><input name="playstyle"
-																				value="1.5ラウンド可" type="checkbox"> 1.5ラウンド可</label></li>
-																		<li><label><input name="playstyle"
-																				value="早朝スルー" type="checkbox"> 早朝スルー</label></li>
-																		<li><label><input name="playstyle"
-																				value="午後スルー" type="checkbox"> 午後スルー</label></li>
-																		<li><label><input name="playstyle"
-																				value="オープンコンペ" type="checkbox"> オープンコンペ</label></li>
-																		<li><label><input name="playstyle"
-																				value="ハーフプレー（0.5Ｒ）" type="checkbox">
-																				ハーフプレー（0.5Ｒ）</label></li>
-																	</ul>
-																</td>
-															</tr>
-															<tr class="other_search_menu">
-																<th>特別プラン</th>
-																<td>
-																	<ul>
-																		<li><label><input name="specialplan"
-																				type="checkbox" value="【GDO×MIZUNO】毎月ハワイが当たるキャンペーン">
-																				【GDO×MIZUNO】毎月ハワイが当たるキャンペーン</label></li>
-																		<li><label><input name="specialplan"
-																				value="直前優待" type="checkbox"> 直前優待</label></li>
-																		<li><label><input name="specialplan"
-																				value="早割でお得" type="checkbox"> 早割でお得</label></li>
-																	</ul>
-																</td>
-															</tr>
-															<tr class="other_search_menu">
-																<th>コンペプラン</th>
-																<td>
-																	<ul>
-																		<li><label><input name="compeplan"
-																				value="コンペプラン全て" type="checkbox"> コンペプラン全て</label></li>
-																		<li><label><input name="compeplan"
-																				value="2組～予約可" type="checkbox"> 2組～予約可</label></li>
-																	</ul>
-																</td>
-															</tr>
-															<tr class="other_search_menu">
-																<th>プレーヤー評価</th>
-																<td>
-																	<ul>
-																		<li><label><input
-																				name="course_rate_total_facet" value="4.5以上"
-																				type="radio"> 4.5以上</label></li>
-																		<li><label><input
-																				name="course_rate_total_facet" value="4.0以上"
-																				type="radio"> 4.0以上</label></li>
-																		<li><label><input
-																				name="course_rate_total_facet" value="3.5以上"
-																				type="radio"> 3.5以上</label></li>
-																		<li><label><input
-																				name="course_rate_total_facet" value="3.0以上"
-																				type="radio"> 3.0以上</label></li>
-																		<li><label><input
-																				name="course_rate_total_facet" value="" type="radio">
-																				指定しない</label></li>
-																	</ul>
-																</td>
-															</tr>
-															<tr class="other_search_menu">
-																<th>コースタイプ</th>
-																<td>
-																	<ul>
-																		<li><label><input
-																				name="course_course_type" value="丘陵" type="checkbox">
-																				丘陵</label></li>
-																		<li><label><input
-																				name="course_course_type" value="林間" type="checkbox">
-																				林間</label></li>
-																		<li><label><input
-																				name="course_course_type" value="山岳" type="checkbox">
-																				山岳</label></li>
-																		<li><label><input
-																				name="course_course_type" value="シーサイド"
-																				type="checkbox"> シーサイド</label></li>
-																		<li><label><input
-																				name="course_course_type" value="河川敷"
-																				type="checkbox"> 河川敷</label></li>
-																		<li><label><input
-																				name="course_course_type" value="その他"
-																				type="checkbox"> その他</label></li>
-																	</ul>
-																</td>
-															</tr>
-															<tr class="other_search_menu">
-																<th>プレーヤータイプ</th>
-																<td>
-																	<ul>
-																		<li><label><input name="specialplan"
-																				value="レディス" type="checkbox"> レディス</label></li>
-																		<li><label><input name="specialplan"
-																				value="シニア" type="checkbox"> シニア</label></li>
-																	</ul>
-																</td>
-															</tr>
-															<tr class="other_search_menu">
-																<th>付帯施設</th>
-																<td>
-																	<ul>
-																		<li><label><input name="facility"
-																				value="練習場" type="checkbox"> 練習場</label></li>
-																		<li><label><input name="facility"
-																				value="温泉" type="checkbox"> 温泉</label></li>
-																	</ul>
-																</td>
-															</tr>
-															<tr class="other_search_menu">
-																<th>利用可能サービス</th>
-																<td>
-																	<ul>
-																		<li><label><input name="service"
-																				value="ポイント＆クーポン利用可能コース" type="checkbox">
-																				ポイント＆クーポン利用可能コース</label></li>
-																		<li><label><input name="service"
-																				value="クラブバス送迎" type="checkbox"> クラブバス送迎</label></li>
-																	</ul>
-																</td>
-															</tr>
-															<tr class="exclude_cell">
-																<th>除外設定</th>
-																<td>
-																	<ul>
-																		<li><label><input name="exclude"
-																				value="ハーフプレーを除く" type="checkbox"> ハーフプレーを除く</label></li>
-																		<li><label><input name="exclude"
-																				value="コンペプランを除く" type="checkbox"> コンペプランを除く</label></li>
-																		<li><label><input name="exclude"
-																				value="オープンコンペを除く" type="checkbox">
-																				オープンコンペを除く</label></li>
-																		<li><label><input name="exclude"
-																				value="スループレーを除く" type="checkbox"> スループレーを除く</label></li>
-																	</ul> <!-- extra_exclusion -->
-																</td>
-															</tr>
-														</tbody>
-													</table>
+									<div class="row pb10 pt10 borderbot">
+										<div class="col-sm-6 pr0 pl0">
+											<p class="barTitle_black">スタート時間</p>
+											<div class="col-sm-12 date pl0 pr0">
+												<div class="checkboxbg">
+													<input type="checkbox" id="sixTime"> <label
+														for="sixTime"><span>6時台</span></label>
 												</div>
-												<div class="modal-footer">
-													<button type="button" class="btn btn-default"
-														data-dismiss="modal">Close</button>
-													<button type="button" class="btn btn-primary">Save
-														changes</button>
+												<div class="checkboxbg">
+													<input type="checkbox" id="sevenTime"> <label
+														for="sevenTime"><span>7時台</span></label>
+												</div>
+												<div class="checkboxbg">
+													<input type="checkbox" id="eightTime"> <label
+														for="eightTime"><span>8時台</span></label>
+												</div>
+											</div>
+											<div class="col-sm-12 date pl0 pr0">
+												<div class="checkboxbg">
+													<input type="checkbox" id="nineTime"> <label
+														for="nineTime"><span>9時台</span></label>
+												</div>
+
+												<div class="checkboxbg">
+													<input type="checkbox" id="tenTime"> <label
+														for="tenTime"><span>10時台</span></label>
+												</div>
+												<div class="checkboxbg">
+													<input type="checkbox" id="elevenTime"> <label
+														for="elevenTime"><span>11時台～</span></label>
 												</div>
 											</div>
 										</div>
-									</div>
-									<p class="fall_under">
-										該当コース <span class="rating">1,600</span><span class="matter">件</span>
-									</p>
-								</div>
-								<div class="col-sm-6">
-									<button class="btn btn-danger btn-block center">空き枠検索</button>
-								</div>
 
-							</div>
-						</div>
-						<div id="tab2" class="tab-pane fade">
-							<div class="row pt10">
-								<div class="col-sm-6">
-									<div class="golf-drag_plan1">
+										<div class="col-sm-6 pr0 pl0">
+											<p class="barTitle_black">連続枠を指定</p>
 
-										<ul class="clearfix">
-											<li><a href="#"> <img src="img/photo1.jpg"
-													alt="喜連川カントリー倶楽部（栃木県）" width="70" border="0">
-											</a></li>
-											<li><a href="#"><p class="blue golf_planttl">佐野ゴルフクラブ</p>
-													<span class="golf_drag_inner bg-grey">栃木県</span> </a></li>
-											<li><a href=""><span class="golfdrag_btn02">お気に入り
-												</span></a></li>
-											<li><label class="checkbox-inline align-top"> <input
-													type="checkbox" id="inlineCheckbox1" class="big-checkbox"
-													value="option1" />
 
-											</label></li>
-										</ul>
-									</div>
-									<div class="golf-drag_plan1">
+											<div class="price_col">
+												<select name="price" class="price">
+													<option selected>指定なし</option>
+													<option value="2">2組以上</option>
+													<option value="3">3組以上</option>
+													<option value="4">4組以上</option>
+													<option value="5">5組以上</option>
+													<option value="6">6組以上</option>
+													<option value="7">7組以上</option>
+													<option value="8">8組以上</option>
+													<option value="9">9組以上</option>
+													<option value="10">10組以上</option>
 
-										<ul class="clearfix">
-											<li><a href="#"> <img src="img/photo1.jpg"
-													alt="喜連川カントリー倶楽部（栃木県）" width="70" border="0">
-											</a></li>
-											<li><a href="#"><p class="blue golf_planttl">佐野ゴルフクラブ</p>
-													<span class="golf_drag_inner bg-grey">栃木県</span> </a></li>
-											<li><a href=""><span class="golfdrag_btn02">お気に入り
-												</span></a></li>
-											<li><label class="checkbox-inline align-top"> <input
-													type="checkbox" id="inlineCheckbox2" class="big-checkbox"
-													value="option2" />
-											</label></li>
-										</ul>
-									</div>
+												</select>
 
-								</div>
-								<div class="col-sm-6">
-									<div class="golf-drag_plan1">
+											</div>
 
-										<ul class="clearfix">
-											<li><a href="#"> <img src="img/photo1.jpg"
-													alt="喜連川カントリー倶楽部（栃木県）" width="70" border="0">
-											</a></li>
-											<li><a href="#"><p class="blue golf_planttl">佐野ゴルフクラブ</p>
-													<span class="golf_drag_inner bg-grey">栃木県</span> </a></li>
-											<li><a href=""><span class="golfdrag_btn02">お気に入り
-												</span></a></li>
-											<li><label class="checkbox-inline align-top"> <input
-													type="checkbox" id="inlineCheckbox3" class="big-checkbox"
-													value="option3" />
-											</label></li>
-										</ul>
-									</div>
-									<div class="golf-drag_plan1">
 
-										<ul class="clearfix">
-											<li><a href="#"> <img src="img/photo1.jpg"
-													alt="喜連川カントリー倶楽部（栃木県）" width="70" border="0">
-											</a></li>
-											<li><a href="#"><p class="blue golf_planttl">佐野ゴルフクラブ</p>
-													<span class="golf_drag_inner bg-grey">栃木県</span> </a></li>
-											<li><a href=""><span class="golfdrag_btn02">お気に入り
-												</span></a></li>
-											<li><label class="checkbox-inline align-top"> <input
-													type="checkbox" id="inlineCheckbox4" class="big-checkbox"
-													value="option4" />
-											</label></li>
-										</ul>
+
+										</div>
+
 									</div>
 								</div>
 
-							</div>
-							<div
-								class="panel-heading bg-grey2 fw-bold txt-white clearfix mb20 pc">
-								<form class="form-inline flr">
+								<div class="row">
+									<div class="col-sm-6 pr0 pl0">
+										<div class="search_wrapBtn">
+											<a href="" data-toggle="modal" data-target=".mymodal3"> <img
+												src="img/home/add_btn.png" alt="" class="img-responsive fll"
+												width="20"> こだわり条件を追加する
+											</a>
+											<div class="modal fade mymodal3" tabindex="-1" role="dialog"
+												aria-labelledby="myModalLabel">
+												<div class="modal-dialog" role="document">
+													<div class="modal-content">
+														<div class="modal-body">
+															<div class="careAboutTitle">
+																<h2>こだわり条件</h2>
+															</div>
+															<table class="search_panel_main table table-bordered"
+																summary="ゴルフ場検索パネル">
+																<tbody>
+																	<tr>
+																		<th>ICからの距離</th>
+																		<td><select name="course_ic_nearby_distance"
+																			style="">
+																				<option value="" selected="selected">指定なし</option>
+																				<option value="5km以内">5km以内</option>
+																				<option value="10km以内">10km以内</option>
+																				<option value="15km以内">15km以内</option>
+																				<option value="20km以内">20km以内</option>
+																				<option value="25km以内">25km以内</option>
+																				<option value="30km以内">30km以内</option>
+																		</select></td>
+																	</tr>
+																	<tr>
+																		<th>スタート時間</th>
+																		<td>
+																			<ul>
+																				<li><label><input type="checkbox"
+																						value="～5時台" name="start_time">～5時台</label></li>
+																				<li><label><input type="checkbox"
+																						value="6時台" name="start_time">6時台</label></li>
+																				<li><label><input name="start_time"
+																						value="7時台" type="checkbox"> 7時台</label></li>
+																				<li><label><input name="start_time"
+																						value="8時台" type="checkbox"> 8時台</label></li>
+																				<li><label><input name="start_time"
+																						value="9時台" type="checkbox"> 9時台</label></li>
+																				<li><label><input name="start_time"
+																						value="10時台" type="checkbox"> 10時台</label></li>
+																				<li><label><input name="start_time"
+																						value="11時台" type="checkbox"> 11時台</label></li>
+																				<li><label><input name="start_time"
+																						value="12時台～" type="checkbox"> 12時台～</label></li>
+																				<li><label><input name="start_time"
+																						value="" type="checkbox"> 時間指定なし</label></li>
+																			</ul>
+																		</td>
+																	</tr>
 
-									<div class="form-group">
-										<label for="golf_name" class="sr-only">例：成田フェアフィ―ルド</label> <input
-											type="text" class="form-control" id="golf_name"
-											placeholder="例：成田フェアフィ―ルド">
+
+																	<tr class="other_search_menu">
+																		<th>プレースタイル</th>
+																		<td>
+																			<ul>
+																				<li><label><input name="playstyle"
+																						value="セルフ" type="checkbox"> セルフ</label></li>
+																				<li><label><input name="playstyle"
+																						value="乗用カート" type="checkbox"> 乗用カート</label></li>
+																				<li><label><input name="playstyle"
+																						value="歩き" type="checkbox"> 歩き</label></li>
+																				<li><label><input name="playstyle"
+																						value="宿泊付" type="checkbox"> 宿泊付</label></li>
+																				<li><label><input name="playstyle"
+																						value="1.5ラウンド可" type="checkbox"> 1.5ラウンド可</label></li>
+																				<li><label><input name="playstyle"
+																						value="早朝スルー" type="checkbox"> 早朝スルー</label></li>
+																				<li><label><input name="playstyle"
+																						value="午後スルー" type="checkbox"> 午後スルー</label></li>
+																				<li><label><input name="playstyle"
+																						value="オープンコンペ" type="checkbox"> オープンコンペ</label></li>
+																				<li><label><input name="playstyle"
+																						value="ハーフプレー（0.5Ｒ）" type="checkbox">
+																						ハーフプレー（0.5Ｒ）</label></li>
+																			</ul>
+																		</td>
+																	</tr>
+																	<tr class="other_search_menu">
+																		<th>特別プラン</th>
+																		<td>
+																			<ul>
+																				<li><label><input name="specialplan"
+																						type="checkbox"
+																						value="【GDO×MIZUNO】毎月ハワイが当たるキャンペーン">
+																						【GDO×MIZUNO】毎月ハワイが当たるキャンペーン</label></li>
+																				<li><label><input name="specialplan"
+																						value="直前優待" type="checkbox"> 直前優待</label></li>
+																				<li><label><input name="specialplan"
+																						value="早割でお得" type="checkbox"> 早割でお得</label></li>
+																			</ul>
+																		</td>
+																	</tr>
+																	<tr class="other_search_menu">
+																		<th>コンペプラン</th>
+																		<td>
+																			<ul>
+																				<li><label><input name="compeplan"
+																						value="コンペプラン全て" type="checkbox"> コンペプラン全て</label></li>
+																				<li><label><input name="compeplan"
+																						value="2組～予約可" type="checkbox"> 2組～予約可</label></li>
+																			</ul>
+																		</td>
+																	</tr>
+																	<tr class="other_search_menu">
+																		<th>プレーヤー評価</th>
+																		<td>
+																			<ul>
+																				<li><label><input
+																						name="course_rate_total_facet" value="4.5以上"
+																						type="radio"> 4.5以上</label></li>
+																				<li><label><input
+																						name="course_rate_total_facet" value="4.0以上"
+																						type="radio"> 4.0以上</label></li>
+																				<li><label><input
+																						name="course_rate_total_facet" value="3.5以上"
+																						type="radio"> 3.5以上</label></li>
+																				<li><label><input
+																						name="course_rate_total_facet" value="3.0以上"
+																						type="radio"> 3.0以上</label></li>
+																				<li><label><input
+																						name="course_rate_total_facet" value=""
+																						type="radio"> 指定しない</label></li>
+																			</ul>
+																		</td>
+																	</tr>
+																	<tr class="other_search_menu">
+																		<th>コースタイプ</th>
+																		<td>
+																			<ul>
+																				<li><label><input
+																						name="course_course_type" value="丘陵"
+																						type="checkbox"> 丘陵</label></li>
+																				<li><label><input
+																						name="course_course_type" value="林間"
+																						type="checkbox"> 林間</label></li>
+																				<li><label><input
+																						name="course_course_type" value="山岳"
+																						type="checkbox"> 山岳</label></li>
+																				<li><label><input
+																						name="course_course_type" value="シーサイド"
+																						type="checkbox"> シーサイド</label></li>
+																				<li><label><input
+																						name="course_course_type" value="河川敷"
+																						type="checkbox"> 河川敷</label></li>
+																				<li><label><input
+																						name="course_course_type" value="その他"
+																						type="checkbox"> その他</label></li>
+																			</ul>
+																		</td>
+																	</tr>
+																	<tr class="other_search_menu">
+																		<th>プレーヤータイプ</th>
+																		<td>
+																			<ul>
+																				<li><label><input name="specialplan"
+																						value="レディス" type="checkbox"> レディス</label></li>
+																				<li><label><input name="specialplan"
+																						value="シニア" type="checkbox"> シニア</label></li>
+																			</ul>
+																		</td>
+																	</tr>
+																	<tr class="other_search_menu">
+																		<th>付帯施設</th>
+																		<td>
+																			<ul>
+																				<li><label><input name="facility"
+																						value="練習場" type="checkbox"> 練習場</label></li>
+																				<li><label><input name="facility"
+																						value="温泉" type="checkbox"> 温泉</label></li>
+																			</ul>
+																		</td>
+																	</tr>
+																	<tr class="other_search_menu">
+																		<th>利用可能サービス</th>
+																		<td>
+																			<ul>
+																				<li><label><input name="service"
+																						value="ポイント＆クーポン利用可能コース" type="checkbox">
+																						ポイント＆クーポン利用可能コース</label></li>
+																				<li><label><input name="service"
+																						value="クラブバス送迎" type="checkbox"> クラブバス送迎</label></li>
+																			</ul>
+																		</td>
+																	</tr>
+																	<tr class="exclude_cell">
+																		<th>除外設定</th>
+																		<td>
+																			<ul>
+																				<li><label><input name="exclude"
+																						value="ハーフプレーを除く" type="checkbox">
+																						ハーフプレーを除く</label></li>
+																				<li><label><input name="exclude"
+																						value="コンペプランを除く" type="checkbox">
+																						コンペプランを除く</label></li>
+																				<li><label><input name="exclude"
+																						value="オープンコンペを除く" type="checkbox">
+																						オープンコンペを除く</label></li>
+																				<li><label><input name="exclude"
+																						value="スループレーを除く" type="checkbox">
+																						スループレーを除く</label></li>
+																			</ul> <!-- extra_exclusion -->
+																		</td>
+																	</tr>
+																</tbody>
+															</table>
+														</div>
+														<div class="modal-footer">
+															<button type="button" class="btn btn-default"
+																data-dismiss="modal">Close</button>
+															<button type="button" class="btn btn-primary">Save
+																changes</button>
+														</div>
+													</div>
+												</div>
+											</div>
+											<p class="fall_under">
+												該当コース <span class="ratingprice text-red">1500</span><span
+													class="matter">件</span>
+											</p>
+										</div>
 									</div>
-									<button type="submit" class="btn btn-default">ゴルフ場追加</button>
-								</form>
+									<div class="col-sm-6">
+										<a href="#"><img src="img/home/search_btn.png" alt="" /></a>
+									</div>
+
+								</div>
+							</div>
+							<div id="tab2" class="tab-pane fade">
+								<div class="row pt10">
+									<div class="col-sm-6">
+										<div class="golf-drag_plan1">
+
+											<ul class="clearfix">
+												<li><a href="#"> <img src="img/photo1.jpg"
+														alt="喜連川カントリー倶楽部（栃木県）" width="70" border="0">
+												</a></li>
+												<li><a href="#"><p class="blue golf_planttl">佐野ゴルフクラブ</p>
+														<span class="golf_drag_inner bg-grey">栃木県</span> </a></li>
+												<li><a href=""><span class="golfdrag_btn02">お気に入り
+													</span></a></li>
+												<li><label class="checkbox-inline align-top"> <input
+														type="checkbox" id="inlineCheckbox1" class="big-checkbox"
+														value="option1" />
+
+												</label></li>
+											</ul>
+										</div>
+										<div class="golf-drag_plan1">
+
+											<ul class="clearfix">
+												<li><a href="#"> <img src="img/photo1.jpg"
+														alt="喜連川カントリー倶楽部（栃木県）" width="70" border="0">
+												</a></li>
+												<li><a href="#"><p class="blue golf_planttl">佐野ゴルフクラブ</p>
+														<span class="golf_drag_inner bg-grey">栃木県</span> </a></li>
+												<li><a href=""><span class="golfdrag_btn02">お気に入り
+													</span></a></li>
+												<li><label class="checkbox-inline align-top"> <input
+														type="checkbox" id="inlineCheckbox2" class="big-checkbox"
+														value="option2" />
+												</label></li>
+											</ul>
+										</div>
+
+									</div>
+									<div class="col-sm-6">
+										<div class="golf-drag_plan1">
+
+											<ul class="clearfix">
+												<li><a href="#"> <img src="img/photo1.jpg"
+														alt="喜連川カントリー倶楽部（栃木県）" width="70" border="0">
+												</a></li>
+												<li><a href="#"><p class="blue golf_planttl">佐野ゴルフクラブ</p>
+														<span class="golf_drag_inner bg-grey">栃木県</span> </a></li>
+												<li><a href=""><span class="golfdrag_btn02">お気に入り
+													</span></a></li>
+												<li><label class="checkbox-inline align-top"> <input
+														type="checkbox" id="inlineCheckbox3" class="big-checkbox"
+														value="option3" />
+												</label></li>
+											</ul>
+										</div>
+										<div class="golf-drag_plan1">
+
+											<ul class="clearfix">
+												<li><a href="#"> <img src="img/photo1.jpg"
+														alt="喜連川カントリー倶楽部（栃木県）" width="70" border="0">
+												</a></li>
+												<li><a href="#"><p class="blue golf_planttl">佐野ゴルフクラブ</p>
+														<span class="golf_drag_inner bg-grey">栃木県</span> </a></li>
+												<li><a href=""><span class="golfdrag_btn02">お気に入り
+													</span></a></li>
+												<li><label class="checkbox-inline align-top"> <input
+														type="checkbox" id="inlineCheckbox4" class="big-checkbox"
+														value="option4" />
+												</label></li>
+											</ul>
+										</div>
+									</div>
+
+								</div>
+								<div
+									class="panel-heading bg-grey2 fw-bold txt-white clearfix mb20 pc">
+									<form class="form-inline flr">
+
+										<div class="form-group">
+											<label for="golf_name" class="sr-only">例：成田フェアフィ―ルド</label> <input
+												type="text" class="form-control" id="golf_name"
+												placeholder="例：成田フェアフィ―ルド">
+										</div>
+										<button type="submit" class="btn btn-default">ゴルフ場追加</button>
+									</form>
+								</div>
+							</div>
+
+						</div>
+						<div class="row bg_topgray">
+							<div class="col-sm-12">
+								<div class="golf-left03In">
+									<p class="barTitle_black">ゴルフ場名から最安値検索</p>
+									プレー日 <input type="text"
+										class="datepicker hasDatepicker search-input"
+										name="search_month" id="search_month" value="日付選択" /> ゴルフ場名 <input
+										name="" class="search-sm" value="例：ABCカントリークラブ" type="text"
+										autocomplete="off"> <input name=""
+										id="search_c_name_submit2" class="snavBtnSearch "
+										type="submit" value="検索">
+
+
+
+								</div>
+							</div>
+						</div>
+						<div class="row">
+
+							<div class="large-6 small-12 columns">
+								<p class="pb20"></p>
+								<div id="steps-fivepercent-slider"
+									class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all ui-slider-pips ui-slider-float">
+									<span
+										class="ui-slider-handle ui-state-default ui-corner-all range2"
+										tabindex="0" style="left: 15%;"><span
+										class="ui-slider-tip">3</span></span><span
+										class="ui-slider-pip ui-slider-pip-first ui-slider-pip-label ui-slider-pip-0"
+										style="left: 0%"><span class="ui-slider-line"></span><span
+										class="ui-slider-label" data-value="0">0</span></span><span
+										class="ui-slider-pip ui-slider-pip-1" style="left: 5.0000%"><span
+										class="ui-slider-line"></span><span class="ui-slider-label"
+										data-value="1">1</span></span><span
+										class="ui-slider-pip ui-slider-pip-2" style="left: 10.0000%"><span
+										class="ui-slider-line"></span><span class="ui-slider-label"
+										data-value="2">2</span></span><span
+										class="ui-slider-pip ui-slider-pip-3 ui-slider-pip-initial ui-slider-pip-selected"
+										style="left: 15.0000%"><span class="ui-slider-line"></span><span
+										class="ui-slider-label" data-value="3">3</span></span><span
+										class="ui-slider-pip ui-slider-pip-4" style="left: 20.0000%"><span
+										class="ui-slider-line"></span><span class="ui-slider-label"
+										data-value="4">4</span></span><span
+										class="ui-slider-pip ui-slider-pip-5" style="left: 25.0000%"><span
+										class="ui-slider-line"></span><span class="ui-slider-label"
+										data-value="5">5</span></span><span
+										class="ui-slider-pip ui-slider-pip-6" style="left: 30.0000%"><span
+										class="ui-slider-line"></span><span class="ui-slider-label"
+										data-value="6">6</span></span><span
+										class="ui-slider-pip ui-slider-pip-7" style="left: 35.0000%"><span
+										class="ui-slider-line"></span><span class="ui-slider-label"
+										data-value="7">7</span></span><span
+										class="ui-slider-pip ui-slider-pip-8" style="left: 40.0000%"><span
+										class="ui-slider-line"></span><span class="ui-slider-label"
+										data-value="8">8</span></span><span
+										class="ui-slider-pip ui-slider-pip-9" style="left: 45.0000%"><span
+										class="ui-slider-line"></span><span class="ui-slider-label"
+										data-value="9">9</span></span><span
+										class="ui-slider-pip ui-slider-pip-10" style="left: 50.0000%"><span
+										class="ui-slider-line"></span><span class="ui-slider-label"
+										data-value="10">10</span></span><span
+										class="ui-slider-pip ui-slider-pip-11" style="left: 55.0000%"><span
+										class="ui-slider-line"></span><span class="ui-slider-label"
+										data-value="11">11</span></span><span
+										class="ui-slider-pip ui-slider-pip-12" style="left: 60.0000%"><span
+										class="ui-slider-line"></span><span class="ui-slider-label"
+										data-value="12">12</span></span><span
+										class="ui-slider-pip ui-slider-pip-13" style="left: 65.0000%"><span
+										class="ui-slider-line"></span><span class="ui-slider-label"
+										data-value="13">13</span></span><span
+										class="ui-slider-pip ui-slider-pip-14" style="left: 70.0000%"><span
+										class="ui-slider-line"></span><span class="ui-slider-label"
+										data-value="14">14</span></span><span
+										class="ui-slider-pip ui-slider-pip-15" style="left: 75.0000%"><span
+										class="ui-slider-line"></span><span class="ui-slider-label"
+										data-value="15">15</span></span><span
+										class="ui-slider-pip ui-slider-pip-16" style="left: 80.0000%"><span
+										class="ui-slider-line"></span><span class="ui-slider-label"
+										data-value="16">16</span></span><span
+										class="ui-slider-pip ui-slider-pip-17" style="left: 85.0000%"><span
+										class="ui-slider-line"></span><span class="ui-slider-label"
+										data-value="17">17</span></span><span
+										class="ui-slider-pip ui-slider-pip-18" style="left: 90.0000%"><span
+										class="ui-slider-line"></span><span class="ui-slider-label"
+										data-value="18">18</span></span><span
+										class="ui-slider-pip ui-slider-pip-19" style="left: 95.0000%"><span
+										class="ui-slider-line"></span><span class="ui-slider-label"
+										data-value="19">19</span></span><span
+										class="ui-slider-pip ui-slider-pip-last ui-slider-pip-label ui-slider-pip-20"
+										style="left: 100%"><span class="ui-slider-line"></span><span
+										class="ui-slider-label" data-value="20">20</span></span>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+
+							<div class="large-6 small-12 columns ">
+								<p class="pb20"></p>
+
+								<div id="hanzi-labels-slider"
+									class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all ui-slider-pips ui-slider-float">
+									<span class="ui-slider-handle ui-state-default ui-corner-all"
+										tabindex="0" style="left: 15%;"><span
+										class="ui-slider-tip">3</span></span><span
+										class="ui-slider-pip ui-slider-pip-first ui-slider-pip-label ui-slider-pip-0"
+										style="left: 0%"><span class="ui-slider-line"></span><span
+										class="ui-slider-label" data-value="0">0</span></span><span
+										class="ui-slider-pip ui-slider-pip-1" style="left: 5.0000%"><span
+										class="ui-slider-line"></span><span class="ui-slider-label"
+										data-value="1">1</span></span><span
+										class="ui-slider-pip ui-slider-pip-2" style="left: 10.0000%"><span
+										class="ui-slider-line"></span><span class="ui-slider-label"
+										data-value="2">2</span></span><span
+										class="ui-slider-pip ui-slider-pip-3 ui-slider-pip-initial ui-slider-pip-selected"
+										style="left: 15.0000%"><span class="ui-slider-line"></span><span
+										class="ui-slider-label" data-value="3">3</span></span><span
+										class="ui-slider-pip ui-slider-pip-4" style="left: 20.0000%"><span
+										class="ui-slider-line"></span><span class="ui-slider-label"
+										data-value="4">4</span></span><span
+										class="ui-slider-pip ui-slider-pip-5" style="left: 25.0000%"><span
+										class="ui-slider-line"></span><span class="ui-slider-label"
+										data-value="5">5</span></span><span
+										class="ui-slider-pip ui-slider-pip-6" style="left: 30.0000%"><span
+										class="ui-slider-line"></span><span class="ui-slider-label"
+										data-value="6">6</span></span><span
+										class="ui-slider-pip ui-slider-pip-7" style="left: 35.0000%"><span
+										class="ui-slider-line"></span><span class="ui-slider-label"
+										data-value="7">7</span></span><span
+										class="ui-slider-pip ui-slider-pip-8" style="left: 40.0000%"><span
+										class="ui-slider-line"></span><span class="ui-slider-label"
+										data-value="8">8</span></span><span
+										class="ui-slider-pip ui-slider-pip-9" style="left: 45.0000%"><span
+										class="ui-slider-line"></span><span class="ui-slider-label"
+										data-value="9">9</span></span><span
+										class="ui-slider-pip ui-slider-pip-10" style="left: 50.0000%"><span
+										class="ui-slider-line"></span><span class="ui-slider-label"
+										data-value="10">10</span></span><span
+										class="ui-slider-pip ui-slider-pip-11" style="left: 55.0000%"><span
+										class="ui-slider-line"></span><span class="ui-slider-label"
+										data-value="11">11</span></span><span
+										class="ui-slider-pip ui-slider-pip-12" style="left: 60.0000%"><span
+										class="ui-slider-line"></span><span class="ui-slider-label"
+										data-value="12">12</span></span><span
+										class="ui-slider-pip ui-slider-pip-13" style="left: 65.0000%"><span
+										class="ui-slider-line"></span><span class="ui-slider-label"
+										data-value="13">13</span></span><span
+										class="ui-slider-pip ui-slider-pip-14" style="left: 70.0000%"><span
+										class="ui-slider-line"></span><span class="ui-slider-label"
+										data-value="14">14</span></span><span
+										class="ui-slider-pip ui-slider-pip-15" style="left: 75.0000%"><span
+										class="ui-slider-line"></span><span class="ui-slider-label"
+										data-value="15">15</span></span><span
+										class="ui-slider-pip ui-slider-pip-16" style="left: 80.0000%"><span
+										class="ui-slider-line"></span><span class="ui-slider-label"
+										data-value="16">16</span></span><span
+										class="ui-slider-pip ui-slider-pip-17" style="left: 85.0000%"><span
+										class="ui-slider-line"></span><span class="ui-slider-label"
+										data-value="17">17</span></span><span
+										class="ui-slider-pip ui-slider-pip-18" style="left: 90.0000%"><span
+										class="ui-slider-line"></span><span class="ui-slider-label"
+										data-value="18">18</span></span><span
+										class="ui-slider-pip ui-slider-pip-19" style="left: 95.0000%"><span
+										class="ui-slider-line"></span><span class="ui-slider-label"
+										data-value="19">19</span></span><span
+										class="ui-slider-pip ui-slider-pip-last ui-slider-pip-label ui-slider-pip-20"
+										style="left: 100%"><span class="ui-slider-line"></span><span
+										class="ui-slider-label" data-value="20">20</span></span>
+								</div>
 							</div>
 						</div>
 
-					</div>
-					<div class="row">
-						<div class="col-sm-12">
-							<div class="golf-left03In">
-								<p class="search_ttl">ゴルフ場名から最安値検索</p>
-								<input type="text" class="datepicker hasDatepicker input-sm"
-									name="search_month" id="search_month"> 月 <input
-									type="text" class="datepicker hasDatepicker input-sm"
-									search_name="day" id="search_day"> 日 <input
-									name="freeword_name" class="input-sm" id="freeword_name"
-									value="" type="text" autocomplete="off"> <input
-									name="search_c_name_submit2" id="search_c_name_submit2"
-									class="snavBtnSearch " type="submit" value="検索">
+						<div class="golf_plan clearfix pc">
+							<h3>よく行くゴルフ場の今だけの特別割引(要会員登録)</h3>
+							<h4></h4>
+							<div class="golf_plan1">
+								<dl>
+									<dt>直前割</dt>
+									<dd class="golf_row1">
+										<ul>
+											<li><a href="#"> <img src="img/top/photo1.jpg"
+													alt="喜連川カントリー倶楽部（栃木県）" width="50" border="0">
+											</a></li>
+											<li><a href="#"><span class="blue">佐野ゴルフクラブ</span> <span
+													class="red"><br>\7,000</span> </a></li>
+											<li><a href=""><span class="golfplan_btn01">2回プレー</span></a></li>
+										</ul>
+									</dd>
+									<dd class="golf_row2">
+										<ul>
+											<li><a href="#"> <img src="img/top/photo1.jpg"
+													alt="喜連川カントリー倶楽部（栃木県）" width="50" border="0">
+											</a></li>
+											<li><a href="#"><span class="blue">佐野ゴルフクラブ</span> <span
+													class="red"><br>\7,000</span> </a></li>
+											<li><a href=""><span class="golfplan_btn02">お気に入り
+												</span></a></li>
+										</ul>
+
+									</dd>
+								</dl>
+							</div>
+							<div class="golf_plan2">
+								<dl>
+									<dt>特別割</dt>
+									<dd class="golf_row3">
+										<ul>
+											<li><a href="#"> <img src="img/top/photo1.jpg"
+													alt="喜連川カントリー倶楽部（栃木県）" width="50" border="0">
+											</a></li>
+											<li><a href="#"><span class="blue">佐野ゴルフクラブ</span> <span
+													class="red"><br>\7,000</span> </a></li>
+											<li><a href=""><span class="golfplan_btn01">2回プレー</span></a></li>
+										</ul>
+									</dd>
+									<dd class="golf_row4">
+										<ul>
+											<li><a href="#"> <img src="img/top/photo1.jpg"
+													alt="喜連川カントリー倶楽部（栃木県）" width="50" border="0">
+											</a></li>
+											<li><a href="#"><span class="blue">佐野ゴルフクラブ</span> <span
+													class="red"><br>\7,000</span> </a></li>
+											<li><a href=""><span class="golfplan_btn02">お気に入り
+												</span></a></li>
+										</ul>
+									</dd>
+								</dl>
+							</div>
+							<div class="golf_plan3">
+								<dl>
+									<dt>早割</dt>
+									<dd class="golf_row5">
+										<ul>
+											<li><a href="#"> <img src="img/top/photo1.jpg"
+													alt="喜連川カントリー倶楽部（栃木県）" width="50" border="0">
+											</a></li>
+											<li><a href="#"><span class="blue">佐野ゴルフクラブ</span> <span
+													class="red"><br>\7,000</span> </a></li>
+											<li><a href=""><span class="golfplan_btn01">2回プレー</span></a></li>
+										</ul>
+									</dd>
+									<dd class="golf_row6">
+										<ul>
+											<li><a href="#"> <img src="img/top/photo1.jpg"
+													alt="喜連川カントリー倶楽部（栃木県）" width="50" border="0">
+											</a></li>
+											<li><a href="#"><span class="blue">佐野ゴルフクラブ</span> <span
+													class="red"><br>\7,000</span> </a></li>
+											<li><a href=""><span class="golfplan_btn02">お気に入り
+												</span></a></li>
+										</ul>
+									</dd>
+								</dl>
+							</div>
+						</div>
 
 
-
+						<div class="reco_ttl  pc">
+							<ul>
+								<li><span>特集A</span></li>
+								<li><span>特集B</span></li>
+								<li><span>特集C</span></li>
+							</ul>
+						</div>
+						<div class="clearfix  pc">
+							<div id="recomme-container-hot">
+								<div class="recomme-box02">
+									<!--注目！お得情報詳細エリア[-->
+									<div class="crs-box" id="otoku0">
+										<div class="photo">
+											<a href="#"> <img src="img/top/photo1.jpg"
+												alt="喜連川カントリー倶楽部（栃木県）" width="85" height="81" border="0">
+											</a>
+										</div>
+										<div class="txt">
+											<h3>
+												<nobr>
+													<a href="#">喜連川カントリー倶楽部</a>（栃木県）
+												</nobr>
+											</h3>
+											<p>
+												●直割！早めスタートがお得！<br>8月22日（土）<br>
+												<nobr>
+													<a href="#">セルフ昼食付 → <strong>4,010円+税</strong>
+													</a>
+												</nobr>
+												<br>
+												<nobr>┗☆２サム保証＆割増なし！</nobr>
+											</p>
+										</div>
+										<div class="clearfix"></div>
+									</div>
+									<!--]注目！お得情報詳細エリア-->
+									<!--注目！お得情報詳細エリア[-->
+									<div class="crs-box" id="otoku1">
+										<div class="photo">
+											<a href="#"> <img src="img/top/photo1.jpg"
+												alt="２５那須ゴルフガーデン" width="85" height="81" border="0"></a>
+										</div>
+										<div class="txt">
+											<h3>
+												<nobr>
+													<a href="#">２５那須ゴルフガーデン（旧....</a>
+												</nobr>
+											</h3>
+											<p>
+												●期間限定！スループレーで午後は温泉♪<br>8月の平日<br>
+												<nobr>
+													<a href="#">セルフ → <strong>3,056円+税</strong>
+													</a>
+												</nobr>
+												<br>
+												<nobr>┗☆２サム保証＆割増なし！</nobr>
+											</p>
+										</div>
+										<div class="clearfix"></div>
+									</div>
+									<!--]注目！お得情報詳細エリア-->
+									<!--注目！お得情報詳細エリア[-->
+									<div class="crs-box" id="otoku2" style="display: block;">
+										<div class="photo">
+											<a href="#"> <img src="img/top/photo1.jpg"
+												alt="月夜野カントリークラブ（群馬県）" width="85" height="81" border="0"></a>
+										</div>
+										<div class="txt">
+											<h3>
+												<nobr>
+													<a href="#">月夜野カントリークラブ</a>（群馬県）
+												</nobr>
+											</h3>
+											<p>
+												●直割！日曜特別優待プラン！<br>8月23日（日）<br>
+												<nobr>
+													<a href="#">セルフ昼食付 → <strong>6,000円+税</strong>
+													</a>
+												</nobr>
+												<br>
+												<nobr>限定！</nobr>
+											</p>
+										</div>
+										<div class="clearfix"></div>
+									</div>
+									<!--]注目！お得情報詳細エリア-->
+									<!--注目！お得情報詳細エリア[-->
+									<div class="crs-box" id="otoku3" style="display: block;">
+										<div class="photo">
+											<a href="#"> <img src="img/top/photo1.jpg"
+												alt="蓼科東急ゴルフコース（長野県）" width="85" height="81" border="0"></a>
+										</div>
+										<div class="txt">
+											<h3>
+												<nobr>
+													<a href="#">蓼科東急ゴルフコース</a>
+												</nobr>
+											</h3>
+											<p>
+												●期間限定！涼しい長野で爽快プレー！<br>8月23、30日の日曜<br>
+												<nobr>
+													<a href="#">セルフ昼食付 → <strong>11,760円+税</strong>
+													</a>
+												</nobr>
+												<br>
+												<nobr>┗＊遅めスタート</nobr>
+											</p>
+										</div>
+										<div class="clearfix"></div>
+									</div>
+									<!--]注目！お得情報詳細エリア-->
+									<!--注目！お得情報詳細エリア[-->
+									<div class="crs-box" id="otoku4">
+										<div class="photo">
+											<a href="#"> <img src="img/top/photo1.jpg"
+												alt="ミッションヒルズカントリー....（埼玉県）" width="85" height="81"
+												border="0"></a>
+										</div>
+										<div class="txt">
+											<h3>
+												<nobr>
+													<a href="#">ミッションヒルズカントリー....</a>
+												</nobr>
+											</h3>
+											<p>
+												直割お得プラン☆<br>8月の土日<br>
+												<nobr>
+													<a href="#">セルフ昼食付 → <strong>５，９２６円＋税〜</strong>
+													</a>
+												</nobr>
+												<br>
+												<nobr>早朝スルー☆1D付！</nobr>
+											</p>
+										</div>
+										<div class="clearfix"></div>
+									</div>
+									<!--]注目！お得情報詳細エリア-->
+									<!--注目！お得情報詳細エリア[-->
+									<div class="crs-box" id="otoku5">
+										<div class="photo">
+											<a href="#"> <img src="img/top/photo1.jpg"
+												alt="境川カントリー倶楽部（山梨県）" width="85" height="81" border="0"></a>
+										</div>
+										<div class="txt">
+											<h3>
+												<nobr>
+													<a href="#">境川カントリー倶楽部</a>（山梨県）
+												</nobr>
+											</h3>
+											<p>
+												予約者はお得な料金プラン★★<br>9月のシルバーウィーク<br>
+												<nobr>
+													<a href="#">セルフ昼食付 → <strong>11,204円＋税〜</strong>
+													</a>
+												</nobr>
+												<br>
+												<nobr>★4名1組のご予約で予約者優待！４B限定?...</nobr>
+											</p>
+										</div>
+										<div class="clearfix"></div>
+									</div>
+									<!--]注目！お得情報詳細エリア-->
+								</div>
 							</div>
 						</div>
 					</div>
-					<div class="row">
 
-						<div class="large-6 small-12 columns">
-							<p class="pb20"></p>
-							<div id="steps-fivepercent-slider"
-								class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all ui-slider-pips ui-slider-float">
-								<span
-									class="ui-slider-handle ui-state-default ui-corner-all range2"
-									tabindex="0" style="left: 15%;"><span
-									class="ui-slider-tip">3</span></span><span
-									class="ui-slider-pip ui-slider-pip-first ui-slider-pip-label ui-slider-pip-0"
-									style="left: 0%"><span class="ui-slider-line"></span><span
-									class="ui-slider-label" data-value="0">0</span></span><span
-									class="ui-slider-pip ui-slider-pip-1" style="left: 5.0000%"><span
-									class="ui-slider-line"></span><span class="ui-slider-label"
-									data-value="1">1</span></span><span
-									class="ui-slider-pip ui-slider-pip-2" style="left: 10.0000%"><span
-									class="ui-slider-line"></span><span class="ui-slider-label"
-									data-value="2">2</span></span><span
-									class="ui-slider-pip ui-slider-pip-3 ui-slider-pip-initial ui-slider-pip-selected"
-									style="left: 15.0000%"><span class="ui-slider-line"></span><span
-									class="ui-slider-label" data-value="3">3</span></span><span
-									class="ui-slider-pip ui-slider-pip-4" style="left: 20.0000%"><span
-									class="ui-slider-line"></span><span class="ui-slider-label"
-									data-value="4">4</span></span><span
-									class="ui-slider-pip ui-slider-pip-5" style="left: 25.0000%"><span
-									class="ui-slider-line"></span><span class="ui-slider-label"
-									data-value="5">5</span></span><span
-									class="ui-slider-pip ui-slider-pip-6" style="left: 30.0000%"><span
-									class="ui-slider-line"></span><span class="ui-slider-label"
-									data-value="6">6</span></span><span
-									class="ui-slider-pip ui-slider-pip-7" style="left: 35.0000%"><span
-									class="ui-slider-line"></span><span class="ui-slider-label"
-									data-value="7">7</span></span><span
-									class="ui-slider-pip ui-slider-pip-8" style="left: 40.0000%"><span
-									class="ui-slider-line"></span><span class="ui-slider-label"
-									data-value="8">8</span></span><span
-									class="ui-slider-pip ui-slider-pip-9" style="left: 45.0000%"><span
-									class="ui-slider-line"></span><span class="ui-slider-label"
-									data-value="9">9</span></span><span
-									class="ui-slider-pip ui-slider-pip-10" style="left: 50.0000%"><span
-									class="ui-slider-line"></span><span class="ui-slider-label"
-									data-value="10">10</span></span><span
-									class="ui-slider-pip ui-slider-pip-11" style="left: 55.0000%"><span
-									class="ui-slider-line"></span><span class="ui-slider-label"
-									data-value="11">11</span></span><span
-									class="ui-slider-pip ui-slider-pip-12" style="left: 60.0000%"><span
-									class="ui-slider-line"></span><span class="ui-slider-label"
-									data-value="12">12</span></span><span
-									class="ui-slider-pip ui-slider-pip-13" style="left: 65.0000%"><span
-									class="ui-slider-line"></span><span class="ui-slider-label"
-									data-value="13">13</span></span><span
-									class="ui-slider-pip ui-slider-pip-14" style="left: 70.0000%"><span
-									class="ui-slider-line"></span><span class="ui-slider-label"
-									data-value="14">14</span></span><span
-									class="ui-slider-pip ui-slider-pip-15" style="left: 75.0000%"><span
-									class="ui-slider-line"></span><span class="ui-slider-label"
-									data-value="15">15</span></span><span
-									class="ui-slider-pip ui-slider-pip-16" style="left: 80.0000%"><span
-									class="ui-slider-line"></span><span class="ui-slider-label"
-									data-value="16">16</span></span><span
-									class="ui-slider-pip ui-slider-pip-17" style="left: 85.0000%"><span
-									class="ui-slider-line"></span><span class="ui-slider-label"
-									data-value="17">17</span></span><span
-									class="ui-slider-pip ui-slider-pip-18" style="left: 90.0000%"><span
-									class="ui-slider-line"></span><span class="ui-slider-label"
-									data-value="18">18</span></span><span
-									class="ui-slider-pip ui-slider-pip-19" style="left: 95.0000%"><span
-									class="ui-slider-line"></span><span class="ui-slider-label"
-									data-value="19">19</span></span><span
-									class="ui-slider-pip ui-slider-pip-last ui-slider-pip-label ui-slider-pip-20"
-									style="left: 100%"><span class="ui-slider-line"></span><span
-									class="ui-slider-label" data-value="20">20</span></span>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-
-						<div class="large-6 small-12 columns ">
-							<p class="pb20"></p>
-
-							<div id="hanzi-labels-slider"
-								class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all ui-slider-pips ui-slider-float">
-								<span class="ui-slider-handle ui-state-default ui-corner-all"
-									tabindex="0" style="left: 15%;"><span
-									class="ui-slider-tip">3</span></span><span
-									class="ui-slider-pip ui-slider-pip-first ui-slider-pip-label ui-slider-pip-0"
-									style="left: 0%"><span class="ui-slider-line"></span><span
-									class="ui-slider-label" data-value="0">0</span></span><span
-									class="ui-slider-pip ui-slider-pip-1" style="left: 5.0000%"><span
-									class="ui-slider-line"></span><span class="ui-slider-label"
-									data-value="1">1</span></span><span
-									class="ui-slider-pip ui-slider-pip-2" style="left: 10.0000%"><span
-									class="ui-slider-line"></span><span class="ui-slider-label"
-									data-value="2">2</span></span><span
-									class="ui-slider-pip ui-slider-pip-3 ui-slider-pip-initial ui-slider-pip-selected"
-									style="left: 15.0000%"><span class="ui-slider-line"></span><span
-									class="ui-slider-label" data-value="3">3</span></span><span
-									class="ui-slider-pip ui-slider-pip-4" style="left: 20.0000%"><span
-									class="ui-slider-line"></span><span class="ui-slider-label"
-									data-value="4">4</span></span><span
-									class="ui-slider-pip ui-slider-pip-5" style="left: 25.0000%"><span
-									class="ui-slider-line"></span><span class="ui-slider-label"
-									data-value="5">5</span></span><span
-									class="ui-slider-pip ui-slider-pip-6" style="left: 30.0000%"><span
-									class="ui-slider-line"></span><span class="ui-slider-label"
-									data-value="6">6</span></span><span
-									class="ui-slider-pip ui-slider-pip-7" style="left: 35.0000%"><span
-									class="ui-slider-line"></span><span class="ui-slider-label"
-									data-value="7">7</span></span><span
-									class="ui-slider-pip ui-slider-pip-8" style="left: 40.0000%"><span
-									class="ui-slider-line"></span><span class="ui-slider-label"
-									data-value="8">8</span></span><span
-									class="ui-slider-pip ui-slider-pip-9" style="left: 45.0000%"><span
-									class="ui-slider-line"></span><span class="ui-slider-label"
-									data-value="9">9</span></span><span
-									class="ui-slider-pip ui-slider-pip-10" style="left: 50.0000%"><span
-									class="ui-slider-line"></span><span class="ui-slider-label"
-									data-value="10">10</span></span><span
-									class="ui-slider-pip ui-slider-pip-11" style="left: 55.0000%"><span
-									class="ui-slider-line"></span><span class="ui-slider-label"
-									data-value="11">11</span></span><span
-									class="ui-slider-pip ui-slider-pip-12" style="left: 60.0000%"><span
-									class="ui-slider-line"></span><span class="ui-slider-label"
-									data-value="12">12</span></span><span
-									class="ui-slider-pip ui-slider-pip-13" style="left: 65.0000%"><span
-									class="ui-slider-line"></span><span class="ui-slider-label"
-									data-value="13">13</span></span><span
-									class="ui-slider-pip ui-slider-pip-14" style="left: 70.0000%"><span
-									class="ui-slider-line"></span><span class="ui-slider-label"
-									data-value="14">14</span></span><span
-									class="ui-slider-pip ui-slider-pip-15" style="left: 75.0000%"><span
-									class="ui-slider-line"></span><span class="ui-slider-label"
-									data-value="15">15</span></span><span
-									class="ui-slider-pip ui-slider-pip-16" style="left: 80.0000%"><span
-									class="ui-slider-line"></span><span class="ui-slider-label"
-									data-value="16">16</span></span><span
-									class="ui-slider-pip ui-slider-pip-17" style="left: 85.0000%"><span
-									class="ui-slider-line"></span><span class="ui-slider-label"
-									data-value="17">17</span></span><span
-									class="ui-slider-pip ui-slider-pip-18" style="left: 90.0000%"><span
-									class="ui-slider-line"></span><span class="ui-slider-label"
-									data-value="18">18</span></span><span
-									class="ui-slider-pip ui-slider-pip-19" style="left: 95.0000%"><span
-									class="ui-slider-line"></span><span class="ui-slider-label"
-									data-value="19">19</span></span><span
-									class="ui-slider-pip ui-slider-pip-last ui-slider-pip-label ui-slider-pip-20"
-									style="left: 100%"><span class="ui-slider-line"></span><span
-									class="ui-slider-label" data-value="20">20</span></span>
-							</div>
-						</div>
-					</div>
-
-					<div class="golf_plan clearfix pc">
-						<h3>よく行くゴルフ場の今だけの特別割引(要会員登録)</h3>
-						<h4></h4>
-						<div class="golf_plan1">
-							<dl>
-								<dt>直前割</dt>
-								<dd class="golf_row1">
-									<ul>
-										<li><a href="#"> <img src="img/top/photo1.jpg"
-												alt="喜連川カントリー倶楽部（栃木県）" width="50" border="0">
-										</a></li>
-										<li><a href="#"><span class="blue">佐野ゴルフクラブ</span> <span
-												class="red"><br>\7,000</span> </a></li>
-										<li><a href=""><span class="golfplan_btn01">2回プレー</span></a></li>
-									</ul>
-								</dd>
-								<dd class="golf_row2">
-									<ul>
-										<li><a href="#"> <img src="img/top/photo1.jpg"
-												alt="喜連川カントリー倶楽部（栃木県）" width="50" border="0">
-										</a></li>
-										<li><a href="#"><span class="blue">佐野ゴルフクラブ</span> <span
-												class="red"><br>\7,000</span> </a></li>
-										<li><a href=""><span class="golfplan_btn02">お気に入り
-											</span></a></li>
-									</ul>
-
-								</dd>
-							</dl>
-						</div>
-						<div class="golf_plan2">
-							<dl>
-								<dt>特別割</dt>
-								<dd class="golf_row3">
-									<ul>
-										<li><a href="#"> <img src="img/top/photo1.jpg"
-												alt="喜連川カントリー倶楽部（栃木県）" width="50" border="0">
-										</a></li>
-										<li><a href="#"><span class="blue">佐野ゴルフクラブ</span> <span
-												class="red"><br>\7,000</span> </a></li>
-										<li><a href=""><span class="golfplan_btn01">2回プレー</span></a></li>
-									</ul>
-								</dd>
-								<dd class="golf_row4">
-									<ul>
-										<li><a href="#"> <img src="img/top/photo1.jpg"
-												alt="喜連川カントリー倶楽部（栃木県）" width="50" border="0">
-										</a></li>
-										<li><a href="#"><span class="blue">佐野ゴルフクラブ</span> <span
-												class="red"><br>\7,000</span> </a></li>
-										<li><a href=""><span class="golfplan_btn02">お気に入り
-											</span></a></li>
-									</ul>
-								</dd>
-							</dl>
-						</div>
-						<div class="golf_plan3">
-							<dl>
-								<dt>早割</dt>
-								<dd class="golf_row5">
-									<ul>
-										<li><a href="#"> <img src="img/top/photo1.jpg"
-												alt="喜連川カントリー倶楽部（栃木県）" width="50" border="0">
-										</a></li>
-										<li><a href="#"><span class="blue">佐野ゴルフクラブ</span> <span
-												class="red"><br>\7,000</span> </a></li>
-										<li><a href=""><span class="golfplan_btn01">2回プレー</span></a></li>
-									</ul>
-								</dd>
-								<dd class="golf_row6">
-									<ul>
-										<li><a href="#"> <img src="img/top/photo1.jpg"
-												alt="喜連川カントリー倶楽部（栃木県）" width="50" border="0">
-										</a></li>
-										<li><a href="#"><span class="blue">佐野ゴルフクラブ</span> <span
-												class="red"><br>\7,000</span> </a></li>
-										<li><a href=""><span class="golfplan_btn02">お気に入り
-											</span></a></li>
-									</ul>
-								</dd>
-							</dl>
-						</div>
-					</div>
 				</div>
+				<!-- main content -->
 
 				<aside class="pc col-sm-3 pr0">
 					<div class="mb20">
@@ -1287,20 +1556,20 @@
 									<p>
 								</div>
 								<div class="col-sm-12 bg-white">
-								<ul class="aside-list">
-									<li>関東近郊プロのコースレッスン体験キャンペーン中</li>
-									<li>毎月当たる！最新ゴルフクラブセット</li>
-									<li>ABCカントリークラブ GOLFオープンコンペ</li>
-									<li>夏物ゴルフウェア　最終セール開催中</li>
-									<li>ゴルフクラブ買い取りフェア　９月末まで！</li>
-								</ul>
+									<ul class="aside-list">
+										<li>関東近郊プロのコースレッスン体験キャンペーン中</li>
+										<li>毎月当たる！最新ゴルフクラブセット</li>
+										<li>ABCカントリークラブ GOLFオープンコンペ</li>
+										<li>夏物ゴルフウェア 最終セール開催中</li>
+										<li>ゴルフクラブ買い取りフェア ９月末まで！</li>
+									</ul>
 								</div>
-
-
 							</div>
 						</div>
 
+
 					</div>
+
 					<div class="aside-section mb20">
 						<div class="row">
 							<div class="col-sm-12 pt20 pb20 pr20 pl20">
@@ -1309,29 +1578,23 @@
 									<p>
 								</div>
 								<div class="col-sm-12 bg-white pt20">
-								<div class="center">
-									<img src="img/home/aside_img02.png" alt="" />
-																	</div>
-																	<p class="caption">
-																	夏ゴルフを満喫しよう！シーサイドコース特集
-																	</p>
-								<div class="center">
-									<img src="img/home/aside_img03.png" alt="" />
-									
-								</div>
-								<p class="caption">
-								女性ゴルファー デビューおすすめコース特集
-								</p>
-								<div class="center">
-									<img src="img/home/aside_img04.png" alt="" />
-									
-								</div>
-								<p class="caption">
-								女性ゴルファー デビューおすすめコース特集
-								</p>
-								<div class="center">
-									<a href="#" class="btn btn-aside02 mb20"> もっと見る</a>
-								</div>
+									<div class="center">
+										<img src="img/home/aside_img02.png" alt="" />
+									</div>
+									<p class="caption">夏ゴルフを満喫しよう！シーサイドコース特集</p>
+									<div class="center">
+										<img src="img/home/aside_img03.png" alt="" />
+
+									</div>
+									<p class="caption">女性ゴルファー デビューおすすめコース特集</p>
+									<div class="center">
+										<img src="img/home/aside_img04.png" alt="" />
+
+									</div>
+									<p class="caption">女性ゴルファー デビューおすすめコース特集</p>
+									<div class="center">
+										<a href="#" class="btn btn-aside02 mb20"> もっと見る</a>
+									</div>
 								</div>
 
 
@@ -2088,7 +2351,8 @@
 						</div>
 						<div class="col-xs-6">
 							<p class="btn btn-block center fw-bold center bg-grey">
-								該当コース <span class="rating">1,600</span><span class="matter">件</span>
+								該当コース <span class="ratingprice text-red">1500</span><span
+									class="matter">件</span>
 							</p>
 						</div>
 					</div>
@@ -2098,171 +2362,10 @@
 			</div>
 
 		</div>
+
+
 	</article>
-	<div class="reco_ttl container pc">
-		<ul>
-			<li><span>test</span></li>
-			<li><span>test</span></li>
-			<li><span>test</span></li>
-		</ul>
-	</div>
-	<div class="clearfix container pc">
-		<div id="recomme-container-hot">
-			<div class="recomme-box02">
-				<!--注目！お得情報詳細エリア[-->
-				<div class="crs-box" id="otoku0">
-					<div class="photo">
-						<a href="#"> <img src="img/top/photo1.jpg"
-							alt="喜連川カントリー倶楽部（栃木県）" width="85" height="81" border="0">
-						</a>
-					</div>
-					<div class="txt">
-						<h3>
-							<nobr>
-								<a href="#">喜連川カントリー倶楽部</a>（栃木県）
-							</nobr>
-						</h3>
-						<p>
-							●直割！早めスタートがお得！<br>8月22日（土）<br>
-							<nobr>
-								<a href="#">セルフ昼食付 → <strong>4,010円+税</strong>
-								</a>
-							</nobr>
-							<br>
-							<nobr>┗☆２サム保証＆割増なし！</nobr>
-						</p>
-					</div>
-					<div class="clearfix"></div>
-				</div>
-				<!--]注目！お得情報詳細エリア-->
-				<!--注目！お得情報詳細エリア[-->
-				<div class="crs-box" id="otoku1">
-					<div class="photo">
-						<a href="#"> <img src="img/top/photo1.jpg" alt="２５那須ゴルフガーデン"
-							width="85" height="81" border="0"></a>
-					</div>
-					<div class="txt">
-						<h3>
-							<nobr>
-								<a href="#">２５那須ゴルフガーデン（旧....</a>
-							</nobr>
-						</h3>
-						<p>
-							●期間限定！スループレーで午後は温泉♪<br>8月の平日<br>
-							<nobr>
-								<a href="#">セルフ → <strong>3,056円+税</strong>
-								</a>
-							</nobr>
-							<br>
-							<nobr>┗☆２サム保証＆割増なし！</nobr>
-						</p>
-					</div>
-					<div class="clearfix"></div>
-				</div>
-				<!--]注目！お得情報詳細エリア-->
-				<!--注目！お得情報詳細エリア[-->
-				<div class="crs-box" id="otoku2" style="display: block;">
-					<div class="photo">
-						<a href="#"> <img src="img/top/photo1.jpg"
-							alt="月夜野カントリークラブ（群馬県）" width="85" height="81" border="0"></a>
-					</div>
-					<div class="txt">
-						<h3>
-							<nobr>
-								<a href="#">月夜野カントリークラブ</a>（群馬県）
-							</nobr>
-						</h3>
-						<p>
-							●直割！日曜特別優待プラン！<br>8月23日（日）<br>
-							<nobr>
-								<a href="#">セルフ昼食付 → <strong>6,000円+税</strong>
-								</a>
-							</nobr>
-							<br>
-							<nobr>限定！</nobr>
-						</p>
-					</div>
-					<div class="clearfix"></div>
-				</div>
-				<!--]注目！お得情報詳細エリア-->
-				<!--注目！お得情報詳細エリア[-->
-				<div class="crs-box" id="otoku3" style="display: block;">
-					<div class="photo">
-						<a href="#"> <img src="img/top/photo1.jpg"
-							alt="蓼科東急ゴルフコース（長野県）" width="85" height="81" border="0"></a>
-					</div>
-					<div class="txt">
-						<h3>
-							<nobr>
-								<a href="#">蓼科東急ゴルフコース</a>
-							</nobr>
-						</h3>
-						<p>
-							●期間限定！涼しい長野で爽快プレー！<br>8月23、30日の日曜<br>
-							<nobr>
-								<a href="#">セルフ昼食付 → <strong>11,760円+税</strong>
-								</a>
-							</nobr>
-							<br>
-							<nobr>┗＊遅めスタート</nobr>
-						</p>
-					</div>
-					<div class="clearfix"></div>
-				</div>
-				<!--]注目！お得情報詳細エリア-->
-				<!--注目！お得情報詳細エリア[-->
-				<div class="crs-box" id="otoku4">
-					<div class="photo">
-						<a href="#"> <img src="img/top/photo1.jpg"
-							alt="ミッションヒルズカントリー....（埼玉県）" width="85" height="81" border="0"></a>
-					</div>
-					<div class="txt">
-						<h3>
-							<nobr>
-								<a href="#">ミッションヒルズカントリー....</a>
-							</nobr>
-						</h3>
-						<p>
-							直割お得プラン☆<br>8月の土日<br>
-							<nobr>
-								<a href="#">セルフ昼食付 → <strong>５，９２６円＋税〜</strong>
-								</a>
-							</nobr>
-							<br>
-							<nobr>早朝スルー☆1D付！</nobr>
-						</p>
-					</div>
-					<div class="clearfix"></div>
-				</div>
-				<!--]注目！お得情報詳細エリア-->
-				<!--注目！お得情報詳細エリア[-->
-				<div class="crs-box" id="otoku5">
-					<div class="photo">
-						<a href="#"> <img src="img/top/photo1.jpg"
-							alt="境川カントリー倶楽部（山梨県）" width="85" height="81" border="0"></a>
-					</div>
-					<div class="txt">
-						<h3>
-							<nobr>
-								<a href="#">境川カントリー倶楽部</a>（山梨県）
-							</nobr>
-						</h3>
-						<p>
-							予約者はお得な料金プラン★★<br>9月のシルバーウィーク<br>
-							<nobr>
-								<a href="#">セルフ昼食付 → <strong>11,204円＋税〜</strong>
-								</a>
-							</nobr>
-							<br>
-							<nobr>★4名1組のご予約で予約者優待！４B限定?...</nobr>
-						</p>
-					</div>
-					<div class="clearfix"></div>
-				</div>
-				<!--]注目！お得情報詳細エリア-->
-			</div>
-		</div>
-	</div>
+
 	<footer>
 		<div class="container">
 			<div class="col-sm-12 dis-none-pc">
@@ -2290,8 +2393,8 @@
 		<div class="container">
 			<div class="row mt30 dis-none ">
 				<div class="col-sm-12 clearfix">
-					<dl class="res_seofooter_top ">
-						<dt class="aside-title">ゴルフ場一覧</dt>
+					<dl class="res_seofooter_top">
+						<dt>ゴルフ場一覧</dt>
 						<dd>
 							<ul class="prefectures">
 								<li class="first"><a href="#">北海道・東北</a></li>
@@ -2433,25 +2536,18 @@
 	<script>
 		$(function() {
 			//  $(".monthpicker").datepicker();
-
 			$('.monthpicker').datepicker({
-
 				dateFormat : "MM dd"
 			});
-
 			$(".switch").click(function() {
 				$(".singleSearchBox").show();
 				$(".searchBoxContainer").hide();
-
 			});
 			$(".switch01").click(function() {
 				$(".singleSearchBox").hide();
 				$(".searchBoxContainer").show();
-
 			});
-
 		});
-
 		$('.single-Nav').slick({
 			dots : true,
 			infinite : true,
