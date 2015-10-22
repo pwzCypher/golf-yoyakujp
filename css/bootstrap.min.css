@@ -3934,7 +3934,8 @@ tbody.collapse.in {
 	content: "";
 	border-top: 0;
 	border-bottom: 4px dashed;
-	border-bottom: 4px solid\9
+	border-bottom: 4px solid\9
+
 }
 
 .dropup .dropdown-menu, .navbar-fixed-bottom .dropdown .dropdown-menu {
@@ -4582,7 +4583,7 @@ border-bottom-right-radius
     margin-bottom: -1px;
     font-size: 20px;
     background: #000;
-    width: 435px;
+    width: 430px;
     text-align: center;
     
 }
